@@ -1,0 +1,4 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'; import education from '@/data/education.yaml'; import awards from '@/data/awards.yaml';
+---
+<BaseLayout title="Education" description="Education, doctoral training, and academic awards."><div class="page"><p class="eyebrow">Education</p><h1>Training and foundations.</h1><div class="timeline" style="margin-top:50px">{education.map(e=><article class="timeline-item"><span class="date">{e.start}—{e.end} · {e.location}</span><h2>{e.degree}</h2><strong>{e.institution}</strong>{e.thesis&&<p>Thesis: <em>{e.thesis}</em></p>}{e.advisor&&<p>Advisor: {e.advisor}</p>}{e.note&&<p>{e.note}</p>}</article>)}</div><section><div class="section-head"><h2>Awards</h2></div><div class="cards">{awards.map(a=><article class="callout"><p class="eyebrow">{a.year} · {a.issuer}</p><h3>{a.title}</h3><p>{a.description}</p></article>)}</div></section></div></BaseLayout>

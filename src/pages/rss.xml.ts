@@ -1,0 +1,2 @@
+import rss from '@astrojs/rss'; import { published } from '@/lib/content'; import site from '@/data/site.yaml';
+export async function GET(context:any){const news=await published('news');return rss({title:`${site.name} — News`,description:site.description,site:context.site,items:news.map(n=>({title:n.data.title,description:n.data.description,pubDate:n.data.date,link:`news/${n.id}/`})),customData:'<language>en</language>'})}

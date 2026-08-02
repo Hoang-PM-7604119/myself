@@ -1,0 +1,12 @@
+name: Research Journey
+description: The fictional academic portfolio of Dr. Maya Chen—edge intelligence, dependable systems, and the people behind the work.
+language: en
+homepage:
+  sections: [hero, research, featured_projects, publications, timeline, collaborators, news, contact]
+navigation:
+  - { label: Research, href: /research/ }
+  - { label: Projects, href: /projects/ }
+  - { label: Publications, href: /publications/ }
+  - { label: People, href: /people/ }
+  - { label: Journey, href: /experience/ }
+  - { label: About, href: /about/ }

@@ -1,0 +1,6 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'; import site from '@/data/site.yaml';
+import Hero from '@/components/Hero.astro'; import Research from '@/components/Research.astro'; import FeaturedProjects from '@/components/FeaturedProjects.astro'; import SelectedPublications from '@/components/SelectedPublications.astro'; import Timeline from '@/components/Timeline.astro'; import Collaborators from '@/components/Collaborators.astro'; import News from '@/components/News.astro'; import ContactCTA from '@/components/ContactCTA.astro';
+const sections:Record<string,any>={hero:Hero,research:Research,featured_projects:FeaturedProjects,publications:SelectedPublications,timeline:Timeline,collaborators:Collaborators,news:News,contact:ContactCTA};
+---
+<BaseLayout>{site.homepage.sections.map((key:string)=>{const Component=sections[key];return Component?<Component/>:null})}</BaseLayout>

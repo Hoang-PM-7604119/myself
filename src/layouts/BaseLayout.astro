@@ -1,0 +1,46 @@
+---
+import site from '@/data/site.yaml';
+import profile from '@/data/profile.yaml';
+import social from '@/data/social.yaml';
+import theme from '@/data/theme.yaml';
+import '@/styles/global.css';
+interface Props { title?: string; description?: string; image?: string; article?: Record<string, unknown>; progress?: boolean; }
+const { title, description = site.description, image = profile.image, article, progress = false } = Astro.props;
+const pageTitle = title ? `${title} — ${profile.name}` : `${profile.name} — ${profile.role}`;
+const canonical = new URL(Astro.url.pathname, Astro.site);
+const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
+const absoluteImage = new URL(asset(image), Astro.site);
+const personLd = { '@context':'https://schema.org', '@type':'Person', name:profile.name, jobTitle:profile.role, affiliation:{'@type':'Organization',name:profile.institution}, email:`mailto:${profile.email}`, url:canonical.origin + import.meta.env.BASE_URL, sameAs:Object.values(social) };
+---
+<!doctype html>
+<html lang={site.language} data-theme="light" style={`--accentLight:${theme.accent};--accentDark:${theme.accentDark};--radius:${theme.radius};--motion:${theme.motion}`}>
+<head>
+  <meta charset="UTF-8" /><meta name="viewport" content="width=device-width" />
+  <title>{pageTitle}</title><meta name="description" content={description} />
+  <link rel="canonical" href={canonical} /><link rel="alternate" type="application/rss+xml" title={`${site.name} news`} href={asset('/rss.xml')} />
+  <meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={absoluteImage} />
+  <meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content={theme.accent} />
+  <script type="application/ld+json" set:html={JSON.stringify(article ?? personLd)} />
+  <style define:vars={{ accent: theme.accent, accentDark: theme.accentDark, radius: theme.radius, motion: theme.motion }}></style>
+  <script is:inline>document.documentElement.dataset.theme=localStorage.getItem('theme')||((matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');</script>
+</head>
+<body data-progress={progress}>
+  {progress && <div class="reading-progress" aria-hidden="true"><span></span></div>}
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="brand" href={asset('/')}><span>MC</span><strong>{profile.name}</strong></a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span>Menu</button>
+    <nav id="site-nav" aria-label="Primary"><ul>{site.navigation.map((item) => <li><a href={asset(item.href)}>{item.label}</a></li>)}</ul></nav>
+    <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
+  </header>
+  <main id="main"><slot /></main>
+  <footer><div><strong>{profile.name}</strong><p>Research is a team sport. This site records the questions, people, and lessons behind the results.</p></div><div><a href={asset('/contact/')}>Contact</a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. Fictional example content. Built as a static Astro site.</small></footer>
+  <script>
+    const root=document.documentElement;
+    document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('theme',next)});
+    const navButton=document.querySelector<HTMLButtonElement>('.nav-toggle');navButton?.addEventListener('click',()=>navButton.setAttribute('aria-expanded',String(navButton.getAttribute('aria-expanded')!=='true')));
+    const observer=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('revealed')),{threshold:.08});document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el));
+    document.querySelectorAll<HTMLElement>('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{await navigator.clipboard.writeText(button.dataset.copy||'');const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1600)}));
+    if(document.body.dataset.progress==='true'){const bar=document.querySelector<HTMLElement>('.reading-progress span');const update=()=>{const h=document.documentElement.scrollHeight-innerHeight; if(bar)bar.style.width=`${h?scrollY/h*100:0}%`};addEventListener('scroll',update,{passive:true});update()}
+  </script>
+</body></html>
