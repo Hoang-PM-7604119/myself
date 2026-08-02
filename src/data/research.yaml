@@ -1,0 +1,16 @@
+- slug: efficient-edge-ai
+  title: Efficient Edge AI
+  summary: Co-designing models, compilers, and heterogeneous hardware for useful inference within severe energy and memory budgets.
+  icon: chip
+- slug: dependable-embedded-systems
+  title: Dependable Embedded Systems
+  summary: Making sensing systems observable, resilient, and safe when deployed in unpredictable physical environments.
+  icon: pulse
+- slug: privacy-federated-learning
+  title: Privacy & Federated Learning
+  summary: Learning across distributed devices while accounting for unequal hardware, connectivity, and data quality.
+  icon: network
+- slug: hardware-security
+  title: Hardware Security
+  summary: Understanding how timing, power, and shared resources can expose—or help protect—intelligent devices.
+  icon: shield

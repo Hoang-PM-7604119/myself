@@ -1,0 +1,4 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'; import { published } from '@/lib/content'; const people=await published('people'); const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
+---
+<BaseLayout title="People" description="Collaborators, mentors, and people met during the research journey."><div class="page"><p class="eyebrow">Research community</p><h1>The people who changed the questions.</h1><p class="lede">Collaboration is not metadata. These short notes record what each relationship brought to the work.</p><div class="people-grid" style="margin-top:50px">{people.map(p=><article class="person"><a href={asset(`/people/${p.id}/`)}><img src={asset(p.data.image)} width="400" height="400" alt=""/></a><div><h3><a href={asset(`/people/${p.id}/`)}>{p.data.title}</a></h3><small>{p.data.role} · {p.data.organization}</small><p>{p.data.description}</p></div></article>)}</div></div></BaseLayout>

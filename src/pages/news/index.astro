@@ -1,0 +1,4 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'; import { published, pretty } from '@/lib/content'; const news=await published('news'); const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
+---
+<BaseLayout title="News" description="Recent research news, publications, projects, awards, and field notes."><div class="page"><p class="eyebrow">News archive</p><h1>Updates from the research journey.</h1><div class="news-list" style="margin-top:50px">{news.map(n=><article class="news-row"><time>{n.data.date.toLocaleDateString('en',{month:'short',day:'numeric',year:'numeric'})}</time><div><a href={asset(`/news/${n.id}/`)}>{n.data.title}</a><p>{n.data.description}</p></div><span class="eyebrow">{pretty(n.data.category)}</span></article>)}</div></div></BaseLayout>

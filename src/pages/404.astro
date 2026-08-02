@@ -1,0 +1,4 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'; const home=import.meta.env.BASE_URL;
+---
+<BaseLayout title="Page not found"><div class="page"><p class="eyebrow">404</p><h1>This signal went quiet.</h1><p class="lede">The page may have moved, or the link may be incomplete.</p><a class="button primary" href={home}>Return home</a></div></BaseLayout>

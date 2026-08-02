@@ -1,0 +1,11 @@
+fictional: true
+name: Dr. Maya Chen
+pronouns: she/her
+role: Assistant Professor of Computer Engineering
+institution: Northbridge Institute of Technology
+location: Toronto, Canada
+email: maya.chen@example.edu
+statement: I build resource-aware, trustworthy intelligence for the small computers that quietly shape everyday life.
+bio: Maya is a fictional researcher exploring the boundary between computer architecture, embedded intelligence, and cybersecurity. Her work asks not only whether edge AI can be faster, but whether it can remain useful, private, and dependable outside the laboratory.
+image: /images/profile/maya-chen.svg
+cv: /files/cv/maya-chen-cv.pdf

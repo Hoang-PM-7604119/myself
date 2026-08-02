@@ -1,0 +1,36 @@
+- id: northbridge
+  role: Assistant Professor
+  organization: Northbridge Institute of Technology
+  type: University
+  location: Toronto, Canada
+  start: 2023-09
+  present: true
+  summary: Leads the Humane Edge Systems Lab, joining architecture and machine learning with field research.
+  achievements: [Founded an interdisciplinary lab, Developed two new embedded AI courses]
+  website: https://example.edu
+  relatedProjects: [adaptive-sensor-fabric]
+  relatedPublications: [sparsewake]
+- id: lumen
+  role: Research Scientist
+  organization: Lumen Research Labs
+  type: Research institute
+  location: Montréal, Canada
+  start: 2021-01
+  end: 2023-08
+  summary: Built privacy-preserving learning systems for heterogeneous sensing fleets.
+  achievements: [Led a 12-device field deployment, Mentored three research interns]
+  website: https://example.com
+  relatedProjects: [federated-field-notes]
+  relatedPublications: [fedtempo]
+- id: arcadia
+  role: Doctoral Researcher
+  organization: Arcadia University Systems Lab
+  type: University laboratory
+  location: Vancouver, Canada
+  start: 2016-09
+  end: 2020-12
+  summary: Studied energy-proportional accelerators and their behavior under noisy real-world workloads.
+  achievements: [Best paper honorable mention, Open-sourced a reproducible benchmark suite]
+  website: https://example.org
+  relatedProjects: [tiny-trust]
+  relatedPublications: [tiny-trust-paper, field-bench]

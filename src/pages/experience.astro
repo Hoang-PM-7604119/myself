@@ -1,0 +1,4 @@
+---
+import BaseLayout from '@/layouts/BaseLayout.astro'; import experience from '@/data/experience.yaml';
+---
+<BaseLayout title="Experience" description="Academic and industry experience, with achievements and connected research."><div class="page"><p class="eyebrow">Experience</p><h1>A research journey across institutions.</h1><p class="lede">Each move introduced a different constraint, collaborator, or definition of useful systems work.</p><div class="timeline" style="margin-top:50px">{experience.map(e=><article class="timeline-item"><span class="date">{e.start} — {e.present?'present':e.end} · {e.location}</span><h2>{e.role}</h2><p><strong><a href={e.website}>{e.organization}</a></strong> · {e.type}</p><p>{e.summary}</p><ul>{e.achievements.map(a=><li>{a}</li>)}</ul></article>)}</div></div></BaseLayout>
