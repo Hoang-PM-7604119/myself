@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 840" role="img" aria-labelledby="title desc">
+  <title id="title">Minh-Hoang Pham system profile graphic</title>
+  <desc id="desc">A technical profile mark with AIoT sensing nodes, data traces, and the initials MH.</desc>
+  <rect width="720" height="840" rx="28" fill="#0b2422"/>
+  <path d="M64 108h592v624H64z" fill="#112f2b" stroke="#4dbda6" stroke-width="2"/>
+  <path d="M104 168h512M104 228h512M104 288h512M104 348h512M104 408h512M104 468h512M104 528h512M104 588h512M104 648h512" stroke="#244942" stroke-width="1"/>
+  <path d="M164 128v544M244 128v544M324 128v544M404 128v544M484 128v544M564 128v544" stroke="#244942" stroke-width="1"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M118 548c72-148 128-38 184-148s126-54 184-142 82-84 118-28" stroke="#72e0c7" stroke-width="7"/>
+    <path d="M118 610c86-72 152-82 218-38 78 52 138 38 268-76" stroke="#d39a43" stroke-width="5"/>
+    <path d="M118 442c88 26 148 16 208-28 70-52 132-62 278 4" stroke="#e8f4ef" stroke-width="3" opacity=".75"/>
+  </g>
+  <g fill="#0b2422" stroke="#72e0c7" stroke-width="3">
+    <circle cx="118" cy="548" r="12"/>
+    <circle cx="302" cy="400" r="12"/>
+    <circle cx="486" cy="258" r="12"/>
+    <circle cx="604" cy="230" r="12"/>
+    <circle cx="336" cy="572" r="12"/>
+    <circle cx="604" cy="496" r="12"/>
+  </g>
+  <g fill="#e8f4ef">
+    <text x="104" y="114" font-family="ui-monospace, Menlo, monospace" font-size="22" font-weight="700">AIoT FIELD STACK</text>
+    <text x="104" y="706" font-family="ui-monospace, Menlo, monospace" font-size="20">SENSOR / MODEL / SERVER / DEPLOY</text>
+  </g>
+  <g transform="translate(128 250)">
+    <rect x="0" y="0" width="230" height="150" rx="14" fill="#e8f4ef"/>
+    <text x="28" y="94" fill="#0b2422" font-family="Georgia, serif" font-size="88" font-weight="700">MH</text>
+    <path d="M28 118h174" stroke="#0f6f5f" stroke-width="5"/>
+  </g>
+</svg>

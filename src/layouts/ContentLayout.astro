@@ -1,10 +1,11 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import { wordsToMinutes, pretty } from '@/lib/content';
+import profile from '@/data/profile.yaml';
 interface Props { title: string; description: string; date?: Date; topics?: string[]; prose?: string; type?: 'CreativeWork'|'ScholarlyArticle'; }
 const { title, description, date, topics = [], prose = '', type = 'CreativeWork' } = Astro.props;
 const headings = Array.from(prose.matchAll(/^##\s+(.+)$/gm)).map(m => ({ text:m[1], id:m[1].toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/(^-|-$)/g,'') }));
-const ld = { '@context':'https://schema.org', '@type':type, headline:title, description, datePublished:date?.toISOString(), author:{'@type':'Person',name:'Dr. Maya Chen'} };
+const ld = { '@context':'https://schema.org', '@type':type, headline:title, description, datePublished:date?.toISOString(), author:{'@type':'Person',name:profile.name} };
 ---
 <BaseLayout title={title} description={description} article={ld} progress>
   <article class="content-shell">

@@ -1,11 +1,11 @@
 ---
-title: Preparing the winter sensor pilot
-description: What we changed after a summer deployment exposed assumptions in our enclosure and energy models.
-date: 2025-02-03
+title: Preparing remote sensing infrastructure for Can Gio mangrove monitoring
+description: Designing field-ready IoT architecture for long-term mangrove conservation.
+date: 2026-02-03
 category: project
 order: 3
-topics: [dependable-embedded-systems]
-projects: [adaptive-sensor-fabric]
+topics: [aiot-environmental-monitoring, edge-ai-embedded-systems]
+projects: [can-gio-mangrove-iot]
 ---
 
-Cold weather changes batteries, sensors, radios, and the people servicing them. Our next pilot adds independent temperature logging and a deliberately conservative fallback policy.
+The project focuses on reliable remote sensing, maintainable deployment workflows, procurement planning, and environmental data infrastructure for conservation research.

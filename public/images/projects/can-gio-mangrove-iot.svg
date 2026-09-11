@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+  <title id="t">Can Gio mangrove IoT system</title>
+  <desc id="d">Remote mangrove monitoring with sensing nodes, communication links, and environmental data traces.</desc>
+  <rect width="1200" height="720" fill="#10271f"/>
+  <path d="M0 584c180-38 276-20 424-76 168-64 332 2 470-50 130-48 206-84 306-54v316H0z" fill="#183b2f"/>
+  <g stroke="#6cdeb9" stroke-width="4" fill="none" opacity=".72">
+    <path d="M172 514V294m0 0c-58-12-86-48-94-108m94 108c62-32 98-84 110-154m-110 154c52 12 98 44 140 96"/>
+    <path d="M515 488V240m0 0c-68-22-106-66-114-132m114 132c74-24 118-76 132-152m-132 152c60 14 116 52 164 116"/>
+    <path d="M888 520V286m0 0c-62-18-98-60-110-126m110 126c74-28 118-76 132-148m-132 148c62 18 114 54 158 110"/>
+  </g>
+  <g fill="#eaf7f1" stroke="#d39a43" stroke-width="4">
+    <rect x="226" y="436" width="94" height="74" rx="10"/>
+    <rect x="626" y="398" width="94" height="74" rx="10"/>
+    <rect x="962" y="442" width="94" height="74" rx="10"/>
+  </g>
+  <path d="M273 436c126-94 250-106 400-38s230 64 336 44" fill="none" stroke="#d39a43" stroke-width="5" stroke-dasharray="12 18"/>
+  <text x="76" y="116" fill="#eaf7f1" font-family="Georgia, serif" font-size="58">Can Gio mangrove IoT</text>
+  <text x="78" y="164" fill="#9fd1c1" font-family="ui-monospace, Menlo, monospace" font-size="22">REMOTE SENSING / FIELD ACCESS / LONG-TERM MONITORING</text>
+</svg>

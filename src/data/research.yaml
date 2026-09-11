@@ -1,16 +1,16 @@
-- slug: efficient-edge-ai
-  title: Efficient Edge AI
-  summary: Co-designing models, compilers, and heterogeneous hardware for useful inference within severe energy and memory budgets.
+- slug: aiot-environmental-monitoring
+  title: AIoT Environmental Monitoring
+  summary: Designing sensing platforms that connect edge devices, communications, backend services, and deployment workflows for long-running field research.
   icon: chip
-- slug: dependable-embedded-systems
-  title: Dependable Embedded Systems
-  summary: Making sensing systems observable, resilient, and safe when deployed in unpredictable physical environments.
+- slug: computer-vision
+  title: Computer Vision Systems
+  summary: Building inspection and monitoring pipelines for OLED defect detection, underwater imagery, bee counting, and camera-fouling analysis.
   icon: pulse
-- slug: privacy-federated-learning
-  title: Privacy & Federated Learning
-  summary: Learning across distributed devices while accounting for unequal hardware, connectivity, and data quality.
+- slug: edge-ai-embedded-systems
+  title: Edge AI and Embedded Systems
+  summary: Bringing PyTorch models, ESP32 and Raspberry Pi devices, MQTT pipelines, and field-ready system architecture into one deployable stack.
   icon: network
-- slug: hardware-security
-  title: Hardware Security
-  summary: Understanding how timing, power, and shared resources can expose—or help protect—intelligent devices.
+- slug: intelligent-sensing-platforms
+  title: Intelligent Sensing Platforms
+  summary: Combining water-quality sensing, bioacoustics, underwater imaging, and cloud data infrastructure for biodiversity and aquaculture research.
   icon: shield

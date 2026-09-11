@@ -1,8 +1,12 @@
-- title: Emerging Researcher Award
-  issuer: Fictional Embedded Systems Society
-  year: 2025
-  description: Recognized work connecting efficient ML systems with deployment realities.
-- title: Best Paper Honorable Mention
-  issuer: Fictional Architecture Conference
-  year: 2020
-  description: For a reproducible study of intermittent edge inference.
+- title: VINIF-Funded Research Projects
+  issuer: Vingroup Innovation Foundation
+  year: 2025-Present
+  description: Research funding supporting environmental monitoring AIoT systems and intelligent sensing platforms.
+- title: NAFOSTED-Funded Research Projects
+  issuer: National Foundation for Science and Technology Development
+  year: 2025-Present
+  description: Research support for deployable environmental-monitoring systems.
+- title: Bee Monitoring AIoT Project Funding
+  issuer: Ministry of Agriculture and Rural Development of Vietnam
+  year: 2023-2024
+  description: Funding for an AIoT platform for hive monitoring, bee counting, and environmental sensing.
