@@ -1,11 +1,11 @@
 ---
-title: SparseWake accepted at ICFEAI
-description: Our field-tested uncertainty-aware scheduling work will appear at a fictional embedded AI conference.
+title: CleanCam preprint connects computer vision and aquaculture monitoring
+description: A benchmark dataset for underwater camera viewport fouling severity in aquaculture.
 date: 2025-05-20
 category: publication
 order: 2
-topics: [efficient-edge-ai, dependable-embedded-systems]
-projects: [adaptive-sensor-fabric]
+topics: [computer-vision, intelligent-sensing-platforms]
+projects: [marine-biodiversity-smart-aquaculture]
 ---
 
-This paper is the result of patient work from a mixed team of systems researchers and field scientists. We will release the measurement harness with the camera-ready version.
+CleanCam reflects the practical interface between underwater imaging hardware, aquaculture operations, and computer-vision evaluation.

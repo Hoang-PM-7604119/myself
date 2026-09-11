@@ -1,36 +1,33 @@
-- id: northbridge
-  role: Assistant Professor
-  organization: Northbridge Institute of Technology
+- id: vinuni
+  role: Research Assistant and Technical Lead
+  organization: VinUniversity
   type: University
-  location: Toronto, Canada
-  start: 2023-09
+  location: Hanoi, Vietnam
+  start: 2025-02
   present: true
-  summary: Leads the Humane Edge Systems Lab, joining architecture and machine learning with field research.
-  achievements: [Founded an interdisciplinary lab, Developed two new embedded AI courses]
-  website: https://example.edu
-  relatedProjects: [adaptive-sensor-fabric]
-  relatedPublications: [sparsewake]
-- id: lumen
-  role: Research Scientist
-  organization: Lumen Research Labs
-  type: Research institute
-  location: Montréal, Canada
-  start: 2021-01
-  end: 2023-08
-  summary: Built privacy-preserving learning systems for heterogeneous sensing fleets.
-  achievements: [Led a 12-device field deployment, Mentored three research interns]
-  website: https://example.com
-  relatedProjects: [federated-field-notes]
-  relatedPublications: [fedtempo]
-- id: arcadia
-  role: Doctoral Researcher
-  organization: Arcadia University Systems Lab
-  type: University laboratory
-  location: Vancouver, Canada
-  start: 2016-09
-  end: 2020-12
-  summary: Studied energy-proportional accelerators and their behavior under noisy real-world workloads.
-  achievements: [Best paper honorable mention, Open-sourced a reproducible benchmark suite]
-  website: https://example.org
-  relatedProjects: [tiny-trust]
-  relatedPublications: [tiny-trust-paper, field-bench]
+  summary: Coordinates environmental-monitoring AIoT projects funded by VINIF and NAFOSTED, leading student and RA teams across embedded devices, backend services, sensing infrastructure, and deployment systems.
+  achievements: [Technical lead for three environmental-monitoring AIoT projects, Designed end-to-end edge-to-cloud architectures, Managed planning, task allocation, integration, and deployment readiness]
+  relatedProjects: [marine-biodiversity-smart-aquaculture, can-gio-mangrove-iot]
+  relatedPublications: [clean-cam, edge-deadline-rl]
+- id: samsung-display
+  role: Engineer I
+  organization: Samsung Display Vietnam
+  type: Industry
+  location: Vietnam
+  start: 2024-07
+  end: 2025-02
+  summary: Developed computer-vision solutions for OLED defect inspection and integrated deep-learning models into real-time manufacturing pipelines.
+  achievements: [Built machine-vision workflows for defect inspection, Optimized real-time inspection efficiency]
+  relatedProjects: []
+  relatedPublications: []
+- id: hust
+  role: Student Researcher
+  organization: Hanoi University of Science and Technology
+  type: University
+  location: Hanoi, Vietnam
+  start: 2020-07
+  end: 2024-09
+  summary: Studied electronic and telecommunication engineering with research affiliations at AICS Laboratory and MICA Institute, contributing to AIoT and intelligent sensing work.
+  achievements: [Bachelor of Electronic and Telecommunication Engineering, Bee Monitoring AIoT project funded by Vietnam's Ministry of Agriculture and Rural Development]
+  relatedProjects: [bee-monitoring-aiot-system]
+  relatedPublications: []

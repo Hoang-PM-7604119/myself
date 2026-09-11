@@ -1,12 +1,11 @@
-name: Research Journey
-description: The fictional academic portfolio of Dr. Maya Chen—edge intelligence, dependable systems, and the people behind the work.
+name: Minh-Hoang Pham
+description: Academic and technology portfolio of Minh-Hoang Pham, Research Assistant and Technical Lead in AIoT, environmental monitoring, computer vision, and intelligent sensing platforms.
 language: en
 homepage:
-  sections: [hero, research, featured_projects, publications, timeline, collaborators, news, contact]
+  sections: [hero, research, featured_projects, publications, timeline, contact]
 navigation:
   - { label: Research, href: /research/ }
   - { label: Projects, href: /projects/ }
   - { label: Publications, href: /publications/ }
-  - { label: People, href: /people/ }
   - { label: Journey, href: /experience/ }
   - { label: About, href: /about/ }

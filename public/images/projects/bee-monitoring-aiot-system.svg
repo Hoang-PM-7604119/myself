@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+  <title id="t">Bee monitoring AIoT system</title>
+  <desc id="d">Hive monitoring architecture with vision counting, environmental sensing, and backend data flow.</desc>
+  <rect width="1200" height="720" fill="#171b1c"/>
+  <g fill="none" stroke="#d39a43" stroke-width="5">
+    <path d="M190 250h140l70 120-70 120H190l-70-120z"/>
+    <path d="M410 250h140l70 120-70 120H410l-70-120z"/>
+    <path d="M630 250h140l70 120-70 120H630l-70-120z"/>
+  </g>
+  <g fill="#eaf7f1">
+    <circle cx="260" cy="370" r="28"/>
+    <circle cx="480" cy="370" r="28"/>
+    <circle cx="700" cy="370" r="28"/>
+  </g>
+  <path d="M728 370h116c58 0 74-112 152-112 54 0 92 42 92 92s-38 92-92 92c-72 0-96-72-152-72H728" fill="none" stroke="#70e0c6" stroke-width="6"/>
+  <rect x="884" y="510" width="184" height="86" rx="12" fill="#eaf7f1"/>
+  <text x="914" y="565" fill="#171b1c" font-family="ui-monospace, Menlo, monospace" font-size="28" font-weight="700">MQTT</text>
+  <text x="76" y="116" fill="#eaf7f1" font-family="Georgia, serif" font-size="58">Bee monitoring AIoT</text>
+  <text x="78" y="164" fill="#d5a34b" font-family="ui-monospace, Menlo, monospace" font-size="22">HIVE SENSING / BEE COUNTING / COMPUTER VISION</text>
+</svg>

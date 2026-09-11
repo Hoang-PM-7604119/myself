@@ -28,13 +28,13 @@ const personLd = { '@context':'https://schema.org', '@type':'Person', name:profi
   {progress && <div class="reading-progress" aria-hidden="true"><span></span></div>}
   <a class="skip" href="#main">Skip to content</a>
   <header class="site-header">
-    <a class="brand" href={asset('/')}><span>MC</span><strong>{profile.name}</strong></a>
+    <a class="brand" href={asset('/')}><span>MH</span><strong>{profile.name}</strong></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span>Menu</button>
     <nav id="site-nav" aria-label="Primary"><ul>{site.navigation.map((item) => <li><a href={asset(item.href)}>{item.label}</a></li>)}</ul></nav>
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
   </header>
   <main id="main"><slot /></main>
-  <footer><div><strong>{profile.name}</strong><p>Research is a team sport. This site records the questions, people, and lessons behind the results.</p></div><div><a href={asset('/contact/')}>Contact</a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. Fictional example content. Built as a static Astro site.</small></footer>
+  <footer><div><strong>{profile.name}</strong><p>AIoT, environmental monitoring, computer vision, edge AI, and deployable intelligent sensing platforms.</p></div><div><a href={asset('/contact/')}>Contact</a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. Built as a static Astro site.</small></footer>
   <script>
     const root=document.documentElement;
     document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('theme',next)});
