@@ -105,12 +105,13 @@ const stories: Record<string, {
 <section class="projects-showcase-intro" data-reveal>
   <div class="section-head">
     <div>
-      <h2>Deployed research systems</h2>
+      <h2><span data-i18n-en>Deployed research systems</span><span data-i18n-vi>Các hệ thống nghiên cứu thực địa</span></h2>
     </div>
-    <a class="button" href={asset('/projects/')}>Explore all projects &rarr;</a>
+    <a class="button" href={asset('/projects/')}><span data-i18n-en>Explore all projects &rarr;</span><span data-i18n-vi>Xem tất cả dự án &rarr;</span></a>
   </div>
   <p class="lede">
-    Translating academic research into robust field architectures. Each platform represents an end-to-end engineering journey: from extreme physical constraints to edge inference and operational ecological impact.
+    <span data-i18n-en>Translating academic research into robust field architectures. Each platform represents an end-to-end engineering journey: from extreme physical constraints to edge inference and operational ecological impact.</span>
+    <span data-i18n-vi>Biến nghiên cứu học thuật thành hệ thống thực địa bền bỉ. Mỗi nền tảng đại diện cho một hành trình kỹ thuật toàn diện: từ những hạn chế khắc nghiệt của môi trường đến suy luận tại biên và tác động sinh thái thực tế.</span>
   </p>
 </section>
 
@@ -181,7 +182,8 @@ const stories: Record<string, {
 
           <div class="story-footer-actions">
             <a class="button primary" href={asset(`/projects/${p.id}/`)}>
-              Read complete story &rarr;
+              <span data-i18n-en>Read complete story &rarr;</span>
+              <span data-i18n-vi>Xem chi tiết dự án &rarr;</span>
             </a>
 
             {relatedPubs.map((pub) => (

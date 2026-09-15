@@ -1,4 +1,4 @@
 ---
 import profile from '@/data/profile.yaml'; const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
 ---
-<section data-reveal><div class="cta"><div><h2>Open to research collaboration on AIoT, sensing platforms, and edge intelligence.</h2></div><div class="actions"><a class="button" href={`mailto:${profile.email}`}>Email Minh-Hoang</a><a class="button" href={asset('/contact/')}>Contact details</a></div></div></section>
+<section data-reveal><div class="cta"><div><h2><span data-i18n-en>Open to research collaboration on AIoT, sensing platforms, and edge intelligence.</span><span data-i18n-vi>Sẵn sàng hợp tác nghiên cứu về AIoT, nền tảng cảm biến và trí tuệ nhân tạo biên.</span></h2></div><div class="actions"><a class="button" href={`mailto:${profile.email}`}><span data-i18n-en>Email Minh-Hoang</span><span data-i18n-vi>Gửi email cho Minh Hoàng</span></a><a class="button" href={asset('/contact/')}><span data-i18n-en>Contact details</span><span data-i18n-vi>Thông tin liên hệ</span></a></div></div></section>

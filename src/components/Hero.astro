@@ -4,20 +4,20 @@ const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
 ---
 <section class="hero" aria-labelledby="hero-title" data-reveal>
   <div class="hero-copy" data-reveal-stagger>
-    <p class="role">{profile.role} / {profile.institution}</p>
-    <h1 id="hero-title">Field AIoT systems, <em>from sensors to intelligence.</em></h1>
-    <p class="lede">{profile.statement}</p>
+    <p class="role"><span data-i18n-en>{profile.role} / {profile.institution}</span><span data-i18n-vi>Trợ lý Nghiên cứu & Trưởng nhóm Kỹ thuật / {profile.institution}</span></p>
+    <h1 id="hero-title"><span data-i18n-en>Field AIoT systems, <em>from sensors to intelligence.</em></span><span data-i18n-vi>Hệ thống AIoT thực địa, <em>từ cảm biến đến trí tuệ nhân tạo.</em></span></h1>
+    <p class="lede"><span data-i18n-en>{profile.statement}</span><span data-i18n-vi>Tôi phát triển các hệ thống AIoT thực địa phục vụ giám sát môi trường, thị giác máy tính và cảm biến thông minh trong điều kiện khắc nghiệt.</span></p>
     <div class="signal-strip" aria-label="Core system stack">
-      <span><i class="signal-pulse" aria-hidden="true"></i> embedded nodes</span>
-      <span><i class="signal-pulse" aria-hidden="true"></i> computer vision</span>
-      <span><i class="signal-pulse" aria-hidden="true"></i> edge AI</span>
-      <span><i class="signal-pulse" aria-hidden="true"></i> cloud infrastructure</span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>embedded nodes</span><span data-i18n-vi>nút nhúng</span></span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>computer vision</span><span data-i18n-vi>thị giác máy tính</span></span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>edge AI</span><span data-i18n-vi>trí tuệ nhân tạo biên</span></span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>cloud infrastructure</span><span data-i18n-vi>hạ tầng đám mây</span></span>
     </div>
     <div class="tags">{research.map(r => <a href={asset(`/topics/${r.slug}/`)}>{r.title}</a>)}</div>
     <div class="actions">
-      <a class="button primary" href={asset('/projects/')}>Explore field systems &rarr;</a>
-      <a class="button" href={asset('/publications/')}>Publications</a>
-      <a class="button" href={asset('/cv/')}>Academic CV</a>
+      <a class="button primary" href={asset('/projects/')}><span data-i18n-en>Explore field systems &rarr;</span><span data-i18n-vi>Khám phá hệ thống thực địa &rarr;</span></a>
+      <a class="button" href={asset('/publications/')}><span data-i18n-en>Publications</span><span data-i18n-vi>Công bố khoa học</span></a>
+      <a class="button" href={asset('/cv/')}><span data-i18n-en>Academic CV</span><span data-i18n-vi>Lý lịch khoa học</span></a>
     </div>
     <div class="socials">
       <a href={`mailto:${profile.email}`}>Email</a>

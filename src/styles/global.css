@@ -225,6 +225,7 @@ textarea { font: inherit; }
 }
 
 .theme-toggle,
+.lang-toggle,
 .nav-toggle,
 .button,
 .copy {
@@ -237,7 +238,47 @@ textarea { font: inherit; }
   box-shadow: inset 0 1px 0 rgba(255,255,255,.28);
 }
 
+.lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  font: 700 0.72rem "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.04em;
+  padding: 0.45rem 0.65rem;
+  min-width: 56px;
+  justify-content: center;
+  transition: all var(--duration-fast) ease;
+  user-select: none;
+}
+
+.lang-toggle .lang-opt {
+  opacity: 0.45;
+  transition: opacity var(--duration-fast) ease, color var(--duration-fast) ease;
+}
+
+.lang-toggle .lang-sep {
+  opacity: 0.25;
+  font-weight: 400;
+}
+
+html[data-lang="en"] .lang-toggle .lang-opt[data-lang-val="en"],
+html[data-lang="vi"] .lang-toggle .lang-opt[data-lang-val="vi"] {
+  opacity: 1;
+  color: var(--accent);
+  font-weight: 800;
+}
+
+/* Language switching utilities */
+html[data-lang="en"] [data-i18n-vi] {
+  display: none !important;
+}
+
+html[data-lang="vi"] [data-i18n-en] {
+  display: none !important;
+}
+
 .theme-toggle:focus-visible,
+.lang-toggle:focus-visible,
 .nav-toggle:focus-visible,
 .button:focus-visible,
 a:focus-visible,

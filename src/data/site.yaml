@@ -4,8 +4,9 @@ language: en
 homepage:
   sections: [hero, research, featured_projects, publications, timeline, contact]
 navigation:
-  - { label: Research, href: /research/ }
-  - { label: Projects, href: /projects/ }
-  - { label: Publications, href: /publications/ }
-  - { label: Journey, href: /experience/ }
-  - { label: About, href: /about/ }
+  - { label: Research, label_vi: Nghiên cứu, href: /research/ }
+  - { label: Projects, label_vi: Dự án, href: /projects/ }
+  - { label: Publications, label_vi: Công bố, href: /publications/ }
+  - { label: Journey, label_vi: Hành trình, href: /experience/ }
+  - { label: About, label_vi: Giới thiệu, href: /about/ }
+

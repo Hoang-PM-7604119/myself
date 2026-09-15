@@ -35,14 +35,16 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
     document.documentElement.classList.add('js');
     try {
       document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.lang = localStorage.getItem('lang') || 'en';
     } catch {
       document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.lang = 'en';
     }
   </script>
 </head>
 <body data-progress={progress}>
   {progress && <div class="reading-progress" aria-hidden="true"><span></span></div>}
-  <a class="skip" href="#main">Skip to content</a>
+  <a class="skip" href="#main"><span data-i18n-en>Skip to content</span><span data-i18n-vi>Chuyển đến nội dung</span></a>
   <header class="site-header">
     <a class="brand" href={asset('/')}><span>MH</span><strong>{profile.name}</strong></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span>Menu</button>
@@ -50,15 +52,17 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
       const href = asset(item.href);
       const normalized = normalizePath(item.href);
       const isCurrent = currentPath === normalized || (normalized !== normalizePath('/') && currentPath.startsWith(normalized));
-      return <li><a href={href} aria-current={isCurrent ? 'page' : undefined}>{item.label}</a></li>;
+      return <li><a href={href} aria-current={isCurrent ? 'page' : undefined}><span data-i18n-en>{item.label}</span><span data-i18n-vi>{item.label_vi || item.label}</span></a></li>;
     })}</ul></nav>
+    <button class="lang-toggle" aria-label="Switch language / Đổi ngôn ngữ" title="Switch language (EN / VI)"><span class="lang-opt" data-lang-val="en">EN</span><span class="lang-sep">|</span><span class="lang-opt" data-lang-val="vi">VI</span></button>
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
   </header>
   <main id="main"><slot /></main>
-  <footer><div><strong>{profile.name}</strong><p>AIoT, environmental monitoring, computer vision, edge AI, and deployable intelligent sensing platforms.</p></div><div><a href={asset('/contact/')}>Contact</a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. Built as a static Astro site.</small></footer>
+  <footer><div><strong>{profile.name}</strong><p><span data-i18n-en>AIoT, environmental monitoring, computer vision, edge AI, and deployable intelligent sensing platforms.</span><span data-i18n-vi>Hệ thống AIoT, giám sát môi trường, thị giác máy tính, Edge AI và các nền tảng cảm biến thông minh.</span></p></div><div><a href={asset('/contact/')}><span data-i18n-en>Contact</span><span data-i18n-vi>Liên hệ</span></a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. <span data-i18n-en>Built as a static Astro site.</span><span data-i18n-vi>Phát triển trên nền tảng tĩnh Astro.</span></small></footer>
   <script>
     const root=document.documentElement;
     document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;try{localStorage.setItem('theme',next)}catch{}});
+    document.querySelector('.lang-toggle')?.addEventListener('click',()=>{const next=root.dataset.lang==='vi'?'en':'vi';root.dataset.lang=next;try{localStorage.setItem('lang',next)}catch{}});
     const navButton=document.querySelector<HTMLButtonElement>('.nav-toggle');navButton?.addEventListener('click',()=>navButton.setAttribute('aria-expanded',String(navButton.getAttribute('aria-expanded')!=='true')));
     document.querySelectorAll('.hero[data-reveal], .hero [data-reveal-stagger]').forEach((el) => el.classList.add('revealed'));
     const observer = new IntersectionObserver((entries) => {
