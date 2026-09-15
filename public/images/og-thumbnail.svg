@@ -1,0 +1,137 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#091f1d" />
+      <stop offset="50%" stop-color="#071716" />
+      <stop offset="100%" stop-color="#030c0c" />
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#113631" />
+      <stop offset="100%" stop-color="#0a2320" />
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#72e0c7" />
+      <stop offset="100%" stop-color="#3bbd9f" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f0b454" />
+      <stop offset="100%" stop-color="#d39a43" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#18423c" stroke-width="1" opacity="0.4"/>
+    </pattern>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="10" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Canvas Background -->
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <rect width="1200" height="630" fill="url(#grid)"/>
+
+  <!-- Subtle glow accents -->
+  <circle cx="200" cy="150" r="300" fill="#72e0c7" opacity="0.05" filter="url(#glow)"/>
+  <circle cx="1000" cy="500" r="350" fill="#d39a43" opacity="0.04" filter="url(#glow)"/>
+
+  <!-- Top Decorative Border line -->
+  <rect x="0" y="0" width="1200" height="6" fill="url(#accentGrad)"/>
+
+  <!-- Left Side: Main Portfolio Identity -->
+  <g transform="translate(80, 80)">
+    <!-- Telemetry Status Tag -->
+    <g transform="translate(0, 0)">
+      <rect width="320" height="38" rx="19" fill="#0d332e" stroke="#1a544c" stroke-width="1.5"/>
+      <circle cx="24" cy="19" r="6" fill="#72e0c7" filter="url(#glow)"/>
+      <text x="42" y="24" fill="#72e0c7" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="14" font-weight="700" letter-spacing="1.5">AIoT &amp; INTELLIGENT SENSING</text>
+    </g>
+
+    <!-- Full Name Title -->
+    <text x="0" y="115" fill="#e8f4ef" font-family="'Spline Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="64" font-weight="800" letter-spacing="-1">Minh-Hoang Pham</text>
+
+    <!-- Subtitle Role -->
+    <text x="0" y="165" fill="#72e0c7" font-family="'IBM Plex Mono', ui-monospace, monospace" font-size="22" font-weight="600" letter-spacing="0.5">Research Assistant &amp; Technical Lead &bull; VinUniversity</text>
+
+    <!-- Description Paragraph -->
+    <text x="0" y="225" fill="#a4c2bb" font-family="'Spline Sans', -apple-system, BlinkMacSystemFont, sans-serif" font-size="20" font-weight="400" width="600">
+      <tspan x="0" dy="0">Building deployable AIoT sensing platforms, computer vision</tspan>
+      <tspan x="0" dy="30">pipelines, and edge architectures for real-world environmental</tspan>
+      <tspan x="0" dy="30">monitoring and biodiversity conservation.</tspan>
+    </text>
+
+    <!-- Stack Chips -->
+    <g transform="translate(0, 340)">
+      <!-- Chip 1 -->
+      <g transform="translate(0, 0)">
+        <rect width="165" height="42" rx="8" fill="#112d29" stroke="#1d4d46" stroke-width="1"/>
+        <circle cx="20" cy="21" r="4" fill="#72e0c7"/>
+        <text x="34" y="26" fill="#e8f4ef" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="600">Embedded Nodes</text>
+      </g>
+      <!-- Chip 2 -->
+      <g transform="translate(180, 0)">
+        <rect width="160" height="42" rx="8" fill="#112d29" stroke="#1d4d46" stroke-width="1"/>
+        <circle cx="20" cy="21" r="4" fill="#72e0c7"/>
+        <text x="34" y="26" fill="#e8f4ef" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="600">Computer Vision</text>
+      </g>
+      <!-- Chip 3 -->
+      <g transform="translate(355, 0)">
+        <rect width="120" height="42" rx="8" fill="#112d29" stroke="#1d4d46" stroke-width="1"/>
+        <circle cx="20" cy="21" r="4" fill="#72e0c7"/>
+        <text x="34" y="26" fill="#e8f4ef" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="600">Edge AI</text>
+      </g>
+      <!-- Chip 4 -->
+      <g transform="translate(490, 0)">
+        <rect width="170" height="42" rx="8" fill="#112d29" stroke="#1d4d46" stroke-width="1"/>
+        <circle cx="20" cy="21" r="4" fill="#d39a43"/>
+        <text x="34" y="26" fill="#e8f4ef" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="600">Cloud Platform</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- Right Side: Blueprint Graphic Frame -->
+  <g transform="translate(780, 80)">
+    <rect width="340" height="470" rx="20" fill="url(#cardBg)" stroke="#1f544c" stroke-width="2" filter="url(#glow)"/>
+
+    <!-- Header bar inside blueprint frame -->
+    <rect width="340" height="48" rx="20" fill="#0e2a27"/>
+    <rect y="28" width="340" height="20" fill="#0e2a27"/>
+    <line x1="0" y1="48" x2="340" y2="48" stroke="#1f544c" stroke-width="1"/>
+    <text x="24" y="30" fill="#72e0c7" font-family="'IBM Plex Mono', monospace" font-size="13" font-weight="700" letter-spacing="1">SYS.ID: MH-PORTFOLIO</text>
+    <circle cx="310" cy="24" r="5" fill="#72e0c7" filter="url(#glow)"/>
+
+    <!-- Inner Blueprint Lines & Wave Graphics -->
+    <g transform="translate(30, 80)">
+      <rect width="280" height="260" rx="12" fill="#051615" stroke="#143e38" stroke-width="1.5"/>
+
+      <!-- Internal grid lines -->
+      <path d="M0 65h280M0 130h280M0 195h280M70 0v260M140 0v260M210 0v260" stroke="#0e2b27" stroke-width="1"/>
+
+      <!-- Sensor Trace Waves -->
+      <path d="M20 200 C70 120, 110 220, 160 110 S230 80, 260 90" fill="none" stroke="#d39a43" stroke-width="3" stroke-dasharray="6,4"/>
+      <path d="M20 150 C80 50, 120 210, 180 80 S220 180, 260 140" fill="none" stroke="url(#accentGrad)" stroke-width="4" filter="url(#glow)"/>
+
+      <!-- Node Pins -->
+      <circle cx="80" cy="116" r="6" fill="#051615" stroke="#72e0c7" stroke-width="3"/>
+      <circle cx="180" cy="80" r="6" fill="#051615" stroke="#72e0c7" stroke-width="3"/>
+      <circle cx="225" cy="165" r="6" fill="#051615" stroke="#d39a43" stroke-width="3"/>
+
+      <!-- Monogram Tag -->
+      <rect x="20" y="25" width="80" height="46" rx="8" fill="#e8f4ef"/>
+      <text x="60" y="58" fill="#091f1d" font-family="'Spline Sans', sans-serif" font-size="32" font-weight="900" text-anchor="middle">MH</text>
+    </g>
+
+    <!-- Footer metadata inside blueprint frame -->
+    <g transform="translate(30, 365)">
+      <text x="0" y="20" fill="#e8f4ef" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="700">FIELD RESEARCH STACK</text>
+      <text x="0" y="44" fill="#72e0c7" font-family="'IBM Plex Mono', monospace" font-size="13" font-weight="500">VINIF &bull; NAFOSTED &bull; MARD</text>
+      <text x="0" y="68" fill="#669187" font-family="'IBM Plex Mono', monospace" font-size="12">Hanoi, Vietnam</text>
+    </g>
+  </g>
+
+  <!-- Bottom Bar with Website URL -->
+  <g transform="translate(80, 560)">
+    <line x1="0" y1="0" x2="1040" y2="0" stroke="#164039" stroke-width="1"/>
+    <text x="0" y="32" fill="#72e0c7" font-family="'IBM Plex Mono', monospace" font-size="16" font-weight="700" letter-spacing="1">https://hoang-pm-7604119.github.io/myself/</text>
+    <text x="1040" y="32" fill="#669187" font-family="'IBM Plex Mono', monospace" font-size="14" font-weight="500" text-anchor="end">&copy; 2026 Minh-Hoang Pham</text>
+  </g>
+</svg>

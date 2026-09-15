@@ -5,7 +5,8 @@ import social from '@/data/social.yaml';
 import theme from '@/data/theme.yaml';
 import '@/styles/global.css';
 interface Props { title?: string; description?: string; image?: string; article?: Record<string, unknown>; progress?: boolean; }
-const { title, description = site.description, image = profile.image, article, progress = false } = Astro.props;
+const defaultImage = '/images/og-thumbnail.svg';
+const { title, description = site.description, image = defaultImage, article, progress = false } = Astro.props;
 const pageTitle = title ? `${title} — ${profile.name}` : `${profile.name} — ${profile.role}`;
 const canonical = new URL(Astro.url.pathname, Astro.site);
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
@@ -23,6 +24,8 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width" />
   <title>{pageTitle}</title><meta name="description" content={description} />
+  <link rel="icon" type="image/svg+xml" href={asset('/favicon.svg')} />
+  <link rel="apple-touch-icon" href={asset('/favicon.svg')} />
   <link rel="canonical" href={canonical} /><link rel="alternate" type="application/rss+xml" title={`${site.name} news`} href={asset('/rss.xml')} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
