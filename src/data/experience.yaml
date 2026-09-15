@@ -5,8 +5,12 @@
   location: Hanoi, Vietnam
   start: 2025-02
   present: true
-  summary: Coordinates environmental-monitoring AIoT projects funded by VINIF and NAFOSTED, leading student and RA teams across embedded devices, backend services, sensing infrastructure, and deployment systems.
-  achievements: [Technical lead for three environmental-monitoring AIoT projects, Designed end-to-end edge-to-cloud architectures, Managed planning, task allocation, integration, and deployment readiness]
+  summary: Coordinated three environmental-monitoring AIoT projects funded by VINIF and NAFOSTED, serving as technical lead for student and RA teams developing embedded devices, backend services, sensing infrastructure, and deployment systems.
+  achievements:
+    - Coordinated three environmental-monitoring AIoT projects funded by VINIF and NAFOSTED
+    - Served as technical lead for student and RA teams developing embedded devices, backend services, sensing infrastructure, and deployment systems
+    - Designed end-to-end architectures covering edge devices, communications, cloud infrastructure, and data management
+    - Managed technical planning, task allocation, system integration, and deployment readiness for field operations
   relatedProjects: [marine-biodiversity-smart-aquaculture, can-gio-mangrove-iot]
   relatedPublications: [clean-cam, edge-deadline-rl]
 - id: samsung-display
@@ -17,17 +21,24 @@
   start: 2024-07
   end: 2025-02
   summary: Developed computer-vision solutions for OLED defect inspection and integrated deep-learning models into real-time manufacturing pipelines.
-  achievements: [Built machine-vision workflows for defect inspection, Optimized real-time inspection efficiency]
+  achievements:
+    - Developed computer-vision solutions for OLED defect inspection
+    - Integrated deep-learning models into real-time manufacturing pipelines
+    - Optimized machine-vision workflows to improve inspection efficiency
   relatedProjects: []
   relatedPublications: []
 - id: hust
-  role: Student Researcher
+  role: Research Assistant & Student Researcher
   organization: Hanoi University of Science and Technology
   type: University
   location: Hanoi, Vietnam
   start: 2020-07
   end: 2024-09
-  summary: Studied electronic and telecommunication engineering with research affiliations at AICS Laboratory and MICA Institute, contributing to AIoT and intelligent sensing work.
-  achievements: [Bachelor of Electronic and Telecommunication Engineering, Bee Monitoring AIoT project funded by Vietnam's Ministry of Agriculture and Rural Development]
+  summary: Studied electronic and telecommunication engineering with research affiliations at AICS Laboratory and MICA Institute, leading AIoT hive monitoring systems.
+  achievements:
+    - Bachelor of Electronic and Telecommunication Engineering with research affiliations at AICS Laboratory and MICA Institute
+    - Coordinated a multidisciplinary student team responsible for embedded devices, backend services, and computer-vision modules
+    - Developed an AIoT platform for hive monitoring, bee counting, and environmental sensing funded by the Ministry of Agriculture and Rural Development of Vietnam
   relatedProjects: [bee-monitoring-aiot-system]
-  relatedPublications: []
+  relatedPublications: [secure-multiuser-stacked-metasurfaces]
+
