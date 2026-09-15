@@ -1,4 +1,24 @@
 ---
-import research from '@/data/research.yaml'; const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
+import research from '@/data/research.yaml';
+
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
 ---
-<section data-reveal><div class="section-head"><div><h2>Research and engineering focus</h2></div><p>My work sits where academic questions become deployed systems: sensing hardware, AI models, backend infrastructure, and field operations have to be designed together.</p></div><div class="research-grid">{research.map((r,i)=><article class="research-card"><span class="number">0{i+1}</span><div class="icon" aria-hidden="true"></div><h3><a href={asset(`/topics/${r.slug}/`)}>{r.title}</a></h3><p>{r.summary}</p></article>)}</div></section>
+<section data-reveal>
+  <div class="section-head">
+    <div>
+      <h2>Research and engineering focus</h2>
+    </div>
+    <p>
+      My work sits where academic questions become deployed systems: sensing hardware, AI models, backend
+      infrastructure, and field operations have to be designed together.
+    </p>
+  </div>
+  <div class="research-grid">
+    {research.map((r) => (
+      <article class="research-card">
+        <h3><a href={asset(`/topics/${r.slug}/`)}>{r.title}</a></h3>
+        <p>{r.summary}</p>
+      </article>
+    ))}
+  </div>
+</section>

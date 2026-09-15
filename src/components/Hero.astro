@@ -2,20 +2,29 @@
 import profile from '@/data/profile.yaml'; import social from '@/data/social.yaml'; import research from '@/data/research.yaml';
 const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
 ---
-<section class="hero" aria-labelledby="hero-title">
-  <div class="hero-copy">
+<section class="hero" aria-labelledby="hero-title" data-reveal>
+  <div class="hero-copy" data-reveal-stagger>
     <p class="role">{profile.role} / {profile.institution}</p>
     <h1 id="hero-title">Field AIoT systems, <em>from sensors to intelligence.</em></h1>
     <p class="lede">{profile.statement}</p>
     <div class="signal-strip" aria-label="Core system stack">
-      <span>embedded nodes</span>
-      <span>computer vision</span>
-      <span>edge AI</span>
-      <span>cloud infrastructure</span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> embedded nodes</span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> computer vision</span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> edge AI</span>
+      <span><i class="signal-pulse" aria-hidden="true"></i> cloud infrastructure</span>
     </div>
-    <div class="tags">{research.map(r=><a href={asset(`/topics/${r.slug}/`)}>{r.title}</a>)}</div>
-    <div class="actions"><a class="button primary" href={asset('/projects/')}>View systems</a><a class="button" href={asset('/publications/')}>Publications</a><a class="button" href={asset('/cv/')}>Academic CV</a></div>
-    <div class="socials"><a href={`mailto:${profile.email}`}>Email</a><a href={social.github}>GitHub</a><a href={social.scholar}>Scholar</a><a href={social.linkedin}>LinkedIn</a></div>
+    <div class="tags">{research.map(r => <a href={asset(`/topics/${r.slug}/`)}>{r.title}</a>)}</div>
+    <div class="actions">
+      <a class="button primary" href={asset('/projects/')}>Explore field systems &rarr;</a>
+      <a class="button" href={asset('/publications/')}>Publications</a>
+      <a class="button" href={asset('/cv/')}>Academic CV</a>
+    </div>
+    <div class="socials">
+      <a href={`mailto:${profile.email}`}>Email</a>
+      <a href={social.github}>GitHub</a>
+      <a href={social.scholar}>Scholar</a>
+      <a href={social.linkedin}>LinkedIn</a>
+    </div>
   </div>
   <div class="hero-visual">
     <img src={asset(profile.image)} width="720" height="840" alt={`System diagram and profile mark for ${profile.name}`} />

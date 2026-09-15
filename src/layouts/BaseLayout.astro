@@ -11,6 +11,12 @@ const canonical = new URL(Astro.url.pathname, Astro.site);
 const asset = (path: string) => `${import.meta.env.BASE_URL}${path.replace(/^\//, '')}`;
 const absoluteImage = new URL(asset(image), Astro.site);
 const personLd = { '@context':'https://schema.org', '@type':'Person', name:profile.name, jobTitle:profile.role, affiliation:{'@type':'Organization',name:profile.institution}, email:`mailto:${profile.email}`, url:canonical.origin + import.meta.env.BASE_URL, sameAs:Object.values(social) };
+const basePath = import.meta.env.BASE_URL.replace(/\/$/, '');
+const normalizePath = (path: string) => {
+  const withBase = `${basePath}/${path.replace(/^\//, '')}`;
+  return withBase.endsWith('/') ? withBase : `${withBase}/`;
+};
+const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 ---
 <!doctype html>
 <html lang={site.language} data-theme="light" style={`--accentLight:${theme.accent};--accentDark:${theme.accentDark};--radius:${theme.radius};--motion:${theme.motion}`}>
@@ -18,11 +24,21 @@ const personLd = { '@context':'https://schema.org', '@type':'Person', name:profi
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width" />
   <title>{pageTitle}</title><meta name="description" content={description} />
   <link rel="canonical" href={canonical} /><link rel="alternate" type="application/rss+xml" title={`${site.name} news`} href={asset('/rss.xml')} />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Newsreader:opsz,wght@6..72,450;6..72,560;6..72,650&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={absoluteImage} />
   <meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content={theme.accent} />
   <script type="application/ld+json" set:html={JSON.stringify(article ?? personLd)} />
   <style define:vars={{ accent: theme.accent, accentDark: theme.accentDark, radius: theme.radius, motion: theme.motion }}></style>
-  <script is:inline>document.documentElement.dataset.theme=localStorage.getItem('theme')||((matchMedia('(prefers-color-scheme: dark)').matches)?'dark':'light');</script>
+  <script is:inline>
+    document.documentElement.classList.add('js');
+    try {
+      document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+    } catch {
+      document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+  </script>
 </head>
 <body data-progress={progress}>
   {progress && <div class="reading-progress" aria-hidden="true"><span></span></div>}
@@ -30,17 +46,47 @@ const personLd = { '@context':'https://schema.org', '@type':'Person', name:profi
   <header class="site-header">
     <a class="brand" href={asset('/')}><span>MH</span><strong>{profile.name}</strong></a>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span>Menu</button>
-    <nav id="site-nav" aria-label="Primary"><ul>{site.navigation.map((item) => <li><a href={asset(item.href)}>{item.label}</a></li>)}</ul></nav>
+    <nav id="site-nav" aria-label="Primary"><ul>{site.navigation.map((item) => {
+      const href = asset(item.href);
+      const normalized = normalizePath(item.href);
+      const isCurrent = currentPath === normalized || (normalized !== normalizePath('/') && currentPath.startsWith(normalized));
+      return <li><a href={href} aria-current={isCurrent ? 'page' : undefined}>{item.label}</a></li>;
+    })}</ul></nav>
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
   </header>
   <main id="main"><slot /></main>
   <footer><div><strong>{profile.name}</strong><p>AIoT, environmental monitoring, computer vision, edge AI, and deployable intelligent sensing platforms.</p></div><div><a href={asset('/contact/')}>Contact</a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. Built as a static Astro site.</small></footer>
   <script>
     const root=document.documentElement;
-    document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;localStorage.setItem('theme',next)});
+    document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;try{localStorage.setItem('theme',next)}catch{}});
     const navButton=document.querySelector<HTMLButtonElement>('.nav-toggle');navButton?.addEventListener('click',()=>navButton.setAttribute('aria-expanded',String(navButton.getAttribute('aria-expanded')!=='true')));
-    const observer=new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting&&e.target.classList.add('revealed')),{threshold:.08});document.querySelectorAll('[data-reveal]').forEach(el=>observer.observe(el));
-    document.querySelectorAll<HTMLElement>('[data-copy]').forEach(button=>button.addEventListener('click',async()=>{await navigator.clipboard.writeText(button.dataset.copy||'');const old=button.textContent;button.textContent='Copied';setTimeout(()=>button.textContent=old,1600)}));
-    if(document.body.dataset.progress==='true'){const bar=document.querySelector<HTMLElement>('.reading-progress span');const update=()=>{const h=document.documentElement.scrollHeight-innerHeight; if(bar)bar.style.width=`${h?scrollY/h*100:0}%`};addEventListener('scroll',update,{passive:true});update()}
+    document.querySelectorAll('.hero[data-reveal], .hero [data-reveal-stagger]').forEach((el) => el.classList.add('revealed'));
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
+    document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach((el) => observer.observe(el));
+
+    document.querySelectorAll<HTMLElement>('[data-copy]').forEach((button) => button.addEventListener('click', async () => {
+      await navigator.clipboard.writeText(button.dataset.copy || '');
+      const old = button.textContent;
+      button.textContent = 'Copied';
+      setTimeout(() => button.textContent = old, 1600);
+    }));
+
+    if (document.body.dataset.progress === 'true') {
+      const bar = document.querySelector<HTMLElement>('.reading-progress span');
+      const updateProgress = () => {
+        const total = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = total > 0 ? Math.min(Math.max(window.scrollY / total, 0), 1) : 0;
+        if (bar) bar.style.transform = `scaleX(${progress})`;
+      };
+      window.addEventListener('scroll', updateProgress, { passive: true });
+      updateProgress();
+    }
   </script>
 </body></html>

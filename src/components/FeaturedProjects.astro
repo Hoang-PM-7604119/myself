@@ -1,4 +1,229 @@
 ---
-import { published } from '@/lib/content'; const projects=(await published('projects')).filter(p=>p.data.featured).slice(0,3); const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
+import { published, pretty } from '@/lib/content';
+
+const allProjects = await published('projects');
+const projects = allProjects.filter((p) => p.data.featured).sort((a, b) => a.data.order - b.data.order);
+const allPubs = await published('publications');
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
+
+// Structured story narratives and telemetry blueprints for each featured system
+const stories: Record<string, {
+  sysId: string;
+  blueprintLabel: string;
+  telemetryStatus: string;
+  statusClass: string;
+  specs: { label: string; value: string }[];
+  beats: { phase: string; title: string; body: string }[];
+}> = {
+  'marine-biodiversity-smart-aquaculture': {
+    sysId: 'SYS.ID: MB-AQ25',
+    blueprintLabel: 'SUBMERSIBLE AIoT ARRAY',
+    telemetryStatus: 'ACTIVE IN WATER',
+    statusClass: 'active',
+    specs: [
+      { label: 'Sampling', value: 'Hydrophones + Optical Rig' },
+      { label: 'Edge Compute', value: 'PyTorch Fouling Classifier' },
+      { label: 'Enclosure', value: 'IP68 Submersible Titanium' }
+    ],
+    beats: [
+      {
+        phase: 'The Field Challenge',
+        title: 'Underwater Optical Attenuation & Severe Biofouling',
+        body: 'Submerged coastal environments degrade standard IoT sensors within days. Optical attenuation, rapid biofouling on camera viewports, and corrosive salinity create severe noise, making continuous manual diving and camera inspection impractical.'
+      },
+      {
+        phase: 'Edge & AI Architecture',
+        title: 'Acoustic Probes & Automated Fouling Severity Estimation',
+        body: 'The platform integrates submerged hydrophones, calibrated water chemistry probes (DO/pH/Salinity), and waterproof camera rigs with an on-site edge gateway. Lightweight PyTorch models evaluate viewport fouling severity in real time to filter occluded frames prior to local MQTT buffering and MinIO cloud sync.'
+      },
+      {
+        phase: 'Deployment & Impact',
+        title: 'Continuous Aquaculture Testbeds & CleanCam Benchmark',
+        body: 'Deployed continuously across pilot research ponds in Vietnam, the system provides automated aquatic biomass insights and established the open-access CleanCam computer-vision benchmark for optical fouling evaluation.'
+      }
+    ]
+  },
+  'can-gio-mangrove-iot': {
+    sysId: 'SYS.ID: CG-MANGROVE02',
+    blueprintLabel: 'INTERTIDAL TELEMETRY ARRAY',
+    telemetryStatus: 'AUTONOMOUS IN FIELD',
+    statusClass: 'active',
+    specs: [
+      { label: 'Sampling', value: 'Tidal Gradient & Salinity' },
+      { label: 'Telemetry', value: 'Sub-GHz Mesh + WireGuard VPN' },
+      { label: 'Power Source', value: 'LiFePO4 Solar Harvesting' }
+    ],
+    beats: [
+      {
+        phase: 'The Biosphere Challenge',
+        title: 'Semidiurnal Tidal Flooding & Dense Canopy Attenuation',
+        body: 'The UNESCO Can Gio Biosphere Reserve experiences tidal inundation up to 4 meters, saline mud immersion, and dense canopy RF attenuation that blocks standard cellular and GPS links, rendering intermittent manual grab-sampling ineffective.'
+      },
+      {
+        phase: 'Autonomous Edge Architecture',
+        title: 'Solar-Harvested ESP32 Nodes & Elevated Mesh Relay',
+        body: 'Engineered custom ESP32 clusters in IP68 hydrodynamic enclosures secured to mangrove stilt roots. Nodes sample hydrologic flux in deep sleep, pulsing microbursts to canopy gateway towers that tunnel compressed time-series over encrypted WireGuard VPN.'
+      },
+      {
+        phase: 'Deployment & Impact',
+        title: 'High-Resolution Observation for Carbon & Ecological Models',
+        body: 'Unattended multi-month operations deliver uninterrupted salinity, tidal surge, and microclimate datasets to conservation researchers, eliminating the observational gaps of manual field sampling in coastal wetlands.'
+      }
+    ]
+  },
+  'bee-monitoring-aiot-system': {
+    sysId: 'SYS.ID: BE-AIOT01',
+    blueprintLabel: 'NON-INVASIVE APIARY APPLIANCE',
+    telemetryStatus: 'COMPLETED ARCHITECTURE',
+    statusClass: 'completed',
+    specs: [
+      { label: 'Vision', value: 'Entrance Optical Flow Counter' },
+      { label: 'Acoustics', value: 'Hive Core Vibration Sensors' },
+      { label: 'Deployment', value: 'MARD Agricultural Pilot' }
+    ],
+    beats: [
+      {
+        phase: 'The Apiary Health Challenge',
+        title: 'Colony Collapse Risk & Invasive Manual Inspections',
+        body: 'Honeybee colonies suffer sudden collapse from environmental volatility, yet traditional physical inspections require cracking open hive boxes, disrupting delicate internal temperature regulation and agitating worker bees.'
+      },
+      {
+        phase: 'Edge Vision & Acoustic Pipeline',
+        title: 'Entrance Optical Flow & Internal Sound Analysis',
+        body: 'Developed an unobtrusive hive-entrance appliance featuring controlled illumination and embedded optical flow algorithms to count forager exits and returns in real-time, paired with internal microphones tracking swarming acoustics.'
+      },
+      {
+        phase: 'Deployment & Impact',
+        title: 'National Agricultural Pilot & Research Adoption',
+        body: 'Coordinated student engineering teams to deliver field-ready appliances deployed across Northern Vietnam apiary farms under Ministry of Agriculture sponsorship, proving computer vision can operate reliably in rural agricultural settings.'
+      }
+    ]
+  }
+};
 ---
-<section data-reveal><div class="section-head"><div><h2>Deployed research systems</h2></div><a href={asset('/projects/')}>Explore all projects</a></div><div class="cards">{projects.map(p=><article class="card"><a href={asset(`/projects/${p.id}/`)}><img src={asset(p.data.cover)} width="1200" height="720" loading="lazy" alt="" /></a><div class="card-body"><p class="eyebrow">{p.data.status} / {p.data.start}-{p.data.end??'present'}</p><h3><a class="stretched" href={asset(`/projects/${p.id}/`)}>{p.data.title}</a></h3><p>{p.data.description}</p><div class="tags">{p.data.technologies.slice(0,4).map(t=><span class="tag">{t}</span>)}</div></div></article>)}</div></section>
+
+<section class="projects-showcase-intro" data-reveal>
+  <div class="section-head">
+    <div>
+      <h2>Deployed research systems</h2>
+    </div>
+    <a class="button" href={asset('/projects/')}>Explore all projects &rarr;</a>
+  </div>
+  <p class="lede">
+    Translating academic research into robust field architectures. Each platform represents an end-to-end engineering journey: from extreme physical constraints to edge inference and operational ecological impact.
+  </p>
+</section>
+
+{projects.map((p, index) => {
+  const story = stories[p.id] ?? {
+    sysId: `SYS.ID: ${p.id.toUpperCase()}`,
+    blueprintLabel: 'SYSTEM SCHEMATIC',
+    telemetryStatus: p.data.status.toUpperCase(),
+    statusClass: p.data.status,
+    specs: [
+      { label: 'Timeline', value: `${p.data.start}—${p.data.end ?? 'present'}` },
+      { label: 'Status', value: pretty(p.data.status) },
+      { label: 'Stack', value: p.data.technologies.slice(0, 3).join(', ') }
+    ],
+    beats: [
+      {
+        phase: 'Project Overview',
+        title: p.data.title,
+        body: p.data.description
+      }
+    ]
+  };
+
+  const relatedPubs = allPubs.filter((pub) =>
+    p.data.publications.includes(pub.id) || pub.data.projects.includes(p.id)
+  );
+
+  const isReversed = index % 2 === 1;
+
+  return (
+    <section class={`project-story-section ${isReversed ? 'reverse' : ''}`} id={`story-${p.id}`} data-reveal>
+      <header class="story-header">
+        <div class="story-telemetry-meta">
+          <span class={`telemetry-pill ${story.statusClass}`}>
+            <span class="pulse-dot" aria-hidden="true"></span>
+            {story.telemetryStatus}
+          </span>
+          <span class="story-org-timeline">
+            {p.data.start}—{p.data.end ?? 'PRESENT'} &bull; {p.data.organizations.join(' &bull; ')}
+          </span>
+        </div>
+        <h3 class="story-title">
+          <a href={asset(`/projects/${p.id}/`)}>{p.data.title}</a>
+        </h3>
+        <p class="story-lede">{p.data.description}</p>
+      </header>
+
+      <div class="story-grid">
+        <div class="story-narrative">
+          <div class="story-beats">
+            {story.beats.map((beat) => (
+              <div class="story-beat">
+                <div class="beat-phase">{beat.phase}</div>
+                <h4 class="beat-title">{beat.title}</h4>
+                <p class="beat-body">{beat.body}</p>
+              </div>
+            ))}
+          </div>
+
+          <dl class="story-specs-strip" aria-label="System specifications">
+            {story.specs.map((spec) => (
+              <div class="spec-item">
+                <dt>{spec.label}</dt>
+                <dd>{spec.value}</dd>
+              </div>
+            ))}
+          </dl>
+
+          <div class="story-footer-actions">
+            <a class="button primary" href={asset(`/projects/${p.id}/`)}>
+              Read complete story &rarr;
+            </a>
+
+            {relatedPubs.map((pub) => (
+              <a class="publication-callout" href={asset(`/publications/${pub.id}/`)} title={pub.data.title}>
+                <span aria-hidden="true">&sect;</span>
+                <span>Publication: {pub.data.title.length > 36 ? `${pub.data.title.slice(0, 34)}...` : pub.data.title} &nearr;</span>
+              </a>
+            ))}
+          </div>
+
+          <div class="tags" aria-label="Technologies used">
+            {p.data.technologies.map((t) => (
+              <span class="tag">{t}</span>
+            ))}
+          </div>
+        </div>
+
+        <div class="story-visual">
+          <div class="blueprint-frame">
+            <div class="blueprint-header">
+              <span>{story.sysId}</span>
+              <span class="blueprint-status">
+                <span class="pulse-dot" aria-hidden="true"></span>
+                {story.blueprintLabel}
+              </span>
+            </div>
+            <a class="blueprint-img-link" href={asset(`/projects/${p.id}/`)} aria-label={`View architecture for ${p.data.title}`}>
+              <img
+                src={asset(p.data.cover)}
+                width="1200"
+                height="750"
+                loading="lazy"
+                alt={`System architecture diagram for ${p.data.title}`}
+              />
+            </a>
+            <div class="blueprint-caption">
+              <strong>{p.data.title}</strong>
+              Field telemetry &bull; {p.data.technologies.slice(0, 4).join(', ')}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+})}
