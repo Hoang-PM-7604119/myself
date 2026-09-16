@@ -6,7 +6,7 @@ start: 2023-01
 end: 2024-09
 status: completed
 featured: true
-order: 3
+order: 4
 cover: /images/projects/bee-monitoring-aiot-system.svg
 topics: [aiot-environmental-monitoring, computer-vision, edge-ai-embedded-systems]
 people: []

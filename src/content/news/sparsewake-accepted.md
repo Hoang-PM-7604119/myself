@@ -5,7 +5,7 @@ date: 2025-05-20
 category: publication
 order: 2
 topics: [computer-vision, intelligent-sensing-platforms]
-projects: [marine-biodiversity-smart-aquaculture]
+projects: [smart-marine-aquaculture]
 ---
 
 CleanCam reflects the practical interface between underwater imaging hardware, aquaculture operations, and computer-vision evaluation.

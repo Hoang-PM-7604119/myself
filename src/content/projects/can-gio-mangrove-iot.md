@@ -5,12 +5,12 @@ date: 2026-01-15
 start: 2026-01
 status: active
 featured: true
-order: 2
+order: 3
 cover: /images/projects/can-gio-mangrove-iot.svg
 topics: [aiot-environmental-monitoring, edge-ai-embedded-systems]
 people: []
 publications: []
-relatedProjects: [marine-biodiversity-smart-aquaculture]
+relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
 technologies: [ESP32, Raspberry Pi, MQTT, Linux, Docker, VPN Systems]
 organizations: [VinUniversity]
 ---

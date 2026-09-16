@@ -15,31 +15,59 @@ const stories: Record<string, {
   specs: { label: string; value: string }[];
   beats: { phase: string; title: string; body: string }[];
 }> = {
-  'marine-biodiversity-smart-aquaculture': {
-    sysId: 'SYS.ID: MB-AQ25',
+  'smart-marine-aquaculture': {
+    sysId: 'SYS.ID: AQ-NHT25',
     blueprintLabel: 'SUBMERSIBLE AIoT ARRAY',
     telemetryStatus: 'ACTIVE IN WATER',
     statusClass: 'active',
     specs: [
-      { label: 'Sampling', value: 'Hydrophones + Optical Rig' },
-      { label: 'Edge Compute', value: 'PyTorch Fouling Classifier' },
-      { label: 'Enclosure', value: 'IP68 Submersible Titanium' }
+      { label: 'Sampling', value: 'Hydrophones + Camera Rigs' },
+      { label: 'Edge Compute', value: 'PyTorch Viewport Fouling Model' },
+      { label: 'Infrastructure', value: 'PostgreSQL + MinIO Cloud' }
     ],
     beats: [
       {
         phase: 'The Field Challenge',
-        title: 'Underwater Optical Attenuation & Severe Biofouling',
-        body: 'Submerged coastal environments degrade standard IoT sensors within days. Optical attenuation, rapid biofouling on camera viewports, and corrosive salinity create severe noise, making continuous manual diving and camera inspection impractical.'
+        title: 'Turbidity & Severe Camera Viewport Biofouling',
+        body: 'Submerged aquaculture environments degrade optical viewports rapidly. High turbidity, biofouling, and corrosive salinity interfere with continuous monitoring, rendering manual diving inspections impractical.'
       },
       {
         phase: 'Edge & AI Architecture',
-        title: 'Acoustic Probes & Automated Fouling Severity Estimation',
-        body: 'The platform integrates submerged hydrophones, calibrated water chemistry probes (DO/pH/Salinity), and waterproof camera rigs with an on-site edge gateway. Lightweight PyTorch models evaluate viewport fouling severity in real time to filter occluded frames prior to local MQTT buffering and MinIO cloud sync.'
+        title: 'Hydrophones & Automated Camera Fouling Classifier',
+        body: 'The platform integrates underwater acoustic probes, water chemistry sensors, and waterproof camera rigs. On-site PyTorch models evaluate viewport fouling severity in real time to filter occluded frames prior to cloud sync.'
       },
       {
         phase: 'Deployment & Impact',
-        title: 'Continuous Aquaculture Testbeds & CleanCam Benchmark',
-        body: 'Deployed continuously across pilot research ponds in Vietnam, the system provides automated aquatic biomass insights and established the open-access CleanCam computer-vision benchmark for optical fouling evaluation.'
+        title: 'Aquaculture Testbeds & CleanCam Benchmark',
+        body: 'Deployed across research ponds in Nha Trang, the system provides automated biomass insights and established the open-access CleanCam computer-vision benchmark for viewport fouling evaluation.'
+      }
+    ]
+  },
+  'coral-reef-conservation-nha-trang': {
+    sysId: 'SYS.ID: CR-NHT25',
+    blueprintLabel: 'UNDERWATER SENSING STATION',
+    telemetryStatus: 'ACTIVE IN FIELD',
+    statusClass: 'active',
+    specs: [
+      { label: 'Sensors', value: 'Multiparameter Water Quality Probes' },
+      { label: 'Enclosure', value: 'IP68 Saline-Resistant Submerged Hull' },
+      { label: 'Telemetry', value: 'MQTT Payload & VPN Logging' }
+    ],
+    beats: [
+      {
+        phase: 'The Conservation Challenge',
+        title: 'Marine Habitat Degradation & Episodic Micro-Surges',
+        body: 'Coral reef ecosystems in Nha Trang face sudden water temperature shifts and runoff pollution. Traditional dive sampling misses rapid episodic chemical fluctuations critical for reef health.'
+      },
+      {
+        phase: 'Submerged Sensing Architecture',
+        title: 'Multiparameter Underwater Probes & Resilient Enclosures',
+        body: 'Custom ESP32-based submerged stations continuously sample dissolved oxygen, pH, temperature, turbidity, and salinity, logging time-series telemetry via secure MQTT pipelines.'
+      },
+      {
+        phase: 'Deployment & Impact',
+        title: 'Continuous Biodiversity & Coral Reef Monitoring',
+        body: 'Provides marine conservation biologists with high-resolution environmental indicators off the coast of Nha Trang, ensuring continuous habitat observation.'
       }
     ]
   },

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+  <title id="t">Coral Reef Conservation Monitoring – Nha Trang</title>
+  <desc id="d">Underwater sensing stations and water quality monitoring for coral reef conservation in Nha Trang.</desc>
+  <rect width="1200" height="720" fill="#0d2838"/>
+  <path d="M0 480c180-50 280 60 440-10 160-70 260-110 420-50 160 60 220 20 340-40v340H0z" fill="#14394e"/>
+  <path d="M0 190c130 40 240 20 360-10s240-20 360 10 240 20 360-10" fill="none" stroke="#72e0c7" stroke-width="5" opacity=".7"/>
+  <g fill="none" stroke="#e6f5ee" stroke-width="5">
+    <circle cx="240" cy="320" r="64"/>
+    <path d="M304 320h160m120 0h140m110 0h160"/>
+    <rect x="464" y="260" width="120" height="120" rx="14"/>
+    <rect x="724" y="250" width="110" height="140" rx="14"/>
+    <circle cx="980" cy="320" r="54"/>
+  </g>
+  <g fill="#f0b454">
+    <circle cx="464" cy="320" r="10"/>
+    <circle cx="584" cy="320" r="10"/>
+    <circle cx="724" cy="320" r="10"/>
+    <circle cx="834" cy="320" r="10"/>
+  </g>
+  <text x="78" y="112" fill="#e6f5ee" font-family="Georgia, serif" font-size="52">Coral Reef Conservation – Nha Trang</text>
+  <text x="80" y="158" fill="#72e0c7" font-family="ui-monospace, Menlo, monospace" font-size="22">WATER QUALITY / UNDERWATER SENSING STATIONS / BIODIVERSITY</text>
+</svg>

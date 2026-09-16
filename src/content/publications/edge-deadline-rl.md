@@ -17,7 +17,7 @@ authors:
 abstract: This paper studies adaptive task scheduling under hard deadlines in edge environments using deep reinforcement learning.
 summary: Scheduling edge workloads with reinforcement learning while respecting hard deadline constraints.
 contribution: Co-author.
-projects: [marine-biodiversity-smart-aquaculture]
+projects: [coral-reef-conservation-nha-trang]
 bibtex: |
   @inproceedings{nguyen2025adaptive,
     title={Adaptive Task Scheduling under Hard Deadlines in Edge Environments Using Deep Reinforcement Learning},

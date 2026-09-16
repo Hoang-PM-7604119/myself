@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 720" role="img" aria-labelledby="t d">
+  <title id="t">Smart Marine Aquaculture – Nha Trang</title>
+  <desc id="d">Submersible AIoT imaging, bioacoustics, and aquaculture monitoring infrastructure in Nha Trang.</desc>
+  <rect width="1200" height="720" fill="#0b2a31"/>
+  <path d="M0 520c170-74 254 44 410-20 156-64 236-140 394-78 150 60 240 10 396-76v374H0z" fill="#123f43"/>
+  <path d="M0 208c116 34 220 34 336 0s218-34 334 0 220 34 336 0 194-34 194-34" fill="none" stroke="#5ed0bd" stroke-width="5" opacity=".65"/>
+  <g fill="none" stroke="#e6f5ee" stroke-width="5">
+    <rect x="170" y="248" width="210" height="132" rx="12"/>
+    <circle cx="276" cy="314" r="42"/>
+    <path d="M380 314h148m110 0h118m102 0h150"/>
+    <rect x="528" y="262" width="110" height="104" rx="10"/>
+    <rect x="756" y="252" width="102" height="124" rx="10"/>
+    <rect x="1008" y="270" width="96" height="88" rx="10"/>
+  </g>
+  <g fill="#d39a43">
+    <circle cx="528" cy="314" r="10"/>
+    <circle cx="638" cy="314" r="10"/>
+    <circle cx="756" cy="314" r="10"/>
+    <circle cx="858" cy="314" r="10"/>
+  </g>
+  <text x="78" y="112" fill="#e6f5ee" font-family="Georgia, serif" font-size="54">Smart Marine Aquaculture – Nha Trang</text>
+  <text x="80" y="158" fill="#8ecdc0" font-family="ui-monospace, Menlo, monospace" font-size="22">UNDERWATER IMAGING / BIOACOUSTICS / AQUACULTURE INFRASTRUCTURE</text>
+</svg>

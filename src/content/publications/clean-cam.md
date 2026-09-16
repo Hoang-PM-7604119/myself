@@ -15,7 +15,7 @@ authors:
 abstract: CleanCam presents a benchmark dataset for underwater camera viewport fouling severity in aquaculture.
 summary: A computer-vision benchmark for evaluating underwater camera fouling in aquaculture monitoring.
 contribution: Co-author.
-projects: [marine-biodiversity-smart-aquaculture]
+projects: [smart-marine-aquaculture]
 bibtex: |
   @article{nguyen2026cleancam,
     title={CleanCam: A Benchmark Dataset for Underwater Camera Viewport Fouling Severity in Aquaculture},
