@@ -95,6 +95,29 @@ The system transitioned from laboratory prototypes into long-term agricultural o
   <figcaption><strong>Figure 7:</strong> Long-term field trials across commercial apiaries in Đắk Lắk and the Center for Tropical Bee Research and Beekeeping (VNUA) verifying continuous 4+ months outdoor reliability.</figcaption>
 </figure>
 
+## Behind the Scenes: From Workbench Prototyping to Outdoor Apiaries
+
+Building deployable edge AI for agricultural environments requires navigating physical constraints that cannot be simulated in software alone:
+
+- **Benchtop Edge Synthesis:** The engineering journey began with perforated mounting plates, terminal wiring, and thermal testing on the lab workbench. The NVIDIA Jetson Nano core was integrated with active heatsink cooling to sustain continuous neural network inference, coupled with an industrial 4G/LTE cellular gateway and stabilized power conversion designed to withstand rural electrical fluctuations.
+- **Non-Invasive Mechanical Co-Design:** To preserve the hive's internal microclimate and natural worker bee flight patterns, the optical sensor was retrofitted onto standard Vietnamese wooden multi-tier hives ("thùng kế") using an adjustable ball-head mount. This focused the camera directly onto the entrance flight board while protecting sensitive CSI ribbon cables along the outer perimeter.
+- **Hands-On Field Realization:** Theoretical designs culminated in direct field trials at the Center for Tropical Bee Research and Beekeeping (VNUA). Working amidst active honeybee colonies and tropical weather, the system was hand-wired, optically calibrated, and stress-tested under harsh sunlight and humidity—bridging the gap between laboratory concepts and robust agricultural reality.
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/lab-hardware-prototyping.jpg" alt="Benchtop prototyping of the edge AIoT computing board" loading="lazy" />
+  <figcaption><strong>Figure 8:</strong> Benchtop integration of the NVIDIA Jetson Nano edge node, active heatsink cooling fan, 4G LTE communications gateway, CSI camera ribbon lines, and isolated power distribution.</figcaption>
+</figure>
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/hive-optical-integration.jpg" alt="Mechanical and optical integration on the wooden beehive" loading="lazy" />
+  <figcaption><strong>Figure 9:</strong> Custom non-invasive optical mount attached to a standard wooden multi-tier hive ("thùng kế"), orienting the camera canopy toward the entrance flight board without altering colony traffic.</figcaption>
+</figure>
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/field-calibration-researcher.jpg" alt="Hands-on field installation and sensor calibration by the author" loading="lazy" />
+  <figcaption><strong>Figure 10:</strong> Lead researcher Minh-Hoang Pham conducting hands-on sensor wiring, 4G telemetry checks, and optical alignment on hive #3 at the Tropical Bee Research Center apiary.</figcaption>
+</figure>
+
 ## Project Video Demonstration
 
 <div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0; border-radius: var(--radius, 8px);">
