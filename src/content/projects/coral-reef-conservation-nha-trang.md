@@ -11,7 +11,7 @@ topics: [aiot-environmental-monitoring]
 people: [pham-minh-hoang, dinh-van-dung, pham-huy-hieu, phung-manh-duong, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
 publications: [edge-deadline-rl]
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]
-technologies: [ESP32, Water Quality Sensing, MQTT, Linux, Docker, Microclimate Sensors]
+technologies: [Water Quality Sensing, Marine Telemetry, Underwater Imaging, Drone Remote Sensing, Linux, Docker, MQTT]
 organizations: [
   "Smart Green Transformation Center (GREEN-X), VinUniversity",
   "Nha Trang Bay Management Board",
@@ -21,40 +21,40 @@ organizations: [
 
 ## The Conservation Challenge
 
-Coral reef ecosystems in Nha Trang Bay—one of Vietnam's most biologically diverse marine protected areas—face severe threats from rising sea temperatures, coastal runoff pollution, and fluctuating salinity levels. Traditional reef assessments rely on periodic manual scuba surveys, which cannot detect acute episodic shocks, dissolved oxygen drops, or fine-grained diurnal variations that trigger coral bleaching. Continuous, autonomous environmental monitoring is vital to safeguard these vulnerable marine habitats.
+Coral reef ecosystems in Nha Trang Bay—one of Vietnam's most biologically diverse marine protected areas—face severe threats from rising sea temperatures, coastal runoff pollution, and fluctuating salinity levels. Traditional reef assessments rely on periodic manual scuba surveys, which cannot detect acute episodic shocks, dissolved oxygen drops, or fine-grained diurnal variations that trigger coral bleaching. 
 
-## Underwater Sensing Architecture
+To overcome these constraints, the project was formulated around two synergistic components:
+1. **Deploying an autonomous offshore water-quality monitoring system** for 24/7 continuous environmental observation.
+2. **Collecting high-resolution underwater coral imagery and drone datasets** to map benthic habitat health and build benchmark datasets for marine conservation.
 
-To provide real-time ecological intelligence without disturbing sensitive benthic habitats, the research team engineered an autonomous coastal marine monitoring system:
+---
 
-- **Multiparameter Submerged Sensing:** Custom ESP32-based submerged nodes continuously record dissolved oxygen (DO), water temperature, pH, salinity, and turbidity directly at reef depths.
-- **Corrosion-Resistant Marine Hardware:** IP68-rated enclosures, marine-grade cable penetrations, and anti-biofouling coatings engineered to withstand long-term seawater submersion.
-- **Surface Telemetry & Energy Harvesting:** Solar-powered surface stations mounted on marine navigation markers harvest energy and beam encrypted telemetry back to terrestrial servers via 4G/cellular channels.
-- **Centralized Data Ingestion:** Real-time dashboards process incoming time-series streams, providing marine biologists and conservation rangers with immediate alerts upon threshold anomalies.
+## Part 1: Autonomous Water Quality Monitoring System Deployment
 
-## Collaborative Journey: From Architecture Kickoff to Open-Water Deployment
+The first core objective focuses on deploying an autonomous, ruggedized environmental telemetry station operating continuously within the Nha Trang Bay marine sanctuary:
 
-Realizing long-term conservation monitoring in a protected marine park requires a coordinated effort spanning architectural formulation, institutional governance, and offshore nautical logistics:
+- **Multiparameter In-Situ Water Quality Sensing:** Submerged sensing clusters continuously log critical water-chemistry variables directly at reef depths, including dissolved oxygen (DO), water temperature, pH, salinity, and turbidity.
+- **Corrosion-Resistant Marine Hardware:** IP68-rated sealed telemetry housings, marine-grade cabling, and anti-biofouling enclosures engineered for long-term survival in high-salinity coastal environments.
+- **Solar Energy Harvesting & Surface Telemetry:** Solar photovoltaic arrays mounted on marine navigation beacons ensure uninterrupted off-grid power, transmitting encrypted telemetry via cellular channels.
+- **Continuous Environmental Sanctuary Intelligence:** Real-time data feeds allow marine scientists and park rangers to detect bleaching conditions, hypoxic dips, and runoff anomalies early.
 
-### 1. Project Kickoff & BCS Architectural Formulation
+### 1. Project Kickoff & System Architecture Formulation
 
-The initiative began with a comprehensive technical workshop at VinUniversity, convening researchers across embedded systems, IoT networking, and marine robotics. 
-
-The team established the Broadband Coastal Sensing (BCS) architecture—defining power budgets, sensor communication protocols, and edge buffering strategies to guarantee zero data loss during adverse weather conditions.
+The initiative began with a comprehensive technical workshop at VinUniversity, convening researchers across embedded sensing, marine IoT networking, and conservation robotics to define the offshore telemetry architecture.
 
 <figure>
   <img src="/myself/images/projects/coral-reef/kickstart-meeting.jpg" alt="Coral reef project kickoff and architecture workshop at VinUniversity" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 1:</strong> Project kickoff meeting at VinUniversity with Minh-Hoang Pham, Prof. Dinh Van Dung, Prof. Pham Huy Hieu, and faculty researchers formulating the BCS marine sensing architecture.</span>
-    <span data-i18n-vi><strong>Hình 1:</strong> Buổi họp khởi động dự án tại VinUniversity cùng Phạm Minh Hoàng, PGS. Đinh Văn Dũng, TS. Phạm Huy Hiệu và nhóm nghiên cứu định hình kiến trúc quan trắc biển BCS.</span>
+    <span data-i18n-en><strong>Figure 1:</strong> Project kickoff meeting at VinUniversity with Minh-Hoang Pham, Prof. Dinh Van Dung, Prof. Pham Huy Hieu, and faculty researchers formulating the coastal sensing architecture.</span>
+    <span data-i18n-vi><strong>Hình 1:</strong> Buổi họp khởi động dự án tại VinUniversity cùng Phạm Minh Hoàng, PGS. Đinh Văn Dũng, TS. Phạm Huy Hiệu và nhóm nghiên cứu định hình kiến trúc quan trắc biển.</span>
   </figcaption>
 </figure>
 
 ### 2. Institutional Strategic Alignment with Nha Trang Bay Management Board
 
-Safeguarding coral reefs requires strict compliance with marine park regulations and close coordination with local authorities. The research delegation traveled to Khanh Hoa to meet with leadership and scientific officers of the **Nha Trang Bay Management Board** (*Ban Quản lý Vịnh Nha Trang*).
+Safeguarding coral reefs requires strict compliance with marine park regulations and close coordination with local authorities. The research delegation traveled to Khanh Hoa to collaborate directly with leadership and scientific officers of the **Nha Trang Bay Management Board** (*Ban Quản lý Vịnh Nha Trang*).
 
-The discussions finalized operational protocols, designated safe deployment corridors within the marine reserve to prevent anchor damage to living coral heads, and established data-sharing agreements with marine conservation rangers.
+The discussions finalized operational protocols, designated safe deployment corridors within the marine reserve to prevent anchor damage to living coral heads, and established data-sharing agreements with conservation rangers.
 
 <figure>
   <img src="/myself/images/projects/coral-reef/nha-trang-bay-management-meeting.jpg" alt="Meeting with Nha Trang Bay Management Board delegation" loading="lazy" />
@@ -66,9 +66,9 @@ The discussions finalized operational protocols, designated safe deployment corr
 
 ### 3. Offshore Marine Transit & Buoy Station Commissioning
 
-The operational phase transitioned to the waters of Nha Trang Bay. Navigating by workboat to designated sanctuary coordinates, researchers and divers transported telemetry equipment, subsea cabling, and underwater inspection ROVs.
+The operational phase transitioned to the open waters of Nha Trang Bay. Navigating by research workboat to designated sanctuary coordinates, researchers and divers transported telemetry equipment, subsea cabling, and underwater inspection ROVs.
 
-The autonomous monitoring station was securely mounted onto a prominent yellow marine navigational beacon. Solar photovoltaic panels and a sealed telemetry housing were affixed above the high-water splash zone, while certified scuba divers descended into the reef to carefully anchor the multiparameter sensor payload along the seabed—initiating continuous, round-the-clock environmental data collection.
+The autonomous monitoring station was mounted onto a marine navigational beacon. Solar photovoltaic panels and sealed telemetry enclosures were affixed above the splash zone, while certified scuba divers descended into the reef to anchor the multiparameter water quality sensor payload along the seabed—initiating continuous round-the-clock environmental data collection.
 
 <div class="figure-grid">
   <figure>
@@ -87,11 +87,17 @@ The autonomous monitoring station was securely mounted onto a prominent yellow m
   </figure>
 </div>
 
-### 4. Marine Data Acquisition & Aerial Drone Survey
+---
 
-To monitor reef microhabitats and correlate benthic sensor logs with surface environmental indicators, the team conducts aerial drone mapping and underwater optical data acquisition across designated coral conservation transects.
+## Part 2: Underwater Coral Image & Video Dataset Collection
 
-Aerial imaging provides broad-scale reef canopy visualization, mapping spatial coral distribution, water clarity, and tidal currents around the expedition vessel. In parallel, submerged sensor arrays stream continuous depth profiles, dissolved oxygen, and salinity readings to validate real-time ecological models.
+The second core objective focuses on building comprehensive visual benchmark datasets of living coral ecosystems across diverse microhabitats in Nha Trang Bay. 
+
+By pairing high-altitude aerial drone surveys with underwater optical transects, the research team acquires multi-angle, multi-scale visual data:
+
+- **Benthic Coral Optical Surveys:** Submerged camera systems and scuba inspection sweeps record high-definition video and photography of branching, massive, and encrusting coral colonies. The dataset documents coral bleaching severity, algal overgrowth, and macro-invertebrate diversity.
+- **Aerial Drone Photogrammetry:** Low-altitude drone flights map shallow reef flats, water surface clarity, wave dynamics, and tidal currents across the survey coordinates.
+- **Multimodal Alignment:** Benthic optical frames and drone canopy footage are georeferenced with concurrent water quality telemetry (temperature, dissolved oxygen, turbidity) to enable data-driven ecological modeling and automated coral assessment algorithms.
 
 <figure>
   <img src="/myself/images/projects/coral-reef/usingdrone-to-collect-data.jpg" alt="Aerial drone view of research boat conducting coral reef data collection" loading="lazy" />

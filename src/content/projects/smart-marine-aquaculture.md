@@ -21,16 +21,17 @@ organizations: [
 
 ## The Field Challenge
 
-Smart marine aquaculture in coastal waters near Nha Trang presents harsh environmental constraints that disrupt traditional monitoring. High water turbidity, rapid biofouling on optical viewports, corrosive saline conditions, and remote offshore power constraints severely challenge standard sensing equipment. Aquaculture operators require continuous insights into water chemistry, underwater acoustics, and fish behavior without manual intervention.
+Smart marine aquaculture in coastal waters near Nha Trang presents harsh environmental constraints that disrupt traditional manual monitoring. High water turbidity, rapid biofouling on optical viewports, corrosive saline conditions, and remote offshore power constraints severely challenge standard equipment. Sustainable offshore farming requires continuous, automated insight into water chemistry, underwater acoustics, and fish behavior without manual diving.
 
-## System Architecture & Sensing Stack
+## Embedded System Architecture: 3 Sensing Modalities & Integrated AI
 
-To provide continuous monitoring for aquaculture operations, the research team developed an integrated hardware and software infrastructure:
+To provide continuous, end-to-end monitoring for offshore aquaculture operations, the research team engineered an integrated embedded hardware platform combining three primary sensing modalities coupled with edge AI algorithms:
 
-- **Submerged Acoustic & Vision Nodes:** Waterproof camera rigs record periodic high-resolution frames for fish biomass and behavior tracking, paired with hydrophone arrays sampling underwater acoustics to evaluate feeding activity.
-- **Edge Vision & Fouling Estimation:** Embedded PyTorch models evaluate camera viewport biofouling severity in real time, filtering obscured imagery prior to transmission.
-- **Multiparameter Water Quality Logging:** Continuous sampling of dissolved oxygen (DO), temperature, pH, salinity, and turbidity via industrial-grade marine probes.
-- **Data & Server Infrastructure:** Edge nodes stream lightweight MQTT payloads to localized gateways that manage data queuing, PostgreSQL time-series logging, and MinIO object storage.
+- **1. Underwater Video Sensing (Computer Vision):** Waterproof submerged camera rigs capture high-resolution imagery and video streams under challenging underwater illumination. Embedded vision models continuously observe fish biomass, school clustering, swimming trajectories, and evaluate optical viewport biofouling in real time.
+- **2. Underwater Audio Sensing (Bioacoustics):** Subsea hydrophone arrays capture underwater soundscapes and frequency dynamics. Bioacoustic AI models analyze fish chewing, pellet collision, and swimming acoustic signatures to quantify feeding intensity and appetite in real time.
+- **3. Five Key Water-Quality Parameters:** An industrial-grade sensor manifold continuously monitors 5 critical physicochemical indicators: **Dissolved Oxygen (DO)**, **pH**, **Water Temperature**, **Salinity**, and **Turbidity**, safeguarding against sudden hypoxia, temperature shocks, or salinity shifts.
+- **Applied Artificial Intelligence (AI):** Edge AI models (PyTorch, YOLO) and signal processing algorithms analyze video and acoustic streams on-site, converting raw high-bandwidth sensor feeds into actionable operational insights, feeding schedule optimizations, and early disease/stress warnings.
+- **Robust Telemetry & Server Infrastructure:** Encrypted MQTT pipelines stream metadata and filtered frames to edge servers, backed by PostgreSQL time-series storage, MinIO media buckets, and live operational dashboards.
 
 ## Evolution of Field Deployments: From Laboratory to Open Ocean
 

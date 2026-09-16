@@ -1,6 +1,6 @@
 ---
-title: Can Gio Mangrove Forest Conservation IoT System
-description: Remote sensing infrastructure for long-term mangrove monitoring in harsh environmental conditions.
+title: Can Gio Mangrove Forest Conservation & Remote Sensing System
+description: Satellite-based canopy green cover analysis dashboard and in-development hardware IoT sensing infrastructure for the Can Gio Mangrove Biosphere Reserve.
 date: 2026-01-15
 start: 2026-01
 status: active
@@ -11,7 +11,7 @@ topics: [aiot-environmental-monitoring]
 people: [pham-minh-hoang, dinh-van-dung, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
 publications: []
 relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
-technologies: [ESP32, Raspberry Pi, MQTT, Linux, Docker, VPN Systems]
+technologies: [Satellite Remote Sensing, GIS Dashboard, Multispectral Analysis, IoT Hardware Engineering, Embedded Firmware, LoRaWAN]
 organizations: [
   "Smart Green Transformation Center (GREEN-X), VinUniversity",
   "Ho Chi Minh City Management Board for Protection and Special-Use Forests"
@@ -20,25 +20,32 @@ organizations: [
 
 ## The Biosphere Challenge
 
-The Can Gio Biosphere Reserve represents one of the most critical coastal defense ecosystems in Southeast Asia, but its environmental dynamics are notoriously difficult to measure. The field conditions present severe operational hurdles: semidiurnal tidal flooding of up to 4 meters, dense mangrove canopy that attenuates RF and GPS signals, high humidity, aggressive mud accretion, and complete absence of grid electrical power. Previous research relied on intermittent manual grab-sampling, missing critical episodic flood surges and salinity fluctuations.
+The Can Gio Biosphere Reserve represents one of the most critical coastal defense ecosystems in Southeast Asia, acting as a vital carbon sink and storm surge shield for southern Vietnam. However, tracking ecological dynamics across extensive, waterlogged mangrove terrain poses severe operational hurdles: semidiurnal tidal inundation up to 4 meters, dense root architectures, high saline humidity, and rapid canopy shifts. Traditional forestry surveys rely on infrequent manual sample plots that cannot detect rapid canopy thinning or fine-scale vegetation stress in time.
 
-## Autonomous Telemetry Architecture
+To address these hurdles, our project adopts a phased, two-tiered ecological monitoring framework:
+1. **Active Phase:** Deployment of a high-resolution satellite remote sensing dashboard to analyze canopy green cover, vegetation health indices, and spatial trends over time.
+2. **Upcoming Phase:** Laboratory prototyping and preparation of ruggedized in-situ IoT telemetry hardware engineered for forthcoming deployment in the tidal mangrove mudflats.
 
-To enable continuous, unattended ecological monitoring, we engineered a distributed, low-power sensing network designed for autonomous survival in tidal marshlands:
+---
 
-- **Ultra-Low-Power Sensing Nodes:** Custom ESP32-based node clusters placed along the intertidal gradient sample hydrological variables, water height, ambient humidity, and soil salinity. Nodes operate in deep sleep, waking periodically to log data and burst telemetry.
-- **Solar Energy Harvesting & Buffering:** Nodes incorporate solar harvesting circuits coupled with conformal-coated lithium iron phosphate (LiFePO4) storage, engineered to endure consecutive monsoon overcast days.
-- **Canopy Gateway & Mesh Relay:** Strategically elevated gateway nodes positioned above the mangrove canopy aggregate telemetry over low-power sub-GHz links and backhaul compressed time-series data over cellular networks.
-- **Encrypted Remote Management:** A hardened Linux gateway running WireGuard VPN and containerized MQTT brokers allows secure remote over-the-air updates, debugging, and configuration without requiring hazardous boat expeditions into the mudflats.
+## Active Phase: Satellite Remote Sensing & Green Cover Analytics Dashboard
 
-## Field Operations & Systems Engineering
+In the initial operational phase, the team developed and deployed an interactive satellite analytics dashboard tailored to the Can Gio biosphere:
 
-Minh-Hoang leads the end-to-end systems lifecycle for the Can Gio deployment, coordinating multidisciplinary student engineers and collaborating with forestry researchers:
+- **Multispectral Orbital Ingestion:** Ingests high-frequency multispectral satellite imagery (Sentinel-2 and Landsat missions) covering the entire mangrove reserve area.
+- **Vegetation Index Calculation:** Automated processing pipelines compute key vegetation and moisture indices—including **NDVI** (Normalized Difference Vegetation Index), **NDRE**, and **EVI**—to evaluate photosynthetic vigor and canopy biomass across seasons.
+- **Spatial Coverage & Defoliation Detection:** The dashboard visually maps canopy density gradients, tracks year-over-year afforestation and natural regeneration, and automatically highlights localized anomalies or canopy dieback hotspots for forestry rangers.
+- **Interactive Geospatial Interface:** Provides intuitive GIS layers allowing researchers and reserve authorities to isolate specific forest compartments, examine historical greenness curves, and correlate climate variations with mangrove health.
 
-- Engineered IP68 corrosion-resistant mounting rigs attached to mangrove stilt roots to withstand high hydrodynamic drag during flood tides.
-- Formulated deployment timelines constrained by lunar tidal tables and monsoon weather patterns.
-- Authored automated anomaly detection scripts that flag sensor fouling or telemetry dropouts in real time.
+---
 
-## Long-Term Ecological Impact
+## Upcoming Phase: In-Situ Hardware Prototyping & Field Deployment Preparation
 
-The platform provides conservation biologists with unprecedented temporal resolution into carbon flux indicators, tidal inundation frequencies, and salinity gradients. By automating environmental observation in a fragile biosphere, the system proves that resilient edge engineering can transform conservation science in the most inaccessible habitats.
+While the satellite dashboard provides macro-scale temporal oversight, micro-scale ecological ground truth requires direct in-situ hydrological and microclimate logging. Hardware development is actively underway:
+
+- **Custom Low-Power Sensor Nodes:** Engineering ultra-low-power embedded telemetry nodes designed to sample water level fluctuations, soil porewater salinity, ambient humidity, and temperature along tidal transects.
+- **Rugged Marine Enclosures:** Prototyping IP68 corrosion-resistant housings and specialized mounting fixtures to endure prolonged seawater immersion, mud accretion, and high hydrodynamic forces on mangrove stilt roots.
+- **Solar Energy Harvesting:** Bench-testing conformal-coated solar harvesting modules paired with LiFePO4 battery management circuits to guarantee autonomous survival under dense forest canopy and prolonged monsoon overcast.
+- **Sub-GHz & Cellular Gateways:** Designing canopy-level gateway relays utilizing long-range sub-GHz / LoRa links to collect telemetry from intertidal nodes and backhaul consolidated data to the central cloud platform.
+
+Field deployment of the physical hardware nodes is scheduled following laboratory calibration and tidal-cycle stress testing, bridging orbital remote sensing with continuous physical measurements on the ground.
