@@ -918,12 +918,15 @@ footer small { grid-column: 1 / -1; }
 }
 
 .prose figure img,
-.prose img {
+.prose img,
+.prose figure video,
+.prose video {
   width: 100%;
   border-radius: var(--radius);
   border: 1px solid var(--line);
   background: var(--surface);
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.04);
+  display: block;
 }
 
 .prose figcaption {

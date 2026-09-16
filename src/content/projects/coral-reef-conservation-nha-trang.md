@@ -75,6 +75,14 @@ The autonomous monitoring station was securely mounted onto a prominent yellow m
   </figure>
 </div>
 
+<figure>
+  <video controls playsinline preload="metadata" poster="/myself/images/projects/coral-reef/setup-coral-reef-buoy-poster.jpg">
+    <source src="/myself/videos/projects/coral-reef/setup-coral-reef-buoy-nha-trang.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption><strong>Video 1: Setup của hệ thống tại Vịnh Nha Trang</strong> — Trạm quan trắc rạn san hô tự hành gắn trên phao báo hiệu hàng hải vận hành giữa vùng bảo tồn biển Vịnh Nha Trang.</figcaption>
+</figure>
+
 ## Impact & Environmental Value
 
 - **Real-Time Sanctuary Vigilance:** Replaced infrequent manual dive surveys with continuous 24/7 water chemistry logging across critical coral zones.

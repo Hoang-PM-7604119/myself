@@ -91,6 +91,14 @@ To ensure total self-sufficiency, the team engineered a dual-solar-powered stati
   <figcaption><strong>Figure 7:</strong> Lead researcher Minh-Hoang Pham, co-researcher Phan Tuan Khoi, and team collaborator on the floating raft platform celebrating successful offshore commissioning.</figcaption>
 </figure>
 
+<figure>
+  <video controls playsinline preload="metadata" poster="/myself/images/projects/smart-aquaculture/setup-nha-phu-bay-poster.jpg">
+    <source src="/myself/videos/projects/smart-aquaculture/setup-nha-phu-bay.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption><strong>Video 1: Setup của hệ thống tại Vịnh Nha Phu</strong> — Toàn cảnh hệ thống trạm quan trắc năng lượng mặt trời trên lồng bè nuôi biển ngoài khơi vịnh Nha Phu nhìn từ drone trên không.</figcaption>
+</figure>
+
 ### Phase 4: Circular Outdoor Tanks & Bioacoustics at RIA 3 (Nha Trang)
 
 In the final operational stage, the infrastructure was installed at the Research Institute for Aquaculture No. 3 (RIA 3) in Nha Trang across large outdoor circular aquaculture pools. 
@@ -107,6 +115,14 @@ This installation unified environmental telemetry with underwater bioacoustic mo
     <figcaption><strong>Figure 9:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</figcaption>
   </figure>
 </div>
+
+<figure>
+  <video controls playsinline preload="metadata" poster="/myself/images/projects/smart-aquaculture/setup-ria3-nha-trang-poster.jpg">
+    <source src="/myself/videos/projects/smart-aquaculture/setup-ria3-nha-trang.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <figcaption><strong>Video 2: Setup của hệ thống tại RIA 3 Nha Trang</strong> — Trạm quan trắc viễn thông VinUniversity, hệ thống cấp nguồn và camera giám sát mái che bể nuôi tại Viện Nghiên cứu Nuôi trồng Thủy sản III.</figcaption>
+</figure>
 
 ## Technical Contributions & Open Science
 
