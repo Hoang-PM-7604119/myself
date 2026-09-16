@@ -135,7 +135,7 @@ This installation unified environmental telemetry with underwater bioacoustic mo
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-system-assembly.jpg" alt="System assembly and wiring at RIA 3 by Phan Tuan Khoi" loading="lazy" />
     <figcaption>
       <span data-i18n-en><strong>Figure 8:</strong> Co-researcher Phan Tuan Khoi assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
-      <span data-i18n-vi><strong>Hình 8:</strong> Cộng sự Phan Tuấn Khởi hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, soundcard thu âm thủy âm và máy tính nhúng.</span>
+      <span data-i18n-vi><strong>Hình 8:</strong> Cộng sự Phan Tuấn Khởi hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
     </figcaption>
   </figure>
   <figure>

@@ -7,123 +7,185 @@ const allPubs = await published('publications');
 const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
 
 // Structured story narratives and telemetry blueprints for each featured system
+interface BeatItem {
+  phaseEn: string;
+  phaseVi: string;
+  titleEn: string;
+  titleVi: string;
+  bodyEn: string;
+  bodyVi: string;
+}
+
+interface SpecItem {
+  labelEn: string;
+  labelVi: string;
+  valueEn: string;
+  valueVi: string;
+}
+
 const stories: Record<string, {
   sysId: string;
-  blueprintLabel: string;
-  telemetryStatus: string;
+  blueprintLabelEn: string;
+  blueprintLabelVi: string;
+  telemetryStatusEn: string;
+  telemetryStatusVi: string;
   statusClass: string;
-  specs: { label: string; value: string }[];
-  beats: { phase: string; title: string; body: string }[];
+  specs: SpecItem[];
+  beats: BeatItem[];
 }> = {
   'smart-marine-aquaculture': {
     sysId: 'SYS.ID: AQ-NHT25',
-    blueprintLabel: 'SUBMERSIBLE AIoT ARRAY',
-    telemetryStatus: 'ACTIVE IN WATER',
+    blueprintLabelEn: 'SUBMERSIBLE AIoT ARRAY',
+    blueprintLabelVi: 'HỆ THỐNG AIoT THỦY SẢN BIỂN',
+    telemetryStatusEn: 'ACTIVE IN WATER',
+    telemetryStatusVi: 'ĐANG HOẠT ĐỘNG THỰC ĐỊA',
     statusClass: 'active',
     specs: [
-      { label: 'Sampling', value: 'Hydrophones + Camera Rigs' },
-      { label: 'Edge Compute', value: 'PyTorch Viewport Fouling Model' },
-      { label: 'Infrastructure', value: 'PostgreSQL + MinIO Cloud' }
+      { labelEn: 'Sensors', labelVi: 'Cảm biến', valueEn: 'Video + Hydrophones + 5 Water Probes', valueVi: 'Camera + Thủy âm + 5 Cảm biến nước' },
+      { labelEn: 'Edge AI', labelVi: 'Trí tuệ nhân tạo biên', valueEn: 'Fouling Detection & Behavior Tracking', valueVi: 'Nhận diện bám bẩn & Giám sát hành vi' },
+      { labelEn: 'Infrastructure', labelVi: 'Hạ tầng', valueEn: 'PostgreSQL + MinIO Storage', valueVi: 'PostgreSQL + Lưu trữ MinIO' }
     ],
     beats: [
       {
-        phase: 'The Field Challenge',
-        title: 'Turbidity & Severe Camera Viewport Biofouling',
-        body: 'Submerged aquaculture environments degrade optical viewports rapidly. High turbidity, biofouling, and corrosive salinity interfere with continuous monitoring, rendering manual diving inspections impractical.'
+        phaseEn: 'The Field Challenge',
+        phaseVi: 'Thách thức thực địa',
+        titleEn: 'Turbidity, Biofouling & Harsh Marine Conditions',
+        titleVi: 'Độ đục cao, sinh vật bám & môi trường biển khắc nghiệt',
+        bodyEn: 'Submerged aquaculture environments degrade optical viewports rapidly. High turbidity, biofouling, and corrosive salinity interfere with continuous monitoring, rendering manual diving inspections costly and impractical.',
+        bodyVi: 'Môi trường nuôi trồng thủy sản biển gây suy giảm nhanh chất lượng kính quan sát quang học. Độ đục cao, sinh vật bám (biofouling) và độ mặn ăn mòn cản trở việc quan trắc liên tục, khiến việc lặn kiểm tra thủ công trở nên tốn kém và khó khả thi.'
       },
       {
-        phase: 'Edge & AI Architecture',
-        title: 'Hydrophones & Automated Camera Fouling Classifier',
-        body: 'The platform integrates underwater acoustic probes, water chemistry sensors, and waterproof camera rigs. On-site PyTorch models evaluate viewport fouling severity in real time to filter occluded frames prior to cloud sync.'
+        phaseEn: 'Embedded AIoT Architecture',
+        phaseVi: 'Kiến trúc AIoT & Hệ thống nhúng',
+        titleEn: 'Tri-Modal Sensing: Video, Hydrophones & 5 Water Probes',
+        titleVi: 'Hệ thống nhúng tích hợp 3 luồng: Video, Âm thanh thủy âm & 5 Chỉ số nước',
+        bodyEn: 'The platform integrates underwater video, hydrophone acoustics, and 5 water quality probes (DO, pH, temperature, turbidity, salinity). Edge AI models monitor viewport fouling in real time and analyze environmental trends.',
+        bodyVi: 'Hệ thống nhúng tích hợp 3 luồng cảm biến: camera dưới nước, micro thủy âm (hydrophone) thu âm thanh cá và 5 cảm biến chất lượng nước (DO, pH, nhiệt độ, độ đục, độ mặn). Mô hình AI tại biên tự động phân loại bám bẩn và theo dõi sức khỏe môi trường nuôi.'
       },
       {
-        phase: 'Deployment & Impact',
-        title: 'Aquaculture Testbeds & CleanCam Benchmark',
-        body: 'Deployed across research ponds in Nha Trang, the system provides automated biomass insights and established the open-access CleanCam computer-vision benchmark for viewport fouling evaluation.'
+        phaseEn: 'Deployment & Impact',
+        phaseVi: 'Triển khai & Kết quả',
+        titleEn: 'Field Deployments across Hai Phong, Nha Trang & CleanCam Benchmark',
+        titleVi: 'Triển khai thực địa tại Hải Phòng, Nha Trang & Bộ dữ liệu CleanCam',
+        bodyEn: 'Iteratively deployed from lab tanks to RA1 Hai Phong, Nha Phu Bay, and RIA3 Nha Trang stations. Established continuous data feeds and the open CleanCam computer vision benchmark for optical fouling assessment.',
+        bodyVi: 'Hệ thống được thử nghiệm và triển khai lần lượt từ VNUA sang trạm RA1 Hải Phòng, vịnh Nha Phu và viện RIA3 Nha Trang. Thiết lập luồng dữ liệu tự động và bộ chuẩn thị giác máy tính CleanCam phục vụ đánh giá bám bẩn.'
       }
     ]
   },
   'coral-reef-conservation-nha-trang': {
     sysId: 'SYS.ID: CR-NHT25',
-    blueprintLabel: 'UNDERWATER SENSING STATION',
-    telemetryStatus: 'ACTIVE IN FIELD',
+    blueprintLabelEn: 'UNDERWATER SENSING STATION',
+    blueprintLabelVi: 'TRẠM QUAN TRẮC DƯỚI NƯỚC',
+    telemetryStatusEn: 'ACTIVE IN FIELD',
+    telemetryStatusVi: 'ĐANG TRIỂN KHAI THỰC ĐỊA',
     statusClass: 'active',
     specs: [
-      { label: 'Sensors', value: 'Multiparameter Water Quality Probes' },
-      { label: 'Enclosure', value: 'IP68 Saline-Resistant Submerged Hull' },
-      { label: 'Telemetry', value: 'MQTT Payload & VPN Logging' }
+      { labelEn: 'Part 1', labelVi: 'Phần 1', valueEn: 'Autonomous Water Quality Station', valueVi: 'Trạm quan trắc chất lượng nước biển' },
+      { labelEn: 'Part 2', labelVi: 'Phần 2', valueEn: 'Underwater Coral Image Dataset', valueVi: 'Thu thập tập dữ liệu hình ảnh san hô' },
+      { labelEn: 'Telemetry', labelVi: 'Truyền thông', valueEn: 'Secure MQTT & Logging Server', valueVi: 'Truyền tin MQTT & Máy chủ lưu trữ' }
     ],
     beats: [
       {
-        phase: 'The Conservation Challenge',
-        title: 'Marine Habitat Degradation & Episodic Micro-Surges',
-        body: 'Coral reef ecosystems in Nha Trang face sudden water temperature shifts and runoff pollution. Traditional dive sampling misses rapid episodic chemical fluctuations critical for reef health.'
+        phaseEn: 'The Conservation Challenge',
+        phaseVi: 'Thách thức bảo tồn',
+        titleEn: 'Marine Habitat Degradation & Episodic Micro-Surges',
+        titleVi: 'Suy giảm rạn san hô & biến động chất lượng nước biển',
+        bodyEn: 'Coral reef ecosystems in Nha Trang face sudden water temperature shifts and runoff pollution. Traditional dive sampling misses rapid episodic chemical fluctuations and spatial reef changes critical for conservation.',
+        bodyVi: 'Hệ sinh thái rạn san hô tại vịnh Nha Trang chịu tác động lớn từ biến đổi nhiệt độ nước biển và ô nhiễm môi trường. Phương pháp lặn lấy mẫu thủ công khó nắm bắt kịp thời các biến động đột ngột và sự thay đổi độ phủ san hô ngầm.'
       },
       {
-        phase: 'Submerged Sensing Architecture',
-        title: 'Multiparameter Underwater Probes & Resilient Enclosures',
-        body: 'Custom ESP32-based submerged stations continuously sample dissolved oxygen, pH, temperature, turbidity, and salinity, logging time-series telemetry via secure MQTT pipelines.'
+        phaseEn: 'Two-Pronged Strategy',
+        phaseVi: 'Chiến lược triển khai 2 hợp phần',
+        titleEn: '1. Water Quality Deployment | 2. Coral Image Dataset Collection',
+        titleVi: '1. Triển khai trạm chất lượng nước | 2. Thu thập dữ liệu ảnh rạn san hô',
+        bodyEn: 'The project executes two core thrusts: deploying autonomous underwater water-quality monitoring stations for continuous telemetry, and conducting systematic diving surveys to build a high-resolution underwater coral image dataset.',
+        bodyVi: 'Dự án gồm 2 phần cốt lõi: 1) Triển khai hệ thống trạm quan trắc thu thập tự động các chỉ số chất lượng nước biển; 2) Tổ chức các đợt lặn khảo sát thu thập tập dữ liệu hình ảnh san hô dưới đáy biển phục vụ nghiên cứu và giám sát.'
       },
       {
-        phase: 'Deployment & Impact',
-        title: 'Continuous Biodiversity & Coral Reef Monitoring',
-        body: 'Provides marine conservation biologists with high-resolution environmental indicators off the coast of Nha Trang, ensuring continuous habitat observation.'
+        phaseEn: 'Deployment & Collaboration',
+        phaseVi: 'Hợp tác & Triển khai',
+        titleEn: 'Joint Deployment with Nha Trang Bay Management Authority',
+        titleVi: 'Phối hợp cùng Ban Quản lý Vịnh Nha Trang',
+        bodyEn: 'Collaborating directly with the Nha Trang Bay Management Board to safeguard marine protected areas, providing scientific telemetry data and comprehensive visual benchmarks for coral health.',
+        bodyVi: 'Hợp tác chặt chẽ cùng Ban Quản lý Vịnh Nha Trang để bảo tồn các phân khu rạn san hô quý giá, cung cấp số liệu môi trường liên tục và hình ảnh khảo sát thực địa cho công tác bảo tồn sinh thái biển.'
       }
     ]
   },
   'can-gio-mangrove-iot': {
     sysId: 'SYS.ID: CG-MANGROVE02',
-    blueprintLabel: 'INTERTIDAL TELEMETRY ARRAY',
-    telemetryStatus: 'AUTONOMOUS IN FIELD',
+    blueprintLabelEn: 'SATELLITE & IoT PLATFORM',
+    blueprintLabelVi: 'NỀN TẢNG VỆ TINH & IoT',
+    telemetryStatusEn: 'DASHBOARD ACTIVE / HARDWARE PREP',
+    telemetryStatusVi: 'DASHBOARD ĐANG CHẠY / ĐANG CHUẨN BỊ THIẾT BỊ',
     statusClass: 'active',
     specs: [
-      { label: 'Sampling', value: 'Tidal Gradient & Salinity' },
-      { label: 'Telemetry', value: 'Sub-GHz Mesh + WireGuard VPN' },
-      { label: 'Power Source', value: 'LiFePO4 Solar Harvesting' }
+      { labelEn: 'Analytics', labelVi: 'Phân tích', valueEn: 'Satellite Mangrove Canopy Dashboard', valueVi: 'Dashboard ảnh vệ tinh phân tích độ phủ' },
+      { labelEn: 'Hardware', labelVi: 'Phần cứng', valueEn: 'Environmental Nodes in Preparation', valueVi: 'Thiết bị cảm biến đang chuẩn bị triển khai' },
+      { labelEn: 'Site', labelVi: 'Địa bàn', valueEn: 'Can Gio Mangrove Biosphere Reserve', valueVi: 'Khu dự trữ sinh quyển Rừng ngập mặn Cần Giờ' }
     ],
     beats: [
       {
-        phase: 'The Biosphere Challenge',
-        title: 'Semidiurnal Tidal Flooding & Dense Canopy Attenuation',
-        body: 'The UNESCO Can Gio Biosphere Reserve experiences tidal inundation up to 4 meters, saline mud immersion, and dense canopy RF attenuation that blocks standard cellular and GPS links, rendering intermittent manual grab-sampling ineffective.'
+        phaseEn: 'The Biosphere Challenge',
+        phaseVi: 'Thách thức sinh thái',
+        titleEn: 'Tidal Inundation & Canopy Cover Fluctuation',
+        titleVi: 'Triều cường ngập mặn & Biến động diện tích tán rừng',
+        bodyEn: 'Can Gio Mangrove Reserve serves as a vital green lung and coastal shield. Monitoring its immense canopy cover and extreme intertidal fluctuations requires combining broad-scale satellite observation with localized ground measurements.',
+        bodyVi: 'Khu dự trữ sinh quyển Rừng ngập mặn Cần Giờ đóng vai trò lá phổi xanh và lá chắn bờ biển trọng yếu. Việc theo dõi độ che phủ tán rừng rộng lớn và các biến động thủy văn đòi hỏi kết hợp giữa viễn thám không gian và quan trắc tại chỗ.'
       },
       {
-        phase: 'Autonomous Edge Architecture',
-        title: 'Solar-Harvested ESP32 Nodes & Elevated Mesh Relay',
-        body: 'Engineered custom ESP32 clusters in IP68 hydrodynamic enclosures secured to mangrove stilt roots. Nodes sample hydrologic flux in deep sleep, pulsing microbursts to canopy gateway towers that tunnel compressed time-series over encrypted WireGuard VPN.'
+        phaseEn: 'Satellite Canopy Dashboard',
+        phaseVi: 'Nền tảng viễn thám',
+        titleEn: 'Multi-Temporal Satellite Canopy Cover Analysis Dashboard',
+        titleVi: 'Dashboard phân tích độ phủ xanh rừng ngập mặn từ ảnh vệ tinh',
+        bodyEn: 'Developed a comprehensive web dashboard utilizing Sentinel-2 satellite imagery and spectral indices (NDVI/NDWI) to track canopy density, green cover dynamics, and spatial distribution across the biosphere reserve over time.',
+        bodyVi: 'Đã triển khai hệ thống dashboard tương tác ứng dụng ảnh vệ tinh Sentinel-2 cùng các chỉ số quang phổ (NDVI, NDWI) để phân tích diễn biến độ che phủ xanh và phân bố sinh khối rừng ngập mặn Cần Giờ theo thời gian.'
       },
       {
-        phase: 'Deployment & Impact',
-        title: 'High-Resolution Observation for Carbon & Ecological Models',
-        body: 'Unattended multi-month operations deliver uninterrupted salinity, tidal surge, and microclimate datasets to conservation researchers, eliminating the observational gaps of manual field sampling in coastal wetlands.'
+        phaseEn: 'Ground Hardware Roadmap',
+        phaseVi: 'Kế hoạch phần cứng',
+        titleEn: 'Field Sensor Node Packages under Deployment Preparation',
+        titleVi: 'Phần cứng trạm cảm biến môi trường đang được chuẩn bị triển khai',
+        bodyEn: 'Complementing the active satellite dashboard, custom waterproof IoT sensor packages for measuring tidal salinity and soil hydrology are currently undergoing calibration and hardware fabrication for physical field deployment.',
+        bodyVi: 'Song song với dashboard viễn thám đang hoạt động, các gói thiết bị phần cứng cảm biến chống nước quan trắc độ mặn, mực nước và độ ẩm thổ nhưỡng đang được hiệu chuẩn và chuẩn bị để đưa ra triển khai thực địa.'
       }
     ]
   },
   'bee-monitoring-aiot-system': {
     sysId: 'SYS.ID: BE-AIOT01',
-    blueprintLabel: 'NON-INVASIVE APIARY APPLIANCE',
-    telemetryStatus: 'COMPLETED ARCHITECTURE',
+    blueprintLabelEn: 'NON-INVASIVE APIARY APPLIANCE',
+    blueprintLabelVi: 'THIẾT BỊ GIÁM SÁT ĐÀN ONG',
+    telemetryStatusEn: 'COMPLETED ARCHITECTURE',
+    telemetryStatusVi: 'HOÀN THÀNH NGHIÊN CỨU',
     statusClass: 'completed',
     specs: [
-      { label: 'Vision', value: 'Entrance Optical Flow Counter' },
-      { label: 'Acoustics', value: 'Hive Core Vibration Sensors' },
-      { label: 'Deployment', value: 'MARD Agricultural Pilot' }
+      { labelEn: 'Vision', labelVi: 'Thị giác', valueEn: 'Entrance Optical Flow Counter', valueVi: 'Đếm lưu lượng ong cửa tổ' },
+      { labelEn: 'Acoustics', labelVi: 'Âm thanh', valueEn: 'Hive Vibration & Sound Sensors', valueVi: 'Cảm biến âm thanh & rung động thùng ong' },
+      { labelEn: 'Deployment', labelVi: 'Thực nghiệm', valueEn: 'MARD Agricultural Research Pilot', valueVi: 'Thử nghiệm đề tài Bộ NN&PTNT' }
     ],
     beats: [
       {
-        phase: 'The Apiary Health Challenge',
-        title: 'Colony Collapse Risk & Invasive Manual Inspections',
-        body: 'Honeybee colonies suffer sudden collapse from environmental volatility, yet traditional physical inspections require cracking open hive boxes, disrupting delicate internal temperature regulation and agitating worker bees.'
+        phaseEn: 'The Apiary Health Challenge',
+        phaseVi: 'Thách thức ngành ong',
+        titleEn: 'Colony Collapse Risk & Invasive Manual Inspections',
+        titleVi: 'Nguy cơ suy giảm bầy & Thao tác kiểm tra thủ công xâm lấn',
+        bodyEn: 'Honeybee colonies suffer sudden collapse from disease and weather changes. Traditional inspections require opening hive boxes, disrupting delicate internal microclimates and agitating worker bees.',
+        bodyVi: 'Đàn ong mật đối mặt với rủi ro dịch bệnh và thời tiết thất thường. Phương pháp kiểm tra thủ công buộc người nuôi phải mở nắp thùng, làm đảo lộn vi khí hậu bên trong tổ và gây xáo trộn đàn ong.'
       },
       {
-        phase: 'Edge Vision & Acoustic Pipeline',
-        title: 'Entrance Optical Flow & Internal Sound Analysis',
-        body: 'Developed an unobtrusive hive-entrance appliance featuring controlled illumination and embedded optical flow algorithms to count forager exits and returns in real-time, paired with internal microphones tracking swarming acoustics.'
+        phaseEn: 'Edge Vision & Acoustic Pipeline',
+        phaseVi: 'Kiến trúc thị giác biên & Âm học',
+        titleEn: 'Entrance Optical Flow & Internal Swarm Acoustic Analysis',
+        titleVi: 'Phân tích dòng quang học cửa tổ & Giám sát âm thanh chia đàn',
+        bodyEn: 'Designed an unobtrusive entrance appliance using embedded optical flow algorithms to count forager exits and entries in real time, accompanied by internal microphones tracking acoustic precursors to swarming.',
+        bodyVi: 'Thiết kế thiết bị không xâm lấn tại cửa tổ ứng dụng giải thuật optical flow trên máy tính nhúng để đếm chính xác lượt ong ra vào theo thời gian thực, kết hợp micro nội bộ ghi nhận biến động âm thanh cảnh báo chia đàn.'
       },
       {
-        phase: 'Deployment & Impact',
-        title: 'National Agricultural Pilot & Research Adoption',
-        body: 'Coordinated student engineering teams to deliver field-ready appliances deployed across Northern Vietnam apiary farms under Ministry of Agriculture sponsorship, proving computer vision can operate reliably in rural agricultural settings.'
+        phaseEn: 'Deployment & Impact',
+        phaseVi: 'Triển khai & Ứng dụng',
+        titleEn: 'Agricultural Field Deployment across Northern Vietnam Apiaries',
+        titleVi: 'Triển khai thực địa tại các trang trại nuôi ong miền Bắc',
+        bodyEn: 'Field-tested across apiary farms in Northern Vietnam under Ministry of Agriculture research initiatives, proving computer vision and acoustics can operate reliably without disrupting bees in agricultural conditions.',
+        bodyVi: 'Thử nghiệm thực tế tại nhiều trang trại nuôi ong ở miền Bắc trong khuôn khổ nghiên cứu của Bộ NN&PTNT, chứng minh tính khả thi và độ tin cậy của AIoT không xâm lấn trong sản xuất nông nghiệp.'
       }
     ]
   }
@@ -146,19 +208,24 @@ const stories: Record<string, {
 {projects.map((p, index) => {
   const story = stories[p.id] ?? {
     sysId: `SYS.ID: ${p.id.toUpperCase()}`,
-    blueprintLabel: 'SYSTEM SCHEMATIC',
-    telemetryStatus: p.data.status.toUpperCase(),
+    blueprintLabelEn: 'SYSTEM SCHEMATIC',
+    blueprintLabelVi: 'SƠ ĐỒ HỆ THỐNG',
+    telemetryStatusEn: p.data.status.toUpperCase(),
+    telemetryStatusVi: p.data.status === 'active' ? 'ĐANG HOẠT ĐỘNG' : (p.data.status === 'completed' ? 'HOÀN THÀNH' : 'TẠM DỪNG'),
     statusClass: p.data.status,
     specs: [
-      { label: 'Timeline', value: `${p.data.start}—${p.data.end ?? 'present'}` },
-      { label: 'Status', value: pretty(p.data.status) },
-      { label: 'Stack', value: p.data.technologies.slice(0, 3).join(', ') }
+      { labelEn: 'Timeline', labelVi: 'Thời gian', valueEn: `${p.data.start}—${p.data.end ?? 'present'}`, valueVi: `${p.data.start}—${p.data.end ?? 'hiện tại'}` },
+      { labelEn: 'Status', labelVi: 'Trạng thái', valueEn: pretty(p.data.status), valueVi: p.data.status === 'active' ? 'Đang thực hiện' : 'Hoàn thành' },
+      { labelEn: 'Stack', labelVi: 'Công nghệ', valueEn: p.data.technologies.slice(0, 3).join(', '), valueVi: p.data.technologies.slice(0, 3).join(', ') }
     ],
     beats: [
       {
-        phase: 'Project Overview',
-        title: p.data.title,
-        body: p.data.description
+        phaseEn: 'Project Overview',
+        phaseVi: 'Tổng quan dự án',
+        titleEn: p.data.title,
+        titleVi: p.data.title,
+        bodyEn: p.data.description,
+        bodyVi: p.data.description
       }
     ]
   };
@@ -175,7 +242,8 @@ const stories: Record<string, {
         <div class="story-telemetry-meta">
           <span class={`telemetry-pill ${story.statusClass}`}>
             <span class="pulse-dot" aria-hidden="true"></span>
-            {story.telemetryStatus}
+            <span data-i18n-en>{story.telemetryStatusEn}</span>
+            <span data-i18n-vi>{story.telemetryStatusVi}</span>
           </span>
           <span class="story-org-timeline">
             {p.data.start}—{p.data.end ?? 'PRESENT'} &bull; {p.data.organizations.join(' &bull; ')}
@@ -192,9 +260,18 @@ const stories: Record<string, {
           <div class="story-beats">
             {story.beats.map((beat) => (
               <div class="story-beat">
-                <div class="beat-phase">{beat.phase}</div>
-                <h4 class="beat-title">{beat.title}</h4>
-                <p class="beat-body">{beat.body}</p>
+                <div class="beat-phase">
+                  <span data-i18n-en>{beat.phaseEn}</span>
+                  <span data-i18n-vi>{beat.phaseVi}</span>
+                </div>
+                <h4 class="beat-title">
+                  <span data-i18n-en>{beat.titleEn}</span>
+                  <span data-i18n-vi>{beat.titleVi}</span>
+                </h4>
+                <p class="beat-body">
+                  <span data-i18n-en>{beat.bodyEn}</span>
+                  <span data-i18n-vi>{beat.bodyVi}</span>
+                </p>
               </div>
             ))}
           </div>
@@ -202,8 +279,14 @@ const stories: Record<string, {
           <dl class="story-specs-strip" aria-label="System specifications">
             {story.specs.map((spec) => (
               <div class="spec-item">
-                <dt>{spec.label}</dt>
-                <dd>{spec.value}</dd>
+                <dt>
+                  <span data-i18n-en>{spec.labelEn}</span>
+                  <span data-i18n-vi>{spec.labelVi}</span>
+                </dt>
+                <dd>
+                  <span data-i18n-en>{spec.valueEn}</span>
+                  <span data-i18n-vi>{spec.valueVi}</span>
+                </dd>
               </div>
             ))}
           </dl>
@@ -217,7 +300,7 @@ const stories: Record<string, {
             {relatedPubs.map((pub) => (
               <a class="publication-callout" href={asset(`/publications/${pub.id}/`)} title={pub.data.title}>
                 <span aria-hidden="true">&sect;</span>
-                <span>Publication: {pub.data.title.length > 36 ? `${pub.data.title.slice(0, 34)}...` : pub.data.title} &nearr;</span>
+                <span><span data-i18n-en>Publication:</span><span data-i18n-vi>Công bố:</span> {pub.data.title.length > 36 ? `${pub.data.title.slice(0, 34)}...` : pub.data.title} &nearr;</span>
               </a>
             ))}
           </div>
@@ -235,7 +318,8 @@ const stories: Record<string, {
               <span>{story.sysId}</span>
               <span class="blueprint-status">
                 <span class="pulse-dot" aria-hidden="true"></span>
-                {story.blueprintLabel}
+                <span data-i18n-en>{story.blueprintLabelEn}</span>
+                <span data-i18n-vi>{story.blueprintLabelVi}</span>
               </span>
             </div>
             <a class="blueprint-img-link" href={asset(`/projects/${p.id}/`)} aria-label={`View architecture for ${p.data.title}`}>
@@ -249,7 +333,8 @@ const stories: Record<string, {
             </a>
             <div class="blueprint-caption">
               <strong>{p.data.title}</strong>
-              Field telemetry &bull; {p.data.technologies.slice(0, 4).join(', ')}
+              <span data-i18n-en>Field telemetry &bull; {p.data.technologies.slice(0, 4).join(', ')}</span>
+              <span data-i18n-vi>Dữ liệu thực địa &bull; {p.data.technologies.slice(0, 4).join(', ')}</span>
             </div>
           </div>
         </div>

@@ -9,7 +9,7 @@ const ld = { '@context':'https://schema.org', '@type':type, headline:title, desc
 ---
 <BaseLayout title={title} description={description} article={ld} progress>
   <article class="content-shell">
-    <header class="article-head"><p class="eyebrow">Research record</p><h1>{title}</h1><p class="lede">{description}</p><div class="meta">{date && <time datetime={date.toISOString()}>{date.toLocaleDateString('en',{year:'numeric',month:'long',day:'numeric'})}</time>}<span>{wordsToMinutes(prose)} min read</span></div><div class="tags">{topics.map(t=><a href={`${import.meta.env.BASE_URL}topics/${t}/`}>{pretty(t)}</a>)}</div></header>
-    <div class="article-grid">{headings.length > 1 && <aside class="toc" aria-label="Table of contents"><strong>On this page</strong><ol>{headings.map(h=><li><a href={`#${h.id}`}>{h.text}</a></li>)}</ol></aside>}<div class="prose"><slot /></div></div>
+    <header class="article-head"><p class="eyebrow"><span data-i18n-en>Research record</span><span data-i18n-vi>Hồ sơ nghiên cứu</span></p><h1>{title}</h1><p class="lede">{description}</p><div class="meta">{date && <time datetime={date.toISOString()}>{date.toLocaleDateString('en',{year:'numeric',month:'long',day:'numeric'})}</time>}<span>{wordsToMinutes(prose)} <span data-i18n-en>min read</span><span data-i18n-vi>phút đọc</span></span></div><div class="tags">{topics.map(t=><a href={`${import.meta.env.BASE_URL}topics/${t}/`}>{pretty(t)}</a>)}</div></header>
+    <div class="article-grid">{headings.length > 1 && <aside class="toc" aria-label="Table of contents"><strong><span data-i18n-en>On this page</span><span data-i18n-vi>Mục lục trang</span></strong><ol>{headings.map(h=><li><a href={`#${h.id}`}>{h.text}</a></li>)}</ol></aside>}<div class="prose"><slot /></div></div>
   </article>
 </BaseLayout>
