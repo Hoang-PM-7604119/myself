@@ -3,7 +3,7 @@ title: Vu Hai
 description: Associate Professor at Hanoi University of Science and Technology (HUST), specializing in computer vision, pattern recognition, and intelligent sensing systems.
 role: Associate Professor & Research Advisor
 organization: Hanoi University of Science and Technology (HUST)
-image: /images/people/default-avatar.svg
+image: /images/people/vu-hai.png
 scholar: https://scholar.google.com/citations?user=wxOIoWMAAAAJ
 date: 2025-01-01
 ---
