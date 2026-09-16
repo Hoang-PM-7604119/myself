@@ -10,7 +10,7 @@ featured: true
 order: 1
 cover: /images/projects/smart-marine-aquaculture.jpg
 topics: [aiot-environmental-monitoring]
-people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung, phan-tuan-khoi, nguyen-thanh-trung, nguyen-hong-phuc, trinh-cong-son, nguyen-xuan-quyen]
+people: [nguyen-van-dinh, do-danh-cuong, dinh-van-dung, pham-minh-hoang, phan-tuan-khoi, nguyen-thanh-trung, nguyen-hong-phuc, trinh-cong-son, nguyen-xuan-quyen]
 publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
 technologies: [Python, PyTorch, Computer Vision, ESP32, MQTT, PostgreSQL, MinIO, Docker]
@@ -27,11 +27,15 @@ organizations: [
 
 Smart marine aquaculture in coastal waters near Nha Trang presents harsh environmental constraints that disrupt traditional manual monitoring. High water turbidity, rapid biofouling on optical viewports, corrosive saline conditions, and remote offshore power constraints severely challenge standard equipment. Sustainable offshore farming requires continuous, automated insight into water chemistry, underwater acoustics, and fish behavior without manual diving.
 
+The project is directed under the academic leadership of Principal Investigators (PI) **Dr. Van-Dinh Nguyen** and **Dr. Do Danh Cuong**, with **Dinh Van Dung** serving as Co-Principal Investigator (Co-PI). Engineering execution, telemetry, and field deployment operations are driven by Technical Lead & Research Assistant **Minh-Hoang Pham** alongside research assistants **Phan Tuan Khoi**, **Nguyen Thanh Trung**, **Nguyen Hong Phuc**, **Trinh Cong Son**, and **Nguyen Xuan Quyen**.
+
 </div>
 
 <div data-i18n-vi>
 
 Nuôi trồng thủy sản biển tại vùng duyên hải Nha Trang đặt ra nhiều thách thức khắc nghiệt khiến các phương pháp giám sát thủ công truyền thống không còn đáp ứng được. Độ đục cao của nước, hiện tượng sinh vật bám (biofouling) nhanh chóng lên ống kính quang học, môi trường nước mặn ăn mòn mạnh cùng nguồn điện ngoài khơi hạn chế tạo áp lực lớn lên các thiết bị phần cứng tiêu chuẩn. Để phát triển nuôi biển bền vững, cần có giải pháp tự động hóa liên tục nhằm thu thập dữ liệu hóa lý nước, âm thanh dưới nước và hành vi đàn cá mà không cần thợ lặn trực tiếp.
+
+Dự án được dẫn dắt bởi hai Chủ nhiệm đề tài (PI) là **TS. Nguyễn Văn Định** và **TS. Đỗ Danh Cường**, cùng Đồng chủ nhiệm đề tài (Co-PI) **Đinh Văn Dũng**. Công tác phát triển kỹ thuật, viễn thông và triển khai thực địa do Trưởng nhóm kỹ thuật kiêm Trợ lý nghiên cứu **Phạm Minh Hoàng** cùng các trợ lý nghiên cứu **Phan Tuấn Khởi**, **Nguyễn Thành Trung**, **Nguyễn Hồng Phúc**, **Trịnh Công Sơn** và **Nguyễn Xuân Quyền** đảm nhiệm.
 
 </div>
 

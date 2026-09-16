@@ -228,10 +228,10 @@ Việc chế tạo hệ thống AI biên vận hành ngoài hiện trường đ�
 </div>
 
 <figure>
-  <img src="/myself/images/projects/bee-monitoring/field-calibration-researcher.jpg" alt="Hands-on field installation and sensor calibration by the author" loading="lazy" />
+  <img src="/myself/images/projects/bee-monitoring/field-calibration-researcher.jpg" alt="Hands-on field installation and sensor calibration by a research collaborator" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 10:</strong> Lead researcher Minh-Hoang Pham conducting hands-on sensor wiring, 4G telemetry checks, and optical alignment on hive #3 at the Tropical Bee Research Center apiary.</span>
-    <span data-i18n-vi><strong>Hình 10:</strong> Tác giả Phạm Minh Hoàng trực tiếp đấu nối cảm biến, kiểm tra truyền tin 4G và căn chỉnh quang học trên tổ số 3 tại trại ong Trung tâm Nghiên cứu Ong Nhiệt đới.</span>
+    <span data-i18n-en><strong>Figure 10:</strong> A research collaborator conducts hands-on sensor wiring, 4G telemetry checks, and optical alignment on hive #3 at the Tropical Bee Research Center apiary.</span>
+    <span data-i18n-vi><strong>Hình 10:</strong> Cộng sự nghiên cứu trực tiếp đấu nối cảm biến, kiểm tra truyền tin 4G và căn chỉnh quang học trên tổ số 3 tại trại ong Trung tâm Nghiên cứu Ong Nhiệt đới.</span>
   </figcaption>
 </figure>
 

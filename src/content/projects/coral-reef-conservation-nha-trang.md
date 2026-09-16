@@ -10,7 +10,7 @@ featured: true
 order: 2
 cover: /images/projects/coral-reef-conservation-nha-trang.jpg
 topics: [aiot-environmental-monitoring]
-people: [pham-minh-hoang, dinh-van-dung, pham-huy-hieu, phung-manh-duong, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
+people: [pham-huy-hieu, phung-manh-duong, dinh-van-dung, pham-minh-hoang, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
 publications: [edge-deadline-rl]
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]
 technologies: [Water Quality Sensing, Marine Telemetry, Underwater Imaging, Drone Remote Sensing, Linux, Docker, MQTT]
@@ -27,6 +27,8 @@ organizations: [
 
 Coral reef ecosystems in Nha Trang Bay—one of Vietnam's most biologically diverse marine protected areas—face severe threats from rising sea temperatures, coastal runoff pollution, and fluctuating salinity levels. Traditional reef assessments rely on periodic manual scuba surveys, which cannot detect acute episodic shocks, dissolved oxygen drops, or fine-grained diurnal variations that trigger coral bleaching. 
 
+The initiative is led by Principal Investigators (PI) **Dr. Pham Huy Hieu** and **Dr. Phung Manh Duong**, with **Dinh Van Dung** serving as Co-Principal Investigator (Co-PI). Field engineering, sensing station deployment, and data collection are executed by Technical Lead & Research Assistant **Minh-Hoang Pham** along with research assistants **Nguyen Ngoc Gia Ninh** and **Nguyen Xuan Quyen**.
+
 To overcome these constraints, the project was formulated around two synergistic components:
 1. **Deploying an autonomous offshore water-quality monitoring system** for 24/7 continuous environmental observation.
 2. **Collecting high-resolution underwater coral imagery and drone datasets** to map benthic habitat health and build benchmark datasets for marine conservation.
@@ -36,6 +38,8 @@ To overcome these constraints, the project was formulated around two synergistic
 <div data-i18n-vi>
 
 Hệ sinh thái rạn san hô tại Vịnh Nha Trang — một trong những khu bảo tồn biển có tính đa dạng sinh học cao nhất Việt Nam — đang đứng trước nguy cơ suy thoái nghiêm trọng do nhiệt độ nước biển tăng cao, nước thải ven bờ và sự biến động độ mặn. Các phương pháp đánh giá rạn san hô truyền thống chủ yếu dựa vào các đợt lặn khảo sát thủ công định kỳ, vốn không thể phát hiện kịp thời các cú sốc môi trường đột ngột, hiện tượng tụt oxy hòa tan hay biến thiên nhiệt độ ngắn hạn dẫn đến hiện tượng san hô tẩy trắng.
+
+Chương trình nghiên cứu được chủ trì bởi hai Chủ nhiệm đề tài (PI) là **TS. Phạm Huy Hiệu** và **TS. Phùng Mạnh Dương**, cùng Đồng chủ nhiệm đề tài (Co-PI) **Đinh Văn Dũng**. Công tác chế tạo thiết bị, lắp đặt trạm quan trắc thực địa và thu thập dữ liệu do Trưởng nhóm kỹ thuật kiêm Trợ lý nghiên cứu **Phạm Minh Hoàng** cùng các trợ lý nghiên cứu **Nguyễn Ngọc Gia Ninh** và **Nguyễn Xuân Quyền** thực hiện.
 
 Để giải quyết thách thức này, dự án được triển khai với hai cấu phần trọng tâm:
 1. **Triển khai hệ thống trạm quan trắc chất lượng nước tự hành ngoài khơi** nhằm giám sát môi trường liên tục 24/7.

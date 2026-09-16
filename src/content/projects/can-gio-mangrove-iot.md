@@ -10,7 +10,7 @@ featured: true
 order: 3
 cover: /images/projects/can-gio-mangrove-iot.jpg
 topics: [aiot-environmental-monitoring]
-people: [pham-minh-hoang, dinh-van-dung, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
+people: [phan-thi-thuc-anh, dinh-van-dung, pham-minh-hoang, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
 publications: []
 relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
 technologies: [Satellite Remote Sensing, GIS Dashboard, Multispectral Analysis, IoT Hardware Engineering, Embedded Firmware, LoRaWAN]
@@ -26,6 +26,8 @@ organizations: [
 
 The Can Gio Biosphere Reserve represents one of the most critical coastal defense ecosystems in Southeast Asia, acting as a vital carbon sink and storm surge shield for southern Vietnam. However, tracking ecological dynamics across extensive, waterlogged mangrove terrain poses severe operational hurdles: semidiurnal tidal inundation up to 4 meters, dense root architectures, high saline humidity, and rapid canopy shifts. Traditional forestry surveys rely on infrequent manual sample plots that cannot detect rapid canopy thinning or fine-scale vegetation stress in time.
 
+The project is directed under the leadership of Principal Investigator (PI) **Assoc. Prof. Dr. Phan Thi Thuc Anh** (Associate Vice Provost, VinUniversity; Executive Director of GREEN-X), with **Dinh Van Dung** serving as Co-Principal Investigator (Co-PI). The engineering and telemetry architecture is led by Technical Lead & Research Assistant **Minh-Hoang Pham** alongside research assistants **Nguyen Ngoc Gia Ninh** and **Nguyen Xuan Quyen**.
+
 To address these hurdles, our project adopts a phased, two-tiered ecological monitoring framework:
 1. **Active Phase:** Deployment of a high-resolution satellite remote sensing dashboard to analyze canopy green cover, vegetation health indices, and spatial trends over time.
 2. **Upcoming Phase:** Laboratory prototyping and preparation of ruggedized in-situ IoT telemetry hardware engineered for forthcoming deployment in the tidal mangrove mudflats.
@@ -35,6 +37,8 @@ To address these hurdles, our project adopts a phased, two-tiered ecological mon
 <div data-i18n-vi>
 
 Khu dự trữ sinh quyển Cần Giờ là lá chắn phòng hộ ven biển xung yếu tại Đông Nam Á, đóng vai trò như bể chứa carbon tự nhiên khổng lồ và bức tường chắn sóng bão bảo vệ khu vực phía Nam. Tuy nhiên, việc theo dõi diễn biến sinh thái trên diện tích rừng ngập nước rộng lớn gặp nhiều trở ngại khắc nghiệt: chế độ bán nhật triều với biên độ lên tới 4 mét, mạng lưới rễ đước chằng chịt, độ ẩm mặn cao và sự biến động phức tạp của tán rừng. Các phương pháp điều tra lâm nghiệp truyền thống bằng ô tiêu chuẩn định kỳ không thể phát hiện kịp thời hiện tượng suy giảm độ che phủ hay suy thoái cục bộ.
+
+Dự án được chủ trì bởi Chủ nhiệm đề tài (PI) là **PGS. TS. Phan Thị Thục Anh** (Phó Hiệu trưởng VinUniversity, Giám đốc Điều hành Trung tâm GREEN-X), cùng Đồng chủ nhiệm đề tài (Co-PI) **Đinh Văn Dũng**. Kiến trúc kỹ thuật và hệ thống viễn thông do Trưởng nhóm kỹ thuật kiêm Trợ lý nghiên cứu **Phạm Minh Hoàng** cùng các trợ lý nghiên cứu **Nguyễn Ngọc Gia Ninh** và **Nguyễn Xuân Quyền** đảm nhiệm.
 
 Để giải quyết bài toán này, dự án triển khai mô hình quan trắc sinh thái hai giai đoạn đồng bộ:
 1. **Giai đoạn hiện tại:** Vận hành dashboard viễn thám vệ tinh độ phân giải cao để phân tích độ phủ xanh tán rừng, chỉ số sức khỏe thực vật và xu hướng biến động theo chuỗi thời gian.
