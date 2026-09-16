@@ -12,7 +12,13 @@ people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung]
 publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
 technologies: [Python, PyTorch, Computer Vision, ESP32, MQTT, PostgreSQL, MinIO, Docker]
-organizations: [VinUniversity, VINIF, NAFOSTED]
+organizations: [
+  "Smart Green Transformation Center (GREEN-X) - VinUniversity",
+  "VINIF Innovation Foundation",
+  "NAFOSTED",
+  "Học viện Nông nghiệp Việt Nam (VNUA)",
+  "Viện Nghiên cứu Nuôi trồng Thủy sản (RIA)"
+]
 ---
 
 ## The Field Challenge

@@ -12,7 +12,13 @@ people: [pham-minh-hoang, dinh-van-dung, pham-huy-hieu, phung-manh-duong]
 publications: [edge-deadline-rl]
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]
 technologies: [ESP32, Water Quality Sensing, MQTT, Linux, Docker, Microclimate Sensors]
-organizations: [VinUniversity, VINIF, NAFOSTED]
+organizations: [
+  "Smart Green Transformation Center (GREEN-X) - VinUniversity",
+  "VINIF Innovation Foundation",
+  "NAFOSTED",
+  "Ban Quản lý Vịnh Nha Trang",
+  "Trường Đại học Nha Trang (NTU)"
+]
 ---
 
 ## The Conservation Challenge

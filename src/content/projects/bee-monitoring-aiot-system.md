@@ -13,7 +13,11 @@ people: [pham-minh-hoang, vu-hai, pham-hong-thai]
 publications: []
 relatedProjects: []
 technologies: [Python, Computer Vision, ESP32, MQTT, Backend Services]
-organizations: [Ministry of Agriculture and Rural Development of Vietnam]
+organizations: [
+  "Đại học Bách khoa Hà Nội (HUST)",
+  "Học viện Nông nghiệp Việt Nam (VNUA)",
+  "Bộ Nông nghiệp và Phát triển Nông thôn (MARD)"
+]
 ---
 
 ## The Apiary Health Challenge

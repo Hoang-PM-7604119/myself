@@ -12,7 +12,10 @@ people: [pham-minh-hoang, dinh-van-dung]
 publications: []
 relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
 technologies: [ESP32, Raspberry Pi, MQTT, Linux, Docker, VPN Systems]
-organizations: [VinUniversity]
+organizations: [
+  "Smart Green Transformation Center (GREEN-X) - VinUniversity",
+  "Ban Quản lý Rừng phòng hộ, Đặc dụng Thành phố Hồ Chí Minh"
+]
 ---
 
 ## The Biosphere Challenge
