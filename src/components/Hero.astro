@@ -27,6 +27,6 @@ const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
     </div>
   </div>
   <div class="hero-visual">
-    <img src={asset(profile.image)} width="720" height="840" alt={`System diagram and profile mark for ${profile.name}`} />
+    <img src={asset(profile.image)} width="720" height="840" alt={`System diagram and profile mark for ${profile.name}`} fetchpriority="high" decoding="async" />
   </div>
 </section>

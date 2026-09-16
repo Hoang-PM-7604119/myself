@@ -8,7 +8,7 @@ featured: true
 order: 3
 cover: /images/projects/can-gio-mangrove-iot.jpg
 topics: [aiot-environmental-monitoring]
-people: [pham-minh-hoang, dinh-van-dung]
+people: [pham-minh-hoang, dinh-van-dung, nguyen-ngoc-gia-ninh]
 publications: []
 relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
 technologies: [ESP32, Raspberry Pi, MQTT, Linux, Docker, VPN Systems]

@@ -87,17 +87,6 @@ The autonomous monitoring station was securely mounted onto a prominent yellow m
   </figure>
 </div>
 
-<figure>
-  <video controls playsinline preload="metadata" poster="/myself/images/projects/coral-reef/setup-coral-reef-buoy-poster.jpg">
-    <source src="/myself/videos/projects/coral-reef/setup-coral-reef-buoy-nha-trang.mp4" type="video/mp4" />
-    Your browser does not support the video tag.
-  </video>
-  <figcaption>
-    <span data-i18n-en><strong>Video 1: System Setup at Nha Trang Bay Marine Sanctuary</strong> — Autonomous solar telemetry station mounted on the marine navigation beacon operating inside the Nha Trang Bay marine protected area.</span>
-    <span data-i18n-vi><strong>Video 1: Setup hệ thống tại Vịnh Nha Trang</strong> — Trạm quan trắc rạn san hô tự hành gắn trên phao báo hiệu hàng hải vận hành giữa vùng bảo tồn biển Vịnh Nha Trang.</span>
-  </figcaption>
-</figure>
-
 ### 4. Marine Data Acquisition & Aerial Drone Survey
 
 To monitor reef microhabitats and correlate benthic sensor logs with surface environmental indicators, the team conducts aerial drone mapping and underwater optical data acquisition across designated coral conservation transects.
@@ -118,8 +107,8 @@ Aerial imaging provides broad-scale reef canopy visualization, mapping spatial c
     Your browser does not support the video tag.
   </video>
   <figcaption>
-    <span data-i18n-en><strong>Video 2: Marine Data Collection & Drone Survey</strong> — Aerial footage tracking the expedition boat and underwater sensor deployment across the Nha Trang Bay coral reef conservation zone.</span>
-    <span data-i18n-vi><strong>Video 2: Thu thập dữ liệu thực địa & Khảo sát drone</strong> — Video flycam theo dõi hoạt động thu thập dữ liệu môi trường và thả đầu dò ngầm trên khu bảo tồn san hô Vịnh Nha Trang.</span>
+    <span data-i18n-en><strong>Video 1: Marine Data Collection & Drone Survey</strong> — Aerial footage tracking the expedition boat and underwater sensor deployment across the Nha Trang Bay coral reef conservation zone.</span>
+    <span data-i18n-vi><strong>Video 1: Thu thập dữ liệu thực địa & Khảo sát drone</strong> — Video flycam theo dõi hoạt động thu thập dữ liệu môi trường và thả đầu dò ngầm trên khu bảo tồn san hô Vịnh Nha Trang.</span>
   </figcaption>
 </figure>
 
