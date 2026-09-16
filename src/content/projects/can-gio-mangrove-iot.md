@@ -6,7 +6,7 @@ start: 2026-01
 status: active
 featured: true
 order: 3
-cover: /images/projects/can-gio-mangrove-iot.svg
+cover: /images/projects/can-gio-mangrove-iot.jpg
 topics: [aiot-environmental-monitoring, edge-ai-embedded-systems]
 people: [pham-minh-hoang, dinh-van-dung]
 publications: []

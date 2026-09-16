@@ -6,7 +6,7 @@ start: 2025-02
 status: active
 featured: true
 order: 1
-cover: /images/projects/smart-marine-aquaculture.svg
+cover: /images/projects/smart-marine-aquaculture.jpg
 topics: [intelligent-sensing-platforms, computer-vision, aiot-environmental-monitoring]
 people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung]
 publications: [clean-cam]
