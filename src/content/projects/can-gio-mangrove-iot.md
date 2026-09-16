@@ -14,7 +14,7 @@ relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
 technologies: [ESP32, Raspberry Pi, MQTT, Linux, Docker, VPN Systems]
 organizations: [
   "Smart Green Transformation Center (GREEN-X), VinUniversity",
-  "Management Board of Protection Forests of Ho Chi Minh City"
+  "Ho Chi Minh City Management Board for Protection and Special-Use Forests"
 ]
 ---
 
