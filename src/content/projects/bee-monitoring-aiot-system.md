@@ -36,6 +36,16 @@ The appliance was engineered to mount directly onto standardized modern multi-ti
 - **Resilient MQTT Telemetry Bridge:** Low-bandwidth, high-reliability MQTT messaging pipeline transferring compressed telemetry over intermittent cellular connectivity.
 - **Central Relational Data Service:** SQLite-powered backend managing structured tables for hive metadata (`hives`), traffic counts (`bee`), hardware health metrics (`device_status`), and environmental logs (`temphum`).
 
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/system-architecture.png" alt="Bee Health Monitoring AIoT System Architecture Diagram" loading="lazy" />
+  <figcaption><strong>Figure 1:</strong> End-to-end AIoT system architecture connecting edge video processing nodes via MQTT to central database, web management platform, and cross-platform mobile application.</figcaption>
+</figure>
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/hardware-installation.png" alt="Hardware Installation on Multi-tier Beehive" loading="lazy" />
+  <figcaption><strong>Figure 2:</strong> Physical hardware assembly mounted on standardized multi-tier beehives ("thùng kế"), featuring Sony IMX477 HQ camera with CS lens, edge processing unit, and diffuse lighting canopy.</figcaption>
+</figure>
+
 ## Edge AI Vision: Real-Time Bee Counting with YOLOv5
 
 To accurately monitor colony activity without disrupting natural worker bee behavior, an optimized **YOLOv5** deep learning model was trained to track and count individual bees entering and exiting the hive:
@@ -43,6 +53,16 @@ To accurately monitor colony activity without disrupting natural worker bee beha
 - **High Sensitivity:** Achieved a **97.0% sensitivity rate** in detecting rapidly moving worker bees under varying outdoor lighting conditions.
 - **Minimal False Alarms:** Maintained an ultra-low **0.56% false alarm rate**, filtering out shadows, background flight board artifacts, and dense clustering.
 - **Continuous Traffic Curves:** Provided entomologists with high-frequency activity curves distinguishing morning foraging bursts from evening return patterns.
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/ai-yolov5-detection.png" alt="YOLOv5 Bee Counting Model Architecture and Detection Results" loading="lazy" />
+  <figcaption><strong>Figure 3:</strong> YOLOv5 neural network architecture and real-time bounding box detection validating 97.0% sensitivity and 0.56% false alarm rate under intense entrance traffic.</figcaption>
+</figure>
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/live-stream-monitoring.png" alt="Real-time Stream and Bee Count Monitoring" loading="lazy" />
+  <figcaption><strong>Figure 4:</strong> Real-time camera feed ingestion and automated entrance counting interface hosted on MICA Institute infrastructure.</figcaption>
+</figure>
 
 ## Cloud Dashboard, Mobile App & Device Health Automation
 
@@ -52,6 +72,16 @@ To support field beekeepers and entomologists across distributed apiary sites, a
 - **Cross-Platform Mobile Application:** Built using Google Flutter and Dart, allowing beekeepers to receive push alerts, monitor live counts, and review individual hive microclimates on Android and iOS devices.
 - **Automated Hardware Watchdog:** Automated device diagnostics logging CPU core temperature, RAM usage, and camera stream status, with an automated 15-minute polling heartbeat that triggers alert notifications if a field node loses connectivity.
 
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/web-dashboard.png" alt="Web Monitoring Platform Dashboard" loading="lazy" />
+  <figcaption><strong>Figure 5:</strong> Central web dashboard displaying real-time bee traffic trends, temperature/humidity time-series curves, and hardware health metrics.</figcaption>
+</figure>
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/mobile-app.png" alt="Cross-Platform Flutter Mobile Application Interface" loading="lazy" />
+  <figcaption><strong>Figure 6:</strong> Flutter cross-platform mobile application interface providing beekeepers with push alerts, live counting statistics, and remote hive diagnostics.</figcaption>
+</figure>
+
 ## Practical Field Deployment & Long-Term Results
 
 The system transitioned from laboratory prototypes into long-term agricultural operations across Vietnam:
@@ -59,6 +89,11 @@ The system transitioned from laboratory prototypes into long-term agricultural o
 - **4 Operational Field Installations:** 3 complete AIoT monitoring units deployed at commercial honeybee farms in **Đắk Lắk province**, and 1 reference unit installed at the **Center for Tropical Bee Research and Beekeeping** (VNUA, Gia Lâm, Hanoi).
 - **4+ Months Continuous Operation:** Validated hardware durability, thermal stability, and sensor calibration across multi-month field operations during monsoon and peak harvest seasons.
 - **Scientific & Practical Impact:** Demonstrated the feasibility of cost-effective edge computer vision and IoT telemetry in rural tropical agriculture, laying architectural foundations for subsequent environmental AIoT research.
+
+<figure>
+  <img src="/myself/images/projects/bee-monitoring/field-deployment.png" alt="Field Deployment in Dak Lak and VNUA Bee Research Center" loading="lazy" />
+  <figcaption><strong>Figure 7:</strong> Long-term field trials across commercial apiaries in Đắk Lắk and the Center for Tropical Bee Research and Beekeeping (VNUA) verifying continuous 4+ months outdoor reliability.</figcaption>
+</figure>
 
 ## Project Video Demonstration
 
