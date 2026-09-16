@@ -8,7 +8,7 @@ featured: true
 order: 1
 cover: /images/projects/smart-marine-aquaculture.jpg
 topics: [aiot-environmental-monitoring]
-people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung, phan-tuan-khoi, nguyen-thanh-trung, nguyen-hong-phuc, trinh-cong-son]
+people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung, phan-tuan-khoi, nguyen-thanh-trung, nguyen-hong-phuc, trinh-cong-son, nguyen-xuan-quyen]
 publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
 technologies: [Python, PyTorch, Computer Vision, ESP32, MQTT, PostgreSQL, MinIO, Docker]
