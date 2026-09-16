@@ -104,7 +104,6 @@ Technologies:
 Organizations:
 - VinUniversity
 - VINIF
-- NAFOSTED
 
 ### Project 2
 
@@ -231,7 +230,7 @@ Dates:
 2025-02 to present
 
 Summary:
-Coordinates environmental-monitoring AIoT projects funded by VINIF and NAFOSTED, leading student and RA teams across embedded devices, backend services, sensing infrastructure, and deployment systems.
+Coordinates environmental-monitoring AIoT projects funded by VINIF, leading student and RA teams across embedded devices, backend services, sensing infrastructure, and deployment systems.
 
 ### Industry Role
 

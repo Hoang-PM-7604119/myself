@@ -15,7 +15,6 @@ technologies: [ESP32, Water Quality Sensing, MQTT, Linux, Docker, Microclimate S
 organizations: [
   "Smart Green Transformation Center (GREEN-X) - VinUniversity",
   "VINIF Innovation Foundation",
-  "NAFOSTED",
   "Ban Quản lý Vịnh Nha Trang",
   "Trường Đại học Nha Trang (NTU)"
 ]

@@ -1,6 +1,6 @@
 ---
 title: Coordinating environmental-monitoring AIoT projects at VinUniversity
-description: Technical leadership across deployable sensing systems funded by VINIF and NAFOSTED.
+description: Technical leadership across deployable sensing systems funded by VINIF.
 date: 2025-07-08
 category: general
 featured: true

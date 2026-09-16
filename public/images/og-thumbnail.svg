@@ -123,7 +123,7 @@
     <!-- Footer metadata inside blueprint frame -->
     <g transform="translate(30, 365)">
       <text x="0" y="20" fill="#e8f4ef" font-family="'IBM Plex Mono', monospace" font-size="15" font-weight="700">FIELD RESEARCH STACK</text>
-      <text x="0" y="44" fill="#72e0c7" font-family="'IBM Plex Mono', monospace" font-size="13" font-weight="500">VINIF &bull; NAFOSTED &bull; MARD</text>
+      <text x="0" y="44" fill="#72e0c7" font-family="'IBM Plex Mono', monospace" font-size="13" font-weight="500">VINIF &bull; MARD</text>
       <text x="0" y="68" fill="#669187" font-family="'IBM Plex Mono', monospace" font-size="12">Hanoi, Vietnam</text>
     </g>
   </g>
