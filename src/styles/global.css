@@ -427,6 +427,7 @@ section,
   overflow: hidden;
   box-shadow: var(--shadow-soft);
   backdrop-filter: blur(14px);
+  contain: layout;
 }
 
 .signal-strip span {
@@ -453,13 +454,15 @@ section,
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
   flex-shrink: 0;
   animation: pulse-beacon 2.5s ease-in-out infinite;
+  will-change: transform, opacity;
 }
 
 @keyframes pulse-beacon {
   0%, 100% { opacity: 0.35; transform: scale(0.85); }
-  50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 6px var(--accent); }
+  50% { opacity: 1; transform: scale(1.25); }
 }
 
 .hero-visual {
@@ -1152,6 +1155,8 @@ footer small { grid-column: 1 / -1; }
   height: 7px;
   border-radius: 50%;
   background: var(--accent);
+  box-shadow: 0 0 5px var(--accent);
+  will-change: transform, opacity;
   animation: pulse-beacon 2s ease-in-out infinite;
 }
 

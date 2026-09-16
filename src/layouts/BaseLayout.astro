@@ -29,7 +29,17 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
   <link rel="canonical" href={canonical} /><link rel="alternate" type="application/rss+xml" title={`${site.name} news`} href={asset('/rss.xml')} />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Newsreader:opsz,wght@6..72,450;6..72,560;6..72,650&family=Spline+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Newsreader:opsz,wght@6..72,450;6..72,560;6..72,650&family=Spline+Sans:wght@400;500;600;700&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Newsreader:opsz,wght@6..72,450;6..72,560;6..72,650&family=Spline+Sans:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500;600;700&family=Newsreader:opsz,wght@6..72,450;6..72,560;6..72,650&family=Spline+Sans:wght@400;500;600;700&display=swap" />
+  </noscript>
+  {(currentPath === normalizePath('/') || currentPath === basePath || currentPath === `${basePath}/`) && (
+    <>
+      <link rel="preload" as="image" href={asset('/images/profile/minh-hoang-pham-mobile.webp')} type="image/webp" media="(max-width: 640px)" fetchpriority="high" />
+      <link rel="preload" as="image" href={asset('/images/profile/minh-hoang-pham.webp')} type="image/webp" media="(min-width: 641px)" fetchpriority="high" />
+    </>
+  )}
   <meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={absoluteImage} />
   <meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content={theme.accent} />
   <script type="application/ld+json" set:html={JSON.stringify(article ?? personLd)} />
