@@ -934,6 +934,18 @@ footer small { grid-column: 1 / -1; }
   line-height: 1.4;
 }
 
+.figure-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin: 2.2rem 0;
+  align-items: start;
+}
+
+.figure-grid figure {
+  margin: 0;
+}
+
 .project-cover {
   width: 100%;
   border-radius: var(--radius);
