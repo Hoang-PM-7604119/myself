@@ -9,6 +9,7 @@
     "check": "astro check",
     "validate:content": "tsx scripts/validate-content.ts",
     "build": "astro build",
+    "preview": "astro preview",
     "test:links": "tsx scripts/test-links.ts",
     "quality": "npm run check && npm run validate:content && npm run build && npm run test:links"
   },

@@ -1,44 +1,68 @@
 - id: vinuni
   role: Research Assistant and Technical Lead
+  role_vi: Trợ lý Nghiên cứu & Trưởng nhóm Kỹ thuật
   organization: Smart Green Transformation Center (GREEN-X) - VinUniversity
+  organization_vi: Trung tâm Chuyển đổi Xanh Thông minh (GREEN-X) - VinUniversity
   type: University
+  type_vi: Viện / Trường Đại học
   location: Hanoi, Vietnam
   start: 2025-02
   present: true
   summary: Coordinated three environmental-monitoring AIoT projects funded by VINIF, serving as technical lead for student and RA teams developing embedded devices, backend services, sensing infrastructure, and deployment systems.
+  summary_vi: Điều phối 3 dự án AIoT giám sát môi trường do Quỹ Đổi mới sáng tạo Vingroup (VINIF) tài trợ, giữ vai trò trưởng nhóm kỹ thuật hướng dẫn sinh viên và trợ lý nghiên cứu phát triển thiết bị nhúng, dịch vụ backend, hạ tầng cảm biến và vận hành thực địa.
   achievements:
     - Coordinated three environmental-monitoring AIoT projects funded by VINIF
     - Served as technical lead for student and RA teams developing embedded devices, backend services, sensing infrastructure, and deployment systems
     - Designed end-to-end architectures covering edge devices, communications, cloud infrastructure, and data management
     - Managed technical planning, task allocation, system integration, and deployment readiness for field operations
+  achievements_vi:
+    - Điều phối 3 dự án nghiên cứu và phát triển AIoT giám sát môi trường tài trợ bởi VINIF
+    - Giữ vai trò Trưởng nhóm kỹ thuật cho các nhóm sinh viên và trợ lý nghiên cứu phát triển thiết bị nhúng, dịch vụ backend và hạ tầng cảm biến
+    - Thiết kế kiến trúc toàn diện từ thiết bị biên, mạng truyền thông đến hạ tầng đám mây và quản trị dữ liệu
+    - Quản lý kế hoạch kỹ thuật, phân bổ nhiệm vụ, tích hợp hệ thống và chuẩn bị vận hành thực địa
   relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
   relatedPublications: [clean-cam, edge-deadline-rl]
 - id: samsung-display
   role: Engineer I
+  role_vi: Kỹ sư R&D (Engineer I)
   organization: Samsung Display Vietnam
+  organization_vi: Công ty TNHH Samsung Display Việt Nam
   type: Industry
+  type_vi: Doanh nghiệp
   location: Vietnam
   start: 2024-07
   end: 2025-02
   summary: Developed computer-vision solutions for OLED defect inspection and integrated deep-learning models into real-time manufacturing pipelines.
+  summary_vi: Phát triển các giải pháp thị giác máy tính phục vụ phát hiện lỗi màn hình OLED và tích hợp mô hình học sâu vào dây chuyền sản xuất công nghiệp theo thời gian thực.
   achievements:
     - Developed computer-vision solutions for OLED defect inspection
     - Integrated deep-learning models into real-time manufacturing pipelines
     - Optimized machine-vision workflows to improve inspection efficiency
+  achievements_vi:
+    - Phát triển các thuật toán thị giác máy tính phục vụ kiểm tra lỗi bề mặt và cấu trúc màn hình OLED
+    - Tích hợp mô hình học sâu vào hệ thống kiểm thử dây chuyền sản xuất tự động thời gian thực
+    - Tối ưu hóa quy trình machine vision nâng cao tốc độ và độ chính xác kiểm tra
   relatedProjects: []
   relatedPublications: []
 - id: hust
   role: Research Assistant & Student Researcher
+  role_vi: Trợ lý Nghiên cứu & Sinh viên Nghiên cứu
   organization: Hanoi University of Science and Technology
+  organization_vi: Đại học Bách khoa Hà Nội
   type: University
+  type_vi: Trường Đại học
   location: Hanoi, Vietnam
   start: 2020-07
   end: 2024-09
   summary: Studied electronic and telecommunication engineering with research affiliations at AICS Laboratory and MICA Institute, leading AIoT hive monitoring systems.
+  summary_vi: Tốt nghiệp Kỹ sư Kỹ thuật Điện tử - Viễn thông, nghiên cứu tại Lab AICS và Viện Nghiên cứu Quốc tế MICA, chủ trì đề tài nghiên cứu hệ thống AIoT giám sát đàn ong.
   achievements:
     - Bachelor of Electronic and Telecommunication Engineering with research affiliations at AICS Laboratory and MICA Institute
     - Coordinated a multidisciplinary student team responsible for embedded devices, backend services, and computer-vision modules
     - Developed an AIoT platform for hive monitoring, bee counting, and environmental sensing funded by the Ministry of Agriculture and Rural Development of Vietnam
+  achievements_vi:
+    - Tốt nghiệp Kỹ sư Điện tử - Viễn thông loại Giỏi, nghiên cứu tại Lab AICS và Viện MICA
+    - Điều phối nhóm nghiên cứu sinh viên đa ngành phụ trách phát triển thiết bị nhúng, dịch vụ backend và mô-đun thị giác máy tính
+    - Phát triển nền tảng AIoT giám sát đàn ong, đếm lượt ong và quan trắc vi khí hậu thùng nuôi trong đề tài nghiên cứu của Bộ Nông nghiệp & PTNT
   relatedProjects: [bee-monitoring-aiot-system]
   relatedPublications: [secure-multiuser-stacked-metasurfaces]
-

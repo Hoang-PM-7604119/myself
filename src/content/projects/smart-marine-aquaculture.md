@@ -1,6 +1,8 @@
 ---
 title: Smart Marine Aquaculture – Nha Trang
+title_vi: Nuôi biển thông minh – Nha Trang
 description: Field-deployable embedded systems, servers, underwater imaging, bioacoustics, and water-quality sensing infrastructure for smart marine aquaculture in Nha Trang.
+description_vi: Hệ thống nhúng thực địa, máy chủ, thị giác dưới nước, âm thanh sinh học và hạ tầng quan trắc 5 chỉ số chất lượng nước phục vụ nuôi biển thông minh tại Nha Trang.
 date: 2025-02-01
 start: 2025-02
 status: active
@@ -19,11 +21,23 @@ organizations: [
 ]
 ---
 
-## The Field Challenge
+## <span data-i18n-en>The Field Challenge</span><span data-i18n-vi>Thách thức từ thực địa</span>
+
+<div data-i18n-en>
 
 Smart marine aquaculture in coastal waters near Nha Trang presents harsh environmental constraints that disrupt traditional manual monitoring. High water turbidity, rapid biofouling on optical viewports, corrosive saline conditions, and remote offshore power constraints severely challenge standard equipment. Sustainable offshore farming requires continuous, automated insight into water chemistry, underwater acoustics, and fish behavior without manual diving.
 
-## Embedded System Architecture: 3 Sensing Modalities & Integrated AI
+</div>
+
+<div data-i18n-vi>
+
+Nuôi trồng thủy sản biển tại vùng duyên hải Nha Trang đặt ra nhiều thách thức khắc nghiệt khiến các phương pháp giám sát thủ công truyền thống không còn đáp ứng được. Độ đục cao của nước, hiện tượng sinh vật bám (biofouling) nhanh chóng lên ống kính quang học, môi trường nước mặn ăn mòn mạnh cùng nguồn điện ngoài khơi hạn chế tạo áp lực lớn lên các thiết bị phần cứng tiêu chuẩn. Để phát triển nuôi biển bền vững, cần có giải pháp tự động hóa liên tục nhằm thu thập dữ liệu hóa lý nước, âm thanh dưới nước và hành vi đàn cá mà không cần thợ lặn trực tiếp.
+
+</div>
+
+## <span data-i18n-en>Embedded System Architecture: 3 Sensing Modalities & Integrated AI</span><span data-i18n-vi>Kiến trúc hệ thống nhúng: 3 phương thức cảm biến & Tích hợp AI</span>
+
+<div data-i18n-en>
 
 To provide continuous, end-to-end monitoring for offshore aquaculture operations, the research team engineered an integrated embedded hardware platform combining three primary sensing modalities coupled with edge AI algorithms:
 
@@ -33,15 +47,51 @@ To provide continuous, end-to-end monitoring for offshore aquaculture operations
 - **Applied Artificial Intelligence (AI):** Edge AI models (PyTorch, YOLO) and signal processing algorithms analyze video and acoustic streams on-site, converting raw high-bandwidth sensor feeds into actionable operational insights, feeding schedule optimizations, and early disease/stress warnings.
 - **Robust Telemetry & Server Infrastructure:** Encrypted MQTT pipelines stream metadata and filtered frames to edge servers, backed by PostgreSQL time-series storage, MinIO media buckets, and live operational dashboards.
 
-## Evolution of Field Deployments: From Laboratory to Open Ocean
+</div>
+
+<div data-i18n-vi>
+
+Nhằm cung cấp giải pháp giám sát toàn diện, liên tục cho các cơ sở nuôi biển, nhóm nghiên cứu đã thiết kế nền tảng phần cứng nhúng tích hợp kết hợp 3 phương thức cảm biến chủ đạo cùng các thuật toán trí tuệ nhân tạo (AI):
+
+- **1. Cảm biến hình ảnh dưới nước (Thị giác máy tính):** Hệ thống camera ngầm chống nước ghi lại luồng hình ảnh và video độ phân giải cao trong điều kiện ánh sáng dưới nước phức tạp. Các mô hình thị giác nhúng quan sát liên tục sinh khối cá, mật độ đàn, quỹ đạo bơi và tự động đánh giá mức độ bám bẩn sinh học trên kính quan sát theo thời gian thực.
+- **2. Cảm biến âm thanh dưới nước (Thủy âm sinh học):** Đầu thu sóng âm ngầm (hydrophone) thu nhận trường âm thanh và dao động tần số dưới nước. Mô hình AI phân tích tín hiệu âm thanh đớp mồi, va chạm thức ăn viên và âm thanh chuyển động để định lượng mức độ thèm ăn và phản xạ ăn của đàn cá theo thời gian thực.
+- **3. Đo đạc 5 chỉ số chất lượng nước quan trọng:** Cụm đầu dò chuẩn công nghiệp liên tục đo đạc 5 thông số hóa lý thiết yếu: **Oxy hòa tan (DO)**, **pH**, **Nhiệt độ nước**, **Độ mặn** và **Độ đục**, giúp cảnh báo sớm nguy cơ thiếu oxy cục bộ hoặc sốc môi trường.
+- **Ứng dụng Trí tuệ Nhân tạo (AI):** Các mô hình AI biên (PyTorch, YOLO) và giải thuật xử lý tín hiệu phân tích trực tiếp luồng video và âm thanh tại trạm, chuyển hóa dữ liệu cảm biến thô thành cảnh báo tức thời, tối ưu hóa chu kỳ cho ăn và phát hiện sớm dấu hiệu căng thẳng hoặc dịch bệnh ở đàn cá.
+- **Hạ tầng viễn thông & Máy chủ tin cậy:** Giao thức truyền tin mã hóa MQTT chuyển tiếp siêu dữ liệu và hình ảnh chắt lọc về máy chủ biên, lưu trữ chuỗi thời gian trên PostgreSQL, lưu tệp đa phương tiện trên MinIO và hiển thị trực quan qua dashboard điều hành thời gian thực.
+
+</div>
+
+## <span data-i18n-en>Evolution of Field Deployments: From Laboratory to Open Ocean</span><span data-i18n-vi>Hành trình thử nghiệm thực địa: Từ phòng thí nghiệm ra biển lớn</span>
+
+<div data-i18n-en>
 
 The system underwent an iterative four-phase engineering trajectory, validating hardware resilience, fluidics, and telemetry across diverse aquaculture environments:
 
-### Phase 1: Laboratory Benchmarking & Multiplexed Fluidics at VNUA (Hanoi)
+</div>
+
+<div data-i18n-vi>
+
+Hệ thống đã trải qua quy trình nghiên cứu thực địa 4 giai đoạn nối tiếp nhau, hoàn thiện dần từ khả năng chống chịu phần cứng, cơ chế tuần hoàn mẫu nước đến độ tin cậy viễn thông qua nhiều môi trường nuôi thực tế:
+
+</div>
+
+### <span data-i18n-en>Phase 1: Laboratory Benchmarking & Multiplexed Fluidics at VNUA (Hanoi)</span><span data-i18n-vi>Giai đoạn 1: Đánh giá phòng thí nghiệm & Hệ thống thủy lực đa kênh tại VNUA (Hà Nội)</span>
+
+<div data-i18n-en>
 
 Development began at the Vietnam National University of Agriculture (VNUA), where controlled multi-tank environments allowed precise calibration of optical sensors and water quality instrumentation. 
 
 To overcome the high cost of duplicating industrial probes across multiple tanks, the team engineered a custom fluidic manifold box. Using automated solenoid valve cycling, a single high-precision sensing chamber could cyclically sample distinct water tanks in sequence, with automated freshwater flush cycles to prevent cross-contamination.
+
+</div>
+
+<div data-i18n-vi>
+
+Quá trình phát triển khởi đầu tại Học viện Nông nghiệp Việt Nam (VNUA), nơi hệ thống bể nuôi trong phòng thí nghiệm cho phép hiệu chuẩn chính xác các cảm biến quang học và cụm đầu dò chất lượng nước trong môi trường kiểm soát.
+
+Để giải quyết bài toán chi phí khi phải nhân bản đầu dò công nghiệp đắt tiền cho từng bể nuôi, nhóm đã chế tạo hộp phân luồng thủy lực chuyên dụng. Cơ chế đóng mở van điện từ tuần tự cho phép một buồng đo cảm biến duy nhất lấy mẫu quay vòng từ nhiều bể khác nhau, kết hợp chu trình rửa nước sạch tự động để loại bỏ nhiễm chéo giữa các bể.
+
+</div>
 
 <div class="figure-grid">
   <figure>
@@ -60,11 +110,23 @@ To overcome the high cost of duplicating industrial probes across multiple tanks
   </figure>
 </div>
 
-### Phase 2: Pilot Raceway Hardening at RIA 1 (Hai Phong)
+### <span data-i18n-en>Phase 2: Pilot Raceway Hardening at RIA 1 (Hai Phong)</span><span data-i18n-vi>Giai đoạn 2: Thử nghiệm hoàn thiện tại bể nuôi RIA 1 (Hải Phòng)</span>
+
+<div data-i18n-en>
 
 Moving beyond benchtop testing, the prototype was deployed at the Research Institute for Aquaculture No. 1 (RIA 1) in Hai Phong. This phase tested the system inside operational concrete raceways and indoor breeding pools under high-humidity, saline aerosol conditions.
 
 The team validated continuous underwater camera telemetry, watertight cable pass-throughs, and real-time data streaming to the central GREEN-X cloud dashboard, isolating and resolving ground-loop electrical noise caused by high-power water aerators.
+
+</div>
+
+<div data-i18n-vi>
+
+Bước ra khỏi phòng thí nghiệm, nguyên mẫu hệ thống được triển khai thử nghiệm thực tế tại Viện Nghiên cứu Nuôi trồng Thủy sản 1 (RIA 1) tại Hải Phòng. Giai đoạn này thử thách thiết bị trong môi trường bể xi măng nuôi cá thương phẩm với độ ẩm bão hòa và bụi sương muối đặc trưng.
+
+Nhóm nghiên cứu đã kiểm chứng tính ổn định của luồng dữ liệu camera ngầm, độ kín nước của các giắc nối hàng hải và khả năng đẩy dữ liệu trực tiếp về dashboard GREEN-X, đồng thời xử lý triệt để hiện tượng nhiễu vòng mass do dàn quạt sục khí công suất lớn gây ra.
+
+</div>
 
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage2-ria1-indoor-aquaculture.jpg" alt="Indoor concrete raceway at RIA 1 Hai Phong" loading="lazy" />
@@ -91,11 +153,23 @@ The team validated continuous underwater camera telemetry, watertight cable pass
   </figure>
 </div>
 
-### Phase 3: Offshore Floating Sea-Cage Deployment at Nha Phu Bay (Nha Trang)
+### <span data-i18n-en>Phase 3: Offshore Floating Sea-Cage Deployment at Nha Phu Bay (Nha Trang)</span><span data-i18n-vi>Giai đoạn 3: Triển khai lồng bè nổi ngoài khơi tại Vịnh Nha Phu (Nha Trang)</span>
+
+<div data-i18n-en>
 
 The true test of marine resilience took place in the open waters of Nha Phu Bay, Khanh Hoa province. Here, commercial fish cages float kilometers offshore, subjected to tidal currents, heavy wave swells, salt spray, and tropical sunlight.
 
 To ensure total self-sufficiency, the team engineered a dual-solar-powered station equipped with high-capacity lithium iron phosphate (LiFePO4) battery buffering and high-gain 4G/LTE cellular communications. The installation operated autonomously on the floating wooden platform, continuously beaming environmental parameters to mainland servers.
+
+</div>
+
+<div data-i18n-vi>
+
+Bài kiểm tra khắc nghiệt nhất diễn ra trên vùng nước mở thuộc Vịnh Nha Phu, tỉnh Khánh Hòa. Tại đây, các lồng bè nuôi cá biển thương phẩm cách bờ hàng cây số, thường xuyên chịu tác động của dòng chảy thủy triều, sóng biển dập dềnh, bụi muối và nắng gắt nhiệt đới.
+
+Để đảm bảo vận hành độc lập hoàn toàn, nhóm kỹ thuật đã phát triển trạm quan trắc dùng nguồn năng lượng mặt trời kép, tích hợp khối pin lưu trữ LiFePO4 dung lượng lớn và ăng-ten 4G/LTE chuyên dụng. Trạm vận hành tự hành trên bè gỗ ngoài khơi, liên tục phát dữ liệu môi trường về máy chủ đất liền.
+
+</div>
 
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage3-nhaphu-floating-cages.jpg" alt="Offshore floating sea cages in Nha Phu Bay with solar station" loading="lazy" />
@@ -124,18 +198,30 @@ To ensure total self-sufficiency, the team engineered a dual-solar-powered stati
   </figcaption>
 </figure>
 
-### Phase 4: Circular Outdoor Tanks & Bioacoustics at RIA 3 (Nha Trang)
+### <span data-i18n-en>Phase 4: Circular Outdoor Tanks & Bioacoustics at RIA 3 (Nha Trang)</span><span data-i18n-vi>Giai đoạn 4: Bể nuôi tròn ngoài trời & Thủy âm sinh học tại RIA 3 (Nha Trang)</span>
+
+<div data-i18n-en>
 
 In the final operational stage, the infrastructure was installed at the Research Institute for Aquaculture No. 3 (RIA 3) in Nha Trang across large outdoor circular aquaculture pools. 
 
 This installation unified environmental telemetry with underwater bioacoustic monitoring. An industrial embedded processing unit and dedicated multi-channel audio interface were integrated into the outdoor weatherproof enclosure, enabling real-time hydrophone signal capture to study fish feeding sounds and swimming dynamics in correlation with water quality fluctuations.
 
+</div>
+
+<div data-i18n-vi>
+
+Ở giai đoạn vận hành mới nhất, hạ tầng thiết bị đã được lắp đặt tại Viện Nghiên cứu Nuôi trồng Thủy sản III (RIA 3) tại Nha Trang trên các bể nuôi cá tròn ngoài trời quy mô lớn.
+
+Cụm lắp đặt này hợp nhất quan trắc môi trường với nghiên cứu thủy âm sinh học dưới nước. Một bộ máy tính nhúng công nghiệp cùng card thu âm thanh đa kênh chuyên dụng được tích hợp trong tủ chịu thời tiết ngoài trời, cho phép thu tín hiệu thủy âm (hydrophone) theo thời gian thực để nghiên cứu tiếng đớp mồi và hoạt động bơi lội tương ứng với biến động chất lượng nước.
+
+</div>
+
 <div class="figure-grid">
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-system-assembly.jpg" alt="System assembly and wiring at RIA 3 by Phan Tuan Khoi" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 8:</strong> Co-researcher Phan Tuan Khoi assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
-      <span data-i18n-vi><strong>Hình 8:</strong> Cộng sự Phan Tuấn Khởi hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
+      <span data-i18n-en><strong>Figure 8:</strong> Co-researcher Nguyen Xuan Quyen assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
+      <span data-i18n-vi><strong>Hình 8:</strong> Cộng sự Nguyễn Xuân Quyền hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
     </figcaption>
   </figure>
   <figure>
@@ -158,8 +244,20 @@ This installation unified environmental telemetry with underwater bioacoustic mo
   </figcaption>
 </figure>
 
-## Technical Contributions & Open Science
+## <span data-i18n-en>Technical Contributions & Open Science</span><span data-i18n-vi>Đóng góp kỹ thuật & Khoa học mở</span>
+
+<div data-i18n-en>
 
 - **Field-Tested Marine AIoT:** Demonstrated sustained autonomous operation across indoor raceways, land-based tank farms, and offshore floating sea cages.
 - **Biofouling-Aware Vision:** Designed camera viewport cleanliness assessment algorithms, forming the basis of the published **CleanCam** benchmark dataset.
 - **Multimodal Environmental & Acoustic Sensing:** Fused water-quality time-series with submerged bioacoustic telemetry for proactive aquaculture management.
+
+</div>
+
+<div data-i18n-vi>
+
+- **AIoT biển được chứng thực thực địa:** Chứng minh khả năng vận hành tự hành bền bỉ trên các mô hình bể xi măng trong nhà, hệ thống bể nuôi tròn trên cạn và lồng bè nổi ngoài khơi xa.
+- **Thị giác máy tính nhận diện bám bẩn:** Thiết kế thuật toán đánh giá độ sạch bề mặt kính camera dưới nước, đặt nền tảng cho tập dữ liệu chuẩn công bố quốc tế **CleanCam**.
+- **Cảm biến đa phương thức môi trường & âm thanh:** Kết hợp chuỗi dữ liệu 5 thông số chất lượng nước với dữ liệu thủy âm sinh học để quản lý chủ động quá trình sinh trưởng và cho ăn trong nuôi trồng thủy sản.
+
+</div>

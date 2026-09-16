@@ -1,16 +1,24 @@
 - slug: aiot-environmental-monitoring
   title: AIoT Environmental Monitoring
+  title_vi: Hệ thống AIoT Giám sát Môi trường
   summary: Designing sensing platforms that connect edge devices, communications, backend services, and deployment workflows for long-running field research.
+  summary_vi: Thiết kế các nền tảng cảm biến kết nối thiết bị biên, viễn thông, hạ tầng backend và quy trình vận hành cho nghiên cứu thực địa dài hạn.
   icon: chip
 - slug: computer-vision
   title: Computer Vision Systems
+  title_vi: Hệ thống Thị giác Máy tính
   summary: Building inspection and monitoring pipelines for OLED defect detection, underwater imagery, bee counting, and camera-fouling analysis.
+  summary_vi: "Xây dựng các luồng thị giác máy tính kiểm tra và quan trắc: phát hiện lỗi màn hình OLED, xử lý ảnh dưới nước, đếm ong và phân loại bám bẩn camera."
   icon: pulse
 - slug: edge-ai-embedded-systems
   title: Edge AI and Embedded Systems
+  title_vi: AI Biên và Hệ thống Nhúng
   summary: Bringing PyTorch models, ESP32 and Raspberry Pi devices, MQTT pipelines, and field-ready system architecture into one deployable stack.
+  summary_vi: Tích hợp mô hình học sâu PyTorch, vi điều khiển và máy tính nhúng, đường truyền MQTT và kiến trúc hệ thống thực địa thành một khối đồng bộ.
   icon: network
 - slug: intelligent-sensing-platforms
   title: Intelligent Sensing Platforms
+  title_vi: Nền tảng Cảm biến Thông minh
   summary: Combining water-quality sensing, bioacoustics, underwater imaging, and cloud data infrastructure for biodiversity and aquaculture research.
+  summary_vi: Kết hợp quan trắc chất lượng nước, âm sinh học (bioacoustics), hình ảnh dưới nước và hạ tầng dữ liệu đám mây phục vụ nghiên cứu đa dạng sinh học và nuôi trồng thủy sản.
   icon: shield

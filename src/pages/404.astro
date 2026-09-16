@@ -1,4 +1,5 @@
 ---
 import BaseLayout from '@/layouts/BaseLayout.astro'; const home=import.meta.env.BASE_URL;
 ---
-<BaseLayout title="Page not found"><div class="page"><p class="eyebrow">404</p><h1>This signal went quiet.</h1><p class="lede">The page may have moved, or the link may be incomplete.</p><a class="button primary" href={home}>Return home</a></div></BaseLayout>
+<BaseLayout title="Page not found"><div class="page"><p class="eyebrow">404</p><h1><span data-i18n-en>This signal went quiet.</span><span data-i18n-vi>Trang không tồn tại hoặc đã được di chuyển.</span></h1><p class="lede"><span data-i18n-en>The page may have moved, or the link may be incomplete.</span><span data-i18n-vi>Đường dẫn có thể đã thay đổi hoặc không còn khả dụng.</span></p><a class="button primary" href={home}><span data-i18n-en>Return home</span><span data-i18n-vi>Về trang chủ</span></a></div></BaseLayout>
+

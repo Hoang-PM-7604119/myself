@@ -250,9 +250,9 @@ const stories: Record<string, {
           </span>
         </div>
         <h3 class="story-title">
-          <a href={asset(`/projects/${p.id}/`)}>{p.data.title}</a>
+          <a href={asset(`/projects/${p.id}/`)}><span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span></a>
         </h3>
-        <p class="story-lede">{p.data.description}</p>
+        <p class="story-lede"><span data-i18n-en>{p.data.description}</span><span data-i18n-vi>{p.data.description_vi || p.data.description}</span></p>
       </header>
 
       <div class="story-grid">
@@ -332,7 +332,7 @@ const stories: Record<string, {
               />
             </a>
             <div class="blueprint-caption">
-              <strong>{p.data.title}</strong>
+              <strong><span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span></strong>
               <span data-i18n-en>Field telemetry &bull; {p.data.technologies.slice(0, 4).join(', ')}</span>
               <span data-i18n-vi>Dữ liệu thực địa &bull; {p.data.technologies.slice(0, 4).join(', ')}</span>
             </div>

@@ -1,11 +1,16 @@
 fictional: false
 name: Minh-Hoang Pham
 role: Research Assistant and Technical Lead
+role_vi: Trợ lý Nghiên cứu & Trưởng nhóm Kỹ thuật
 institution: Smart Green Transformation Center (GREEN-X) - VinUniversity
+institution_vi: Trung tâm Chuyển đổi Xanh Thông minh (GREEN-X) - VinUniversity
 location: Hanoi, Vietnam
+location_vi: Hà Nội, Việt Nam
 email: hoangpmh2406@email.com
 phone: "+84 33 883 5784"
 statement: I build deployable AIoT systems for environmental monitoring, computer vision, and intelligent sensing in real field conditions.
+statement_vi: Tôi phát triển các hệ thống AIoT thực địa phục vụ giám sát môi trường, thị giác máy tính và cảm biến thông minh trong điều kiện khắc nghiệt.
 bio: Minh-Hoang Pham is a Research Assistant and Technical Lead with the Smart Green Transformation Center (GREEN-X) at VinUniversity working across AIoT, environmental monitoring, computer vision, edge AI, deep reinforcement learning (DRL), and quantum computing. He leads student and research-assistant teams building deployable sensing platforms for biodiversity conservation, smart aquaculture, mangrove monitoring, and bee monitoring projects.
+bio_vi: Minh-Hoàng Phạm là Trợ lý nghiên cứu và Trưởng nhóm kỹ thuật tại Trung tâm Chuyển đổi Xanh Thông minh (GREEN-X) thuộc Đại học VinUniversity, hoạt động trong các lĩnh vực AIoT, giám sát môi trường, thị giác máy tính, AI biên, học tăng cường sâu (DRL) và điện toán lượng tử. Anh dẫn dắt các nhóm sinh viên và trợ lý nghiên cứu xây dựng các nền tảng cảm biến thực địa phục vụ bảo tồn đa dạng sinh học, nuôi trồng thủy sản thông minh, giám sát rừng ngập mặn và giám sát đàn ong.
 image: /images/profile/minh-hoang-pham.png
 cv: /files/cv/minh-hoang-pham-cv.pdf
