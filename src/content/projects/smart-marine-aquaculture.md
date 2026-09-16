@@ -8,7 +8,7 @@ featured: true
 order: 1
 cover: /images/projects/smart-marine-aquaculture.svg
 topics: [intelligent-sensing-platforms, computer-vision, aiot-environmental-monitoring]
-people: [nguyen-van-dinh]
+people: [pham-minh-hoang, nguyen-van-dinh]
 publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
 technologies: [Python, PyTorch, Computer Vision, ESP32, MQTT, PostgreSQL, MinIO, Docker]

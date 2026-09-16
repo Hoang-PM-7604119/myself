@@ -9,7 +9,7 @@ featured: true
 order: 4
 cover: /images/projects/bee-monitoring-aiot-system.svg
 topics: [aiot-environmental-monitoring, computer-vision, edge-ai-embedded-systems]
-people: []
+people: [pham-minh-hoang]
 publications: []
 relatedProjects: []
 technologies: [Python, Computer Vision, ESP32, MQTT, Backend Services]
