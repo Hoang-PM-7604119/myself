@@ -8,7 +8,7 @@ status: completed
 featured: true
 order: 4
 cover: /images/projects/bee-monitoring-aiot-system.jpg
-topics: [aiot-environmental-monitoring, computer-vision, edge-ai-embedded-systems]
+topics: [aiot-environmental-monitoring]
 people: [pham-minh-hoang, vu-hai, pham-hong-thai]
 publications: []
 relatedProjects: []

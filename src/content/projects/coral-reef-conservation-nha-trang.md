@@ -7,7 +7,7 @@ status: active
 featured: true
 order: 2
 cover: /images/projects/coral-reef-conservation-nha-trang.jpg
-topics: [aiot-environmental-monitoring, intelligent-sensing-platforms]
+topics: [aiot-environmental-monitoring]
 people: [pham-minh-hoang, dinh-van-dung, pham-huy-hieu, phung-manh-duong]
 publications: [edge-deadline-rl]
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]

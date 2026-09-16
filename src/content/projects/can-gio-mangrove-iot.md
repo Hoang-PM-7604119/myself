@@ -7,7 +7,7 @@ status: active
 featured: true
 order: 3
 cover: /images/projects/can-gio-mangrove-iot.jpg
-topics: [aiot-environmental-monitoring, edge-ai-embedded-systems]
+topics: [aiot-environmental-monitoring]
 people: [pham-minh-hoang, dinh-van-dung]
 publications: []
 relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]

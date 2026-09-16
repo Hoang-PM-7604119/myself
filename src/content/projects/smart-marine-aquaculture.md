@@ -7,7 +7,7 @@ status: active
 featured: true
 order: 1
 cover: /images/projects/smart-marine-aquaculture.jpg
-topics: [intelligent-sensing-platforms, computer-vision, aiot-environmental-monitoring]
+topics: [aiot-environmental-monitoring]
 people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung]
 publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
