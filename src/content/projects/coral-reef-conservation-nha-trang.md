@@ -13,10 +13,9 @@ publications: [edge-deadline-rl]
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]
 technologies: [ESP32, Water Quality Sensing, MQTT, Linux, Docker, Microclimate Sensors]
 organizations: [
-  "Smart Green Transformation Center (GREEN-X) - VinUniversity",
-  "VINIF Innovation Foundation",
-  "Ban Quản lý Vịnh Nha Trang",
-  "Trường Đại học Nha Trang (NTU)"
+  "Smart Green Transformation Center (GREEN-X), VinUniversity",
+  "Nha Trang Bay Management Board",
+  "Nha Trang University (NTU)"
 ]
 ---
 

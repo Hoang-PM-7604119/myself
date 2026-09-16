@@ -14,9 +14,8 @@ publications: []
 relatedProjects: []
 technologies: [Python, Computer Vision, ESP32, MQTT, Backend Services]
 organizations: [
-  "Đại học Bách khoa Hà Nội (HUST)",
-  "Học viện Nông nghiệp Việt Nam (VNUA)",
-  "Bộ Nông nghiệp và Phát triển Nông thôn (MARD)"
+  "Hanoi University of Science and Technology (HUST)",
+  "Vietnam National University of Agriculture (VNUA)"
 ]
 ---
 

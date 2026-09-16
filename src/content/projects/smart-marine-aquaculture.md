@@ -13,10 +13,9 @@ publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
 technologies: [Python, PyTorch, Computer Vision, ESP32, MQTT, PostgreSQL, MinIO, Docker]
 organizations: [
-  "Smart Green Transformation Center (GREEN-X) - VinUniversity",
-  "VINIF Innovation Foundation",
-  "Học viện Nông nghiệp Việt Nam (VNUA)",
-  "Viện Nghiên cứu Nuôi trồng Thủy sản (RIA)"
+  "Smart Green Transformation Center (GREEN-X), VinUniversity",
+  "Vietnam National University of Agriculture (VNUA)",
+  "Research Institute for Aquaculture (RIA)"
 ]
 ---
 

@@ -13,8 +13,8 @@ publications: []
 relatedProjects: [smart-marine-aquaculture, coral-reef-conservation-nha-trang]
 technologies: [ESP32, Raspberry Pi, MQTT, Linux, Docker, VPN Systems]
 organizations: [
-  "Smart Green Transformation Center (GREEN-X) - VinUniversity",
-  "Ban Quản lý Rừng phòng hộ, Đặc dụng Thành phố Hồ Chí Minh"
+  "Smart Green Transformation Center (GREEN-X), VinUniversity",
+  "Management Board of Protection Forests of Ho Chi Minh City"
 ]
 ---
 
