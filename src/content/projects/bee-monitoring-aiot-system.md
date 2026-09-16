@@ -17,6 +17,7 @@ organizations: [
   "Hanoi University of Science and Technology (HUST)",
   "Vietnam National University of Agriculture (VNUA)"
 ]
+video: https://www.youtube.com/watch?v=96vREBGUFqM
 ---
 
 ## The Apiary Health Challenge
@@ -43,3 +44,9 @@ Minh-Hoang coordinated the technical execution of a multidisciplinary engineerin
 ## Agricultural Research Outcomes
 
 The project delivered an operational, end-to-end AIoT appliance that proved computer vision can operate continuously in rural agricultural settings without specialized maintenance. The resulting telemetry provided entomologists with fine-grained activity curves, establishing foundational architectures for Minh-Hoang's subsequent environmental sensing platforms.
+
+## Project Video Demonstration
+
+<div class="video-container" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%; margin: 2rem 0; border-radius: var(--radius, 8px);">
+  <iframe src="https://www.youtube-nocookie.com/embed/96vREBGUFqM" title="Bee Monitoring AIoT System Demonstration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>
+</div>
