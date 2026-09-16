@@ -1,10 +1,11 @@
 ---
 title: Pham Hong Thai
-description: Collaborator and researcher on AIoT and intelligent sensing systems.
-role: Collaborator
-organization: VinUniversity
-image: /images/people/default-avatar.svg
+description: Associate Professor & Director of the Center for Tropical Bee Research and Beekeeping, Vietnam National University of Agriculture (VNUA).
+role: Associate Professor & Center Director
+organization: Vietnam National University of Agriculture (VNUA)
+image: /images/people/pham-hong-thai.jpg
+homepage: https://vnua.edu.vn/trang-ca-nhan/pham-hong-thai-67
 date: 2025-01-01
 ---
 
-Pham Hong Thai contributes to research and development across intelligent sensing platforms.
+Assoc. Prof. Dr. Pham Hong Thai is the Director of the Center for Tropical Bee Research and Beekeeping, Faculty of Agronomy, Vietnam National University of Agriculture (VNUA), specializing in honeybee biology, tropical beekeeping, and colony health monitoring platforms.
