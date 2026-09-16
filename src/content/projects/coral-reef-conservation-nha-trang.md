@@ -8,7 +8,7 @@ featured: true
 order: 2
 cover: /images/projects/coral-reef-conservation-nha-trang.svg
 topics: [aiot-environmental-monitoring, intelligent-sensing-platforms]
-people: [pham-minh-hoang, dinh-van-dung]
+people: [pham-minh-hoang, dinh-van-dung, pham-huy-hieu, phung-manh-duong]
 publications: [edge-deadline-rl]
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]
 technologies: [ESP32, Water Quality Sensing, MQTT, Linux, Docker, Microclimate Sensors]

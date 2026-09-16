@@ -4,7 +4,7 @@ description: Assistant Professor & Co-Director of VAIR Lab at VinUniversity, spe
 role: Assistant Professor & Research Advisor
 organization: VinUniversity
 image: /images/people/pham-huy-hieu.png
-scholar: https://scholar.google.com/citations?user=x8N131YAAAAJ
+scholar: https://scholar.google.com/citations?user=mXcFcNkAAAAJ
 date: 2025-01-01
 ---
 
