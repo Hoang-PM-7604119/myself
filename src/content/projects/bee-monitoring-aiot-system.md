@@ -38,12 +38,18 @@ The appliance was engineered to mount directly onto standardized modern multi-ti
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/system-architecture.png" alt="Bee Health Monitoring AIoT System Architecture Diagram" loading="lazy" />
-  <figcaption><strong>Figure 1:</strong> End-to-end AIoT system architecture connecting edge video processing nodes via MQTT to central database, web management platform, and cross-platform mobile application.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 1:</strong> End-to-end AIoT system architecture connecting edge video processing nodes via MQTT to central database, web management platform, and cross-platform mobile application.</span>
+    <span data-i18n-vi><strong>Hình 1:</strong> Kiến trúc hệ thống AIoT toàn diện kết nối các nút xử lý thị giác biên qua MQTT đến cơ sở dữ liệu trung tâm, nền tảng web và ứng dụng di động.</span>
+  </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/hardware-installation.png" alt="Hardware Installation on Multi-tier Beehive" loading="lazy" />
-  <figcaption><strong>Figure 2:</strong> Physical hardware assembly mounted on standardized multi-tier beehives ("thùng kế"), featuring Sony IMX477 HQ camera with CS lens, edge processing unit, and diffuse lighting canopy.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 2:</strong> Physical hardware assembly mounted on standardized multi-tier beehives ("thùng kế"), featuring Sony IMX477 HQ camera with CS lens, edge processing unit, and diffuse lighting canopy.</span>
+    <span data-i18n-vi><strong>Hình 2:</strong> Cụm phần cứng gắn trên thùng kế tiêu chuẩn, tích hợp camera Sony IMX477 ống kính CS, bộ xử lý biên và vòm chiếu sáng khuếch tán.</span>
+  </figcaption>
 </figure>
 
 ## Edge AI Vision: Real-Time Bee Counting with YOLOv5
@@ -56,12 +62,18 @@ To accurately monitor colony activity without disrupting natural worker bee beha
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/ai-yolov5-detection.png" alt="YOLOv5 Bee Counting Model Architecture and Detection Results" loading="lazy" />
-  <figcaption><strong>Figure 3:</strong> YOLOv5 neural network architecture and real-time bounding box detection validating 97.0% sensitivity and 0.56% false alarm rate under intense entrance traffic.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 3:</strong> YOLOv5 neural network architecture and real-time bounding box detection validating 97.0% sensitivity and 0.56% false alarm rate under intense entrance traffic.</span>
+    <span data-i18n-vi><strong>Hình 3:</strong> Kiến trúc mạng nơ-ron YOLOv5 và kết quả nhận diện bounding box thời gian thực đạt độ nhạy 97.0% và tỷ lệ báo động giả 0.56%.</span>
+  </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/live-stream-monitoring.png" alt="Real-time Stream and Bee Count Monitoring" loading="lazy" />
-  <figcaption><strong>Figure 4:</strong> Real-time camera feed ingestion and automated entrance counting interface hosted on MICA Institute infrastructure.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 4:</strong> Real-time camera feed ingestion and automated entrance counting interface hosted on MICA Institute infrastructure.</span>
+    <span data-i18n-vi><strong>Hình 4:</strong> Giao diện tiếp nhận luồng video thời gian thực và đếm ong tự động được triển khai trên hạ tầng Viện MICA.</span>
+  </figcaption>
 </figure>
 
 ## Cloud Dashboard, Mobile App & Device Health Automation
@@ -74,12 +86,18 @@ To support field beekeepers and entomologists across distributed apiary sites, a
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/web-dashboard.png" alt="Web Monitoring Platform Dashboard" loading="lazy" />
-  <figcaption><strong>Figure 5:</strong> Central web dashboard displaying real-time bee traffic trends, temperature/humidity time-series curves, and hardware health metrics.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 5:</strong> Central web dashboard displaying real-time bee traffic trends, temperature/humidity time-series curves, and hardware health metrics.</span>
+    <span data-i18n-vi><strong>Hình 5:</strong> Giao diện web trung tâm hiển thị xu hướng lưu lượng ong theo thời gian thực, biểu đồ nhiệt ẩm và các chỉ số sức khỏe phần cứng.</span>
+  </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/mobile-app.png" alt="Cross-Platform Flutter Mobile Application Interface" loading="lazy" />
-  <figcaption><strong>Figure 6:</strong> Flutter cross-platform mobile application interface providing beekeepers with push alerts, live counting statistics, and remote hive diagnostics.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 6:</strong> Flutter cross-platform mobile application interface providing beekeepers with push alerts, live counting statistics, and remote hive diagnostics.</span>
+    <span data-i18n-vi><strong>Hình 6:</strong> Ứng dụng di động Flutter đa nền tảng cung cấp cảnh báo đẩy, thống kê số lượng ong và chẩn đoán tổ ong từ xa.</span>
+  </figcaption>
 </figure>
 
 ## Practical Field Deployment & Long-Term Results
@@ -92,7 +110,10 @@ The system transitioned from laboratory prototypes into long-term agricultural o
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/field-deployment.png" alt="Field Deployment in Dak Lak and VNUA Bee Research Center" loading="lazy" />
-  <figcaption><strong>Figure 7:</strong> Long-term field trials across commercial apiaries in Đắk Lắk and the Center for Tropical Bee Research and Beekeeping (VNUA) verifying continuous 4+ months outdoor reliability.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 7:</strong> Long-term field trials across commercial apiaries in Đắk Lắk and the Center for Tropical Bee Research and Beekeeping (VNUA) verifying continuous 4+ months outdoor reliability.</span>
+    <span data-i18n-vi><strong>Hình 7:</strong> Thử nghiệm thực địa dài hạn tại các trại ong ở Đắk Lắk và Trung tâm Nghiên cứu Ong Nhiệt đới (VNUA) xác thực độ bền bỉ ngoài trời trên 4 tháng.</span>
+  </figcaption>
 </figure>
 
 ## Behind the Scenes: From Workbench Prototyping to Outdoor Apiaries
@@ -105,17 +126,26 @@ Building deployable edge AI for agricultural environments requires navigating ph
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/lab-hardware-prototyping.jpg" alt="Benchtop prototyping of the edge AIoT computing board" loading="lazy" />
-  <figcaption><strong>Figure 8:</strong> Benchtop integration of the NVIDIA Jetson Nano edge node, active heatsink cooling fan, 4G LTE communications gateway, CSI camera ribbon lines, and isolated power distribution.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 8:</strong> Benchtop integration of the NVIDIA Jetson Nano edge node, active heatsink cooling fan, 4G LTE communications gateway, CSI camera ribbon lines, and isolated power distribution.</span>
+    <span data-i18n-vi><strong>Hình 8:</strong> Lắp ráp thử nghiệm bộ xử lý NVIDIA Jetson Nano, quạt tản nhiệt, gateway 4G LTE, cáp camera CSI và khối phân phối nguồn cách ly.</span>
+  </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/hive-optical-integration.jpg" alt="Mechanical and optical integration on the wooden beehive" loading="lazy" />
-  <figcaption><strong>Figure 9:</strong> Custom non-invasive optical mount attached to a standard wooden multi-tier hive ("thùng kế"), orienting the camera canopy toward the entrance flight board without altering colony traffic.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 9:</strong> Custom non-invasive optical mount attached to a standard wooden multi-tier hive ("thùng kế"), orienting the camera canopy toward the entrance flight board without altering colony traffic.</span>
+    <span data-i18n-vi><strong>Hình 9:</strong> Khung gá quang học tùy biến gắn trên thùng kế gỗ tiêu chuẩn, hướng camera vào cửa tổ mà không làm xáo trộn đường bay của đàn ong.</span>
+  </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/bee-monitoring/field-calibration-researcher.jpg" alt="Hands-on field installation and sensor calibration by the author" loading="lazy" />
-  <figcaption><strong>Figure 10:</strong> Lead researcher Minh-Hoang Pham conducting hands-on sensor wiring, 4G telemetry checks, and optical alignment on hive #3 at the Tropical Bee Research Center apiary.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 10:</strong> Lead researcher Minh-Hoang Pham conducting hands-on sensor wiring, 4G telemetry checks, and optical alignment on hive #3 at the Tropical Bee Research Center apiary.</span>
+    <span data-i18n-vi><strong>Hình 10:</strong> Tác giả Phạm Minh Hoàng trực tiếp đấu nối cảm biến, kiểm tra truyền tin 4G và căn chỉnh quang học trên tổ số 3 tại trại ong Trung tâm Nghiên cứu Ong Nhiệt đới.</span>
+  </figcaption>
 </figure>
 
 ## Project Video Demonstration

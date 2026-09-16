@@ -8,7 +8,7 @@ featured: true
 order: 1
 cover: /images/projects/smart-marine-aquaculture.jpg
 topics: [aiot-environmental-monitoring]
-people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung, phan-tuan-khoi]
+people: [pham-minh-hoang, nguyen-van-dinh, dinh-van-dung, phan-tuan-khoi, nguyen-thanh-trung, nguyen-hong-phuc, trinh-cong-son]
 publications: [clean-cam]
 relatedProjects: [coral-reef-conservation-nha-trang, can-gio-mangrove-iot]
 technologies: [Python, PyTorch, Computer Vision, ESP32, MQTT, PostgreSQL, MinIO, Docker]
@@ -45,11 +45,17 @@ To overcome the high cost of duplicating industrial probes across multiple tanks
 <div class="figure-grid">
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage1-vnua-lab-testing.jpg" alt="Controlled laboratory multi-tank testing at VNUA" loading="lazy" />
-    <figcaption><strong>Figure 1:</strong> Multi-tank experimental test bench at VNUA during overnight calibration of automated water circulation and optical tracking rigs.</figcaption>
+    <figcaption>
+      <span data-i18n-en><strong>Figure 1:</strong> Multi-tank experimental test bench at VNUA during overnight calibration of automated water circulation and optical tracking rigs.</span>
+      <span data-i18n-vi><strong>Hình 1:</strong> Dàn bể thử nghiệm tại VNUA trong quá trình hiệu chuẩn đêm hệ thống tuần hoàn nước và camera theo dõi.</span>
+    </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage1-vnua-sensor-manifold.jpg" alt="Automated solenoid valve water manifold box" loading="lazy" />
-    <figcaption><strong>Figure 2:</strong> Solenoid valve manifold assembly multiplexing fluid intake lines from distinct aquaculture tanks into a single sensor chamber.</figcaption>
+    <figcaption>
+      <span data-i18n-en><strong>Figure 2:</strong> Solenoid valve manifold assembly multiplexing fluid intake lines from distinct aquaculture tanks into a single sensor chamber.</span>
+      <span data-i18n-vi><strong>Hình 2:</strong> Hộp van điện từ đa kênh tự động phân luồng dòng nước từ nhiều bể nuôi vào một buồng đo cảm biến duy nhất.</span>
+    </figcaption>
   </figure>
 </div>
 
@@ -61,17 +67,26 @@ The team validated continuous underwater camera telemetry, watertight cable pass
 
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage2-ria1-indoor-aquaculture.jpg" alt="Indoor concrete raceway at RIA 1 Hai Phong" loading="lazy" />
-  <figcaption><strong>Figure 3:</strong> High-density indoor aquaculture raceway at RIA 1 Hai Phong instrumented with submerged water-quality probes and an overhead camera rig.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 3:</strong> High-density indoor aquaculture raceway at RIA 1 Hai Phong instrumented with submerged water-quality probes and an overhead camera rig.</span>
+    <span data-i18n-vi><strong>Hình 3:</strong> Hệ thống bể xi măng nuôi trong nhà tại RIA 1 Hải Phòng tích hợp chùm đầu dò ngầm và camera quan sát trên cao.</span>
+  </figcaption>
 </figure>
 
 <div class="figure-grid">
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage2-ria1-field-team.jpg" alt="Field team conducting telemetry verification at RIA 1" loading="lazy" />
-    <figcaption><strong>Figure 4:</strong> Research team conducting real-time data ingestion checks and telemetry validation on the VinUniversity GREEN-X monitoring station.</figcaption>
+    <figcaption>
+      <span data-i18n-en><strong>Figure 4:</strong> Research team conducting real-time data ingestion checks and telemetry validation on the VinUniversity GREEN-X monitoring station.</span>
+      <span data-i18n-vi><strong>Hình 4:</strong> Nhóm nghiên cứu kiểm tra luồng dữ liệu thời gian thực và độ ổn định viễn thông trên trạm quan trắc GREEN-X.</span>
+    </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage2-ria1-circuit-inspection.jpg" alt="Inspection of internal controller circuitry and waterproof glands" loading="lazy" />
-    <figcaption><strong>Figure 5:</strong> Technical inspection of power management circuitry, signal conditioning boards, and IP-rated marine enclosure cable glands.</figcaption>
+    <figcaption>
+      <span data-i18n-en><strong>Figure 5:</strong> Technical inspection of power management circuitry, signal conditioning boards, and IP-rated marine enclosure cable glands.</span>
+      <span data-i18n-vi><strong>Hình 5:</strong> Kiểm tra kỹ thuật mạch nguồn, bo mạch điều chế tín hiệu cảm biến và ốc siết cáp chống nước chuẩn hàng hải.</span>
+    </figcaption>
   </figure>
 </div>
 
@@ -83,12 +98,18 @@ To ensure total self-sufficiency, the team engineered a dual-solar-powered stati
 
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage3-nhaphu-floating-cages.jpg" alt="Offshore floating sea cages in Nha Phu Bay with solar station" loading="lazy" />
-  <figcaption><strong>Figure 6:</strong> Autonomous dual-solar telemetry station mounted atop offshore floating sea cages in Nha Phu Bay, Nha Trang.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 6:</strong> Autonomous dual-solar telemetry station mounted atop offshore floating sea cages in Nha Phu Bay, Nha Trang.</span>
+    <span data-i18n-vi><strong>Hình 6:</strong> Trạm quan trắc tự hành 2 tấm pin mặt trời lắp đặt trên hệ thống lồng bè nuôi cá biển ngoài khơi Vịnh Nha Phu.</span>
+  </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage3-nhaphu-team-deployment.jpg" alt="Minh-Hoang Pham and Phan Tuan Khoi at Nha Phu Bay floating platform" loading="lazy" />
-  <figcaption><strong>Figure 7:</strong> Lead researcher Minh-Hoang Pham, co-researcher Phan Tuan Khoi, and team collaborator on the floating raft platform celebrating successful offshore commissioning.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Figure 7:</strong> Lead researcher Minh-Hoang Pham, co-researcher Phan Tuan Khoi, and team collaborator on the floating raft platform celebrating successful offshore commissioning.</span>
+    <span data-i18n-vi><strong>Hình 7:</strong> Trưởng nhóm kỹ thuật Phạm Minh Hoàng, cộng sự Phan Tuấn Khởi cùng thành viên nhóm trên bè nổi sau khi hoàn thành chạy thử nghiệm.</span>
+  </figcaption>
 </figure>
 
 <figure>
@@ -96,7 +117,10 @@ To ensure total self-sufficiency, the team engineered a dual-solar-powered stati
     <source src="/myself/videos/projects/smart-aquaculture/setup-nha-phu-bay.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <figcaption><strong>Video 1: Setup của hệ thống tại Vịnh Nha Phu</strong> — Toàn cảnh hệ thống trạm quan trắc năng lượng mặt trời trên lồng bè nuôi biển ngoài khơi vịnh Nha Phu nhìn từ drone trên không.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Video 1: System Setup at Nha Phu Bay</strong> — Aerial drone survey of the autonomous solar-powered telemetry station deployed on offshore floating aquaculture cages in Nha Phu Bay.</span>
+    <span data-i18n-vi><strong>Video 1: Setup hệ thống tại Vịnh Nha Phu</strong> — Toàn cảnh hệ thống trạm quan trắc năng lượng mặt trời trên lồng bè nuôi biển ngoài khơi Vịnh Nha Phu nhìn từ drone.</span>
+  </figcaption>
 </figure>
 
 ### Phase 4: Circular Outdoor Tanks & Bioacoustics at RIA 3 (Nha Trang)
@@ -108,11 +132,17 @@ This installation unified environmental telemetry with underwater bioacoustic mo
 <div class="figure-grid">
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-system-assembly.jpg" alt="System assembly and wiring at RIA 3 by Phan Tuan Khoi" loading="lazy" />
-    <figcaption><strong>Figure 8:</strong> Co-researcher Phan Tuan Khoi assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</figcaption>
+    <figcaption>
+      <span data-i18n-en><strong>Figure 8:</strong> Co-researcher Phan Tuan Khoi assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
+      <span data-i18n-vi><strong>Hình 8:</strong> Cộng sự Phan Tuấn Khởi hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, soundcard thu âm thủy âm và máy tính nhúng.</span>
+    </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-tank-overview.jpg" alt="Panoramic view of RIA 3 outdoor aquaculture tanks" loading="lazy" />
-    <figcaption><strong>Figure 9:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</figcaption>
+    <figcaption>
+      <span data-i18n-en><strong>Figure 9:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</span>
+      <span data-i18n-vi><strong>Hình 9:</strong> Góc nhìn trên cao cụm bể nuôi tròn ngoài trời tại RIA 3 dưới sự giám sát liên tục của trạm AIoT VinUniversity.</span>
+    </figcaption>
   </figure>
 </div>
 
@@ -121,7 +151,10 @@ This installation unified environmental telemetry with underwater bioacoustic mo
     <source src="/myself/videos/projects/smart-aquaculture/setup-ria3-nha-trang.mp4" type="video/mp4" />
     Your browser does not support the video tag.
   </video>
-  <figcaption><strong>Video 2: Setup của hệ thống tại RIA 3 Nha Trang</strong> — Trạm quan trắc viễn thông VinUniversity, hệ thống cấp nguồn và camera giám sát mái che bể nuôi tại Viện Nghiên cứu Nuôi trồng Thủy sản III.</figcaption>
+  <figcaption>
+    <span data-i18n-en><strong>Video 2: System Setup at RIA 3 Nha Trang</strong> — VinUniversity outdoor telemetry enclosure, power distribution, and monitoring cameras mounted under the aquaculture tank roof.</span>
+    <span data-i18n-vi><strong>Video 2: Setup hệ thống tại RIA 3 Nha Trang</strong> — Tủ trạm quan trắc VinUniversity, hệ thống cấp nguồn và camera giám sát gắn dưới mái che bể nuôi tại RIA 3.</span>
+  </figcaption>
 </figure>
 
 ## Technical Contributions & Open Science
