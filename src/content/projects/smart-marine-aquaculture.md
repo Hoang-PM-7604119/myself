@@ -220,19 +220,27 @@ Cụm lắp đặt này hợp nhất quan trắc môi trường với nghiên c�
 
 </div>
 
+<figure>
+  <img src="/myself/images/projects/smart-aquaculture/meeting-with-ria.jpg" alt="Strategic collaboration meeting with the Research Institute for Aquaculture (RIA)" loading="lazy" />
+  <figcaption>
+    <span data-i18n-en><strong>Figure 8:</strong> Strategic collaboration and technical working session between the VinUniversity GREEN-X delegation and the leadership of the Research Institute for Aquaculture (RIA).</span>
+    <span data-i18n-vi><strong>Hình 8:</strong> Buổi làm việc kỹ thuật và hợp tác nghiên cứu giữa đoàn chuyên gia VinUniversity (GREEN-X) và lãnh đạo Viện Nghiên cứu Nuôi trồng Thủy sản (RIA).</span>
+  </figcaption>
+</figure>
+
 <div class="figure-grid">
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-system-assembly.jpg" alt="System assembly and wiring at RIA 3 by Phan Tuan Khoi" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 8:</strong> Co-researcher Nguyen Xuan Quyen assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
-      <span data-i18n-vi><strong>Hình 8:</strong> Cộng sự Nguyễn Xuân Quyền hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
+      <span data-i18n-en><strong>Figure 9:</strong> Co-researcher Nguyen Xuan Quyen assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
+      <span data-i18n-vi><strong>Hình 9:</strong> Cộng sự Nguyễn Xuân Quyền hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
     </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-tank-overview.jpg" alt="Panoramic view of RIA 3 outdoor aquaculture tanks" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 9:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</span>
-      <span data-i18n-vi><strong>Hình 9:</strong> Góc nhìn trên cao cụm bể nuôi tròn ngoài trời tại RIA 3 dưới sự giám sát liên tục của trạm AIoT VinUniversity.</span>
+      <span data-i18n-en><strong>Figure 10:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</span>
+      <span data-i18n-vi><strong>Hình 10:</strong> Góc nhìn trên cao cụm bể nuôi tròn ngoài trời tại RIA 3 dưới sự giám sát liên tục của trạm AIoT VinUniversity.</span>
     </figcaption>
   </figure>
 </div>
