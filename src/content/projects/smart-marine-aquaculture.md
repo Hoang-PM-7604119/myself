@@ -35,7 +35,7 @@ The project is directed under the academic leadership of Principal Investigators
 
 Nuôi trồng thủy sản biển tại vùng duyên hải Nha Trang đặt ra nhiều thách thức khắc nghiệt khiến các phương pháp giám sát thủ công truyền thống không còn đáp ứng được. Độ đục cao của nước, hiện tượng sinh vật bám (biofouling) nhanh chóng lên ống kính quang học, môi trường nước mặn ăn mòn mạnh cùng nguồn điện ngoài khơi hạn chế tạo áp lực lớn lên các thiết bị phần cứng tiêu chuẩn. Để phát triển nuôi biển bền vững, cần có giải pháp tự động hóa liên tục nhằm thu thập dữ liệu hóa lý nước, âm thanh dưới nước và hành vi đàn cá mà không cần thợ lặn trực tiếp.
 
-Dự án được dẫn dắt bởi hai Chủ nhiệm đề tài (PI) là **TS. Nguyễn Văn Định** và **TS. Đỗ Danh Cường**, cùng Đồng chủ nhiệm đề tài (Co-PI) **Đinh Văn Dũng**. Công tác phát triển kỹ thuật, viễn thông và triển khai thực địa do Trưởng nhóm kỹ thuật kiêm Trợ lý nghiên cứu **Phạm Minh Hoàng** cùng các trợ lý nghiên cứu **Phan Tuấn Khởi**, **Nguyễn Thành Trung**, **Nguyễn Hồng Phúc**, **Trịnh Công Sơn** và **Nguyễn Xuân Quyền** đảm nhiệm.
+Dự án được dẫn dắt bởi hai Chủ nhiệm đề tài (PI) là **TS. Nguyễn Văn Định** và **TS. Đỗ Danh Cường**, cùng Đồng chủ nhiệm đề tài (Co-PI) **Đinh Văn Dũng**. Công tác phát triển kỹ thuật, viễn thông và triển khai thực địa do Trưởng nhóm kỹ thuật kiêm Trợ lý nghiên cứu **Phạm Minh Hoàng** cùng các trợ lý nghiên cứu **Phan Tuấn Khôi**, **Nguyễn Thành Trung**, **Nguyễn Hồng Phúc**, **Trịnh Công Sơn** và **Nguyễn Xuân Quyền** đảm nhiệm.
 
 </div>
 
@@ -187,7 +187,7 @@ Bài kiểm tra khắc nghiệt nhất diễn ra trên vùng nước mở thuộ
   <img src="/myself/images/projects/smart-aquaculture/stage3-nhaphu-team-deployment.jpg" alt="Minh-Hoang Pham and Phan Tuan Khoi at Nha Phu Bay floating platform" loading="lazy" />
   <figcaption>
     <span data-i18n-en><strong>Figure 7:</strong> Lead researcher Minh-Hoang Pham, co-researcher Phan Tuan Khoi, and team collaborator on the floating raft platform celebrating successful offshore commissioning.</span>
-    <span data-i18n-vi><strong>Hình 7:</strong> Trưởng nhóm kỹ thuật Phạm Minh Hoàng, cộng sự Phan Tuấn Khởi cùng thành viên nhóm trên bè nổi sau khi hoàn thành chạy thử nghiệm.</span>
+    <span data-i18n-vi><strong>Hình 7:</strong> Trưởng nhóm kỹ thuật Phạm Minh Hoàng, cộng sự Phan Tuấn Khôi cùng thành viên nhóm trên bè nổi sau khi hoàn thành chạy thử nghiệm.</span>
   </figcaption>
 </figure>
 
