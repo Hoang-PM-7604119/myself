@@ -142,10 +142,10 @@ Nhóm nghiên cứu đã kiểm chứng tính ổn định của luồng dữ li
 
 <div class="figure-grid">
   <figure>
-    <img src="/myself/images/projects/smart-aquaculture/stage2-ria1-field-team.jpg" alt="Field team conducting telemetry verification at RIA 1" loading="lazy" />
+    <img src="/myself/images/projects/smart-aquaculture/stage2-ria1-field-team.jpg" alt="Team members completing installation of IoT monitoring equipment at RIA 1" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 4:</strong> Research team conducting real-time data ingestion checks and telemetry validation on the VinUniversity GREEN-X monitoring station.</span>
-      <span data-i18n-vi><strong>Hình 4:</strong> Nhóm nghiên cứu kiểm tra luồng dữ liệu thời gian thực và độ ổn định viễn thông trên trạm quan trắc GREEN-X.</span>
+      <span data-i18n-en><strong>Figure 4:</strong> Team members completing the installation of the IoT environmental monitoring station.</span>
+      <span data-i18n-vi><strong>Hình 4:</strong> Các thành viên hoàn thành việc lắp đặt thiết bị IoT quan trắc.</span>
     </figcaption>
   </figure>
   <figure>
