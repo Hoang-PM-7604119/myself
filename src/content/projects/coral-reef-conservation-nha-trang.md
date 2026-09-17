@@ -184,13 +184,6 @@ Bằng cách kết hợp các chuyến bay khảo sát bằng flycam trên cao c
 
 </div>
 
-<figure>
-  <img src="/myself/images/projects/coral-reef/usingdrone-to-collect-data.jpg" alt="Aerial drone view of research boat conducting coral reef data collection" loading="lazy" />
-  <figcaption>
-    <span data-i18n-en><strong>Figure 5:</strong> Aerial drone survey of the expedition vessel conducting data acquisition over shallow coral reef beds in Nha Trang Bay, with submerged sensor cables deployed into the water column.</span>
-    <span data-i18n-vi><strong>Hình 5:</strong> Khảo sát bằng drone từ trên không ghi nhận tàu nghiên cứu thu thập dữ liệu trên rạn san hô nông Vịnh Nha Trang với đường cáp cảm biến thả ngầm.</span>
-  </figcaption>
-</figure>
 
 <figure>
   <video controls playsinline preload="metadata" poster="/myself/images/projects/coral-reef/data-collecting-poster.jpg">
