@@ -157,6 +157,43 @@ Nhóm nghiên cứu đã kiểm chứng tính ổn định của luồng dữ li
   </figure>
 </div>
 
+### <span data-i18n-en>Strategic Provincial Alignment & Academic Collaboration in Khanh Hoa</span><span data-i18n-vi>Phối hợp chính quyền cấp tỉnh cùng Sở Tài chính & Hợp tác học thuật tại Đại học Nha Trang</span>
+
+<div data-i18n-en>
+
+Scaling IoT-driven smart aquaculture from closed indoor facilities to expansive coastal environments in Khanh Hoa required comprehensive institutional endorsement and specialized domain expertise:
+
+- **Implementation Alignment with the Khanh Hoa Department of Finance:** The research team conducted strategic working sessions with the **Department of Finance of Khanh Hoa Province** (*Sở Tài chính Tỉnh Khánh Hòa*) to discuss deployment frameworks, inter-agency operational protocols, and policy integration for deploying automated environmental telemetry across provincial aquaculture zones.
+- **Scientific Collaboration with Domain Experts at Nha Trang University (NTU):** Recognizing **Nha Trang University** as Vietnam's foremost academic institution in aquaculture, marine biotechnology, and fisheries science, researchers collaborated with NTU faculty and marine specialists to align environmental monitoring thresholds with biological indicators of finfish stress, feed response acoustics, and waterborne disease dynamics.
+
+</div>
+
+<div data-i18n-vi>
+
+Việc mở rộng hệ thống AIoT nuôi biển thông minh từ các cơ sở trong nhà ra môi trường biển ven bờ quy mô lớn tại Khánh Hòa đòi hỏi sự đồng thuận cao từ chính quyền địa phương và sự đồng hành của các chuyên gia đầu ngành:
+
+- **Họp bàn phương án triển khai với Sở Tài chính Tỉnh Khánh Hòa:** Đoàn nghiên cứu GREEN-X đã làm việc với lãnh đạo và chuyên viên **Sở Tài chính Tỉnh Khánh Hòa** nhằm thống nhất phương án triển khai, cơ chế phối hợp hành chính và định hướng chính sách hỗ trợ phát triển các mô hình nuôi biển công nghệ cao, kinh tế biển bền vững trên địa bàn tỉnh.
+- **Hợp tác chuyên gia với Trường Đại học Nha Trang (NTU):** Với vị thế là trung tâm đào tạo và nghiên cứu thủy sản hàng đầu cả nước, các giáo sư và chuyên gia tại **Trường Đại học Nha Trang** đã trực tiếp tham gia trao đổi chuyên môn, cố vấn về sinh học cá biển, phản ứng âm thanh của đàn cá khi đớp mồi (bioacoustics) và xác lập các ngưỡng chất lượng nước cảnh báo sớm dịch bệnh.
+
+</div>
+
+<div class="figure-grid">
+  <figure>
+    <img src="/myself/images/projects/smart-aquaculture/meeting-department-of-finance.jpg" alt="Implementation alignment meeting with Khanh Hoa Department of Finance" loading="lazy" />
+    <figcaption>
+      <span data-i18n-en><strong>Figure 6:</strong> Working session with the Khanh Hoa Department of Finance (Sở Tài chính Tỉnh Khánh Hòa) to align on implementation frameworks and administrative support for smart aquaculture pilots.</span>
+      <span data-i18n-vi><strong>Hình 6:</strong> Buổi làm việc với Sở Tài chính Tỉnh Khánh Hòa, họp bàn phương án triển khai và cơ chế phối hợp nhân rộng mô hình trạm quan trắc nuôi biển.</span>
+    </figcaption>
+  </figure>
+  <figure>
+    <img src="/myself/images/projects/smart-aquaculture/meeting-nha-trang-university.jpg" alt="Expert collaboration meeting at Nha Trang University" loading="lazy" />
+    <figcaption>
+      <span data-i18n-en><strong>Figure 7:</strong> Scientific collaboration and domain expert consultation meeting at Nha Trang University (Trường Đại học Nha Trang - NTU) focusing on aquaculture biology and underwater acoustics.</span>
+      <span data-i18n-vi><strong>Hình 7:</strong> Hợp tác nghiên cứu chuyên sâu cùng các chuyên gia hàng đầu về thủy sản và sinh học biển tại Trường Đại học Nha Trang (NTU).</span>
+    </figcaption>
+  </figure>
+</div>
+
 ### <span data-i18n-en>Phase 3: Offshore Floating Sea-Cage Deployment at Nha Phu Bay (Nha Trang)</span><span data-i18n-vi>Giai đoạn 3: Triển khai lồng bè nổi ngoài khơi tại Vịnh Nha Phu (Nha Trang)</span>
 
 <div data-i18n-en>
@@ -178,16 +215,16 @@ Bài kiểm tra khắc nghiệt nhất diễn ra trên vùng nước mở thuộ
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage3-nhaphu-floating-cages.jpg" alt="Offshore floating sea cages in Nha Phu Bay with solar station" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 6:</strong> Autonomous dual-solar telemetry station mounted atop offshore floating sea cages in Nha Phu Bay, Nha Trang.</span>
-    <span data-i18n-vi><strong>Hình 6:</strong> Trạm quan trắc tự hành 2 tấm pin mặt trời lắp đặt trên hệ thống lồng bè nuôi cá biển ngoài khơi Vịnh Nha Phu.</span>
+    <span data-i18n-en><strong>Figure 8:</strong> Autonomous dual-solar telemetry station mounted atop offshore floating sea cages in Nha Phu Bay, Nha Trang.</span>
+    <span data-i18n-vi><strong>Hình 8:</strong> Trạm quan trắc tự hành 2 tấm pin mặt trời lắp đặt trên hệ thống lồng bè nuôi cá biển ngoài khơi Vịnh Nha Phu.</span>
   </figcaption>
 </figure>
 
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/stage3-nhaphu-team-deployment.jpg" alt="Minh-Hoang Pham and Phan Tuan Khoi at Nha Phu Bay floating platform" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 7:</strong> Lead researcher Minh-Hoang Pham, co-researcher Phan Tuan Khoi, and team collaborator on the floating raft platform celebrating successful offshore commissioning.</span>
-    <span data-i18n-vi><strong>Hình 7:</strong> Trưởng nhóm kỹ thuật Phạm Minh Hoàng, cộng sự Phan Tuấn Khôi cùng thành viên nhóm trên bè nổi sau khi hoàn thành chạy thử nghiệm.</span>
+    <span data-i18n-en><strong>Figure 9:</strong> Lead researcher Minh-Hoang Pham, co-researcher Phan Tuan Khoi, and team collaborator on the floating raft platform celebrating successful offshore commissioning.</span>
+    <span data-i18n-vi><strong>Hình 9:</strong> Trưởng nhóm kỹ thuật Phạm Minh Hoàng, cộng sự Phan Tuấn Khôi cùng thành viên nhóm trên bè nổi sau khi hoàn thành chạy thử nghiệm.</span>
   </figcaption>
 </figure>
 
@@ -223,8 +260,8 @@ Cụm lắp đặt này hợp nhất quan trắc môi trường với nghiên c�
 <figure>
   <img src="/myself/images/projects/smart-aquaculture/meeting-with-ria.jpg" alt="Strategic collaboration meeting with the Research Institute for Aquaculture (RIA)" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 8:</strong> Strategic collaboration and technical working session between the VinUniversity GREEN-X delegation and the leadership of the Research Institute for Aquaculture (RIA).</span>
-    <span data-i18n-vi><strong>Hình 8:</strong> Buổi làm việc kỹ thuật và hợp tác nghiên cứu giữa đoàn chuyên gia VinUniversity (GREEN-X) và lãnh đạo Viện Nghiên cứu Nuôi trồng Thủy sản (RIA).</span>
+    <span data-i18n-en><strong>Figure 10:</strong> Strategic collaboration and technical working session between the VinUniversity GREEN-X delegation and the leadership of the Research Institute for Aquaculture (RIA).</span>
+    <span data-i18n-vi><strong>Hình 10:</strong> Buổi làm việc kỹ thuật và hợp tác nghiên cứu giữa đoàn chuyên gia VinUniversity (GREEN-X) và lãnh đạo Viện Nghiên cứu Nuôi trồng Thủy sản (RIA).</span>
   </figcaption>
 </figure>
 
@@ -232,15 +269,15 @@ Cụm lắp đặt này hợp nhất quan trắc môi trường với nghiên c�
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-system-assembly.jpg" alt="System assembly and wiring at RIA 3 by Phan Tuan Khoi" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 9:</strong> Co-researcher Nguyen Xuan Quyen assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
-      <span data-i18n-vi><strong>Hình 9:</strong> Cộng sự Nguyễn Xuân Quyền hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
+      <span data-i18n-en><strong>Figure 11:</strong> Co-researcher Nguyen Xuan Quyen assembling the outdoor telemetry enclosure, integrating 4G LTE communications, hydrophone audio interface, and embedded processor.</span>
+      <span data-i18n-vi><strong>Hình 11:</strong> Cộng sự Nguyễn Xuân Quyền hoàn thiện lắp ráp tủ trạm ngoài trời, tích hợp kết nối 4G LTE, giao tiếp âm thanh thủy âm (hydrophone) và máy tính nhúng.</span>
     </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/smart-aquaculture/stage4-ria3-tank-overview.jpg" alt="Panoramic view of RIA 3 outdoor aquaculture tanks" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 10:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</span>
-      <span data-i18n-vi><strong>Hình 10:</strong> Góc nhìn trên cao cụm bể nuôi tròn ngoài trời tại RIA 3 dưới sự giám sát liên tục của trạm AIoT VinUniversity.</span>
+      <span data-i18n-en><strong>Figure 12:</strong> Elevated view of RIA 3 outdoor circular aquaculture tanks under continuous surveillance by the installed VinUniversity solar AIoT telemetry station.</span>
+      <span data-i18n-vi><strong>Hình 12:</strong> Góc nhìn trên cao cụm bể nuôi tròn ngoài trời tại RIA 3 dưới sự giám sát liên tục của trạm AIoT VinUniversity.</span>
     </figcaption>
   </figure>
 </div>

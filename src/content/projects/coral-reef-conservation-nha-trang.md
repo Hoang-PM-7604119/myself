@@ -95,37 +95,57 @@ Dự án khởi đầu bằng buổi làm việc kỹ thuật chuyên sâu tại
   </figcaption>
 </figure>
 
-### <span data-i18n-en>2. Institutional Strategic Alignment with Nha Trang Bay Management Board</span><span data-i18n-vi>2. Làm việc & Thống nhất triển khai với Ban Quản lý Vịnh Nha Trang</span>
+### <span data-i18n-en>2. Provincial Coordination, Academic Partnership & Marine Park Alignment</span><span data-i18n-vi>2. Phối hợp cấp tỉnh, Hợp tác học thuật NTU & Thống nhất triển khai với Ban Quản lý Vịnh Nha Trang</span>
 
 <div data-i18n-en>
 
-Safeguarding coral reefs requires strict compliance with marine park regulations and close coordination with local authorities. The research delegation traveled to Khanh Hoa to collaborate directly with leadership and scientific officers of the **Nha Trang Bay Management Board** (*Ban Quản lý Vịnh Nha Trang*).
+Deploying high-technology environmental monitoring infrastructure in the protected waters of Nha Trang Bay required multi-tiered coordination across provincial governance, academic institutions, and marine park authorities:
 
-The discussions finalized operational protocols, designated safe deployment corridors within the marine reserve to prevent anchor damage to living coral heads, and established data-sharing agreements with conservation rangers.
+1. **Provincial Deployment Alignment with Khanh Hoa Department of Finance:** The research delegation, led by project leadership, held working sessions with leadership and specialists at the **Department of Finance of Khanh Hoa Province** (*Sở Tài chính Tỉnh Khánh Hòa*) to discuss deployment plans, resource allocation frameworks, inter-agency administrative mechanisms, and provincial policy alignment supporting smart ocean conservation initiatives.
+2. **Scientific Collaboration with Domain Experts at Nha Trang University (NTU):** As Vietnam's premier academic center for marine sciences, oceanography, and fisheries, **Nha Trang University** provided invaluable scientific consultation. The research team convened with leading marine ecologists and oceanographic faculty to calibrate water quality thresholds (temperature spikes, dissolved oxygen depletion, turbidity anomalies), map critical benthic coral zones, and establish long-term research partnerships.
+3. **Operational Planning with the Nha Trang Bay Management Board:** To safeguard living coral heads during deployment, the team worked closely with the **Nha Trang Bay Management Board** (*Ban Quản lý Vịnh Nha Trang*) to finalize sanctuary zoning, permit navigation corridors, and integrate real-time telemetry into ranger conservation workflows.
 
 </div>
 
 <div data-i18n-vi>
 
-Bảo tồn san hô đòi hỏi sự tuân thủ nghiêm ngặt quy chế phân vùng bảo vệ nghiêm ngặt và phối hợp chặt chẽ với cơ quan chức năng địa phương. Đoàn nghiên cứu đã trực tiếp tới Khánh Hòa làm việc với lãnh đạo và cán bộ chuyên môn của **Ban Quản lý Vịnh Nha Trang**.
+Triển khai hạ tầng quan trắc công nghệ cao trên vùng nước bảo tồn Vịnh Nha Trang đòi hỏi sự phối hợp đa tầng chặt chẽ giữa chính quyền cấp tỉnh, các viện trường nghiên cứu chuyên ngành và ban quản lý khu bảo tồn biển:
 
-Buổi làm việc đã thống nhất phương án triển khai, xác định vị trí thả thiết bị an toàn trong khu bảo tồn nhằm tránh gây tổn hại đến các rạn san hô sống, đồng thời thiết lập cơ chế chia sẻ luồng dữ liệu quan trắc phục vụ công tác tuần tra, bảo vệ.
+1. **Họp bàn phương án triển khai với Sở Tài chính Tỉnh Khánh Hòa:** Đoàn nghiên cứu do ban chủ nhiệm đề tài dẫn đầu đã có buổi làm việc chính thức với lãnh đạo và chuyên viên **Sở Tài chính Tỉnh Khánh Hòa**. Buổi họp tập trung thảo luận, thống nhất phương án triển khai, cơ chế phối hợp liên ngành, phân bổ nguồn lực và các chính sách hỗ trợ của tỉnh đối với đề án ứng dụng công nghệ số và IoT vào bảo tồn đa dạng sinh học biển.
+2. **Hợp tác chuyên môn với các chuyên gia Trường Đại học Nha Trang (NTU):** Là trung tâm đào tạo và nghiên cứu đầu ngành của cả nước về khoa học biển và thủy sản, **Trường Đại học Nha Trang** là đối tác học thuật then chốt. Nhóm nghiên cứu đã làm việc cùng các giáo sư, chuyên gia sinh thái biển hàng đầu để tham vấn về ngưỡng chỉ số lý - hóa - sinh tác động đến hiện tượng tẩy trắng san hô, lựa chọn tọa độ đáy biển tối ưu và xây dựng hợp tác nghiên cứu dài hạn.
+3. **Thống nhất phương án thực địa với Ban Quản lý Vịnh Nha Trang:** Nhằm đảm bảo an toàn tuyệt đối cho các rạn san hô sống trong quá trình thả neo thiết bị, đoàn nghiên cứu đã trực tiếp làm việc với **Ban Quản lý Vịnh Nha Trang** để chốt tọa độ phân vùng bảo vệ nghiêm ngặt, cấp phép luồng di chuyển và thiết lập cơ chế chia sẻ dữ liệu phục vụ tuần tra, cứu hộ.
 
 </div>
+
+<figure>
+  <img src="/myself/images/projects/coral-reef/meeting-department-of-finance.jpg" alt="Strategic deployment meeting with Khanh Hoa Department of Finance" loading="lazy" />
+  <figcaption>
+    <span data-i18n-en><strong>Figure 2:</strong> Strategic working session between the VinUniversity research delegation and leadership of the Khanh Hoa Department of Finance (Sở Tài chính Tỉnh Khánh Hòa) to align on provincial implementation frameworks.</span>
+    <span data-i18n-vi><strong>Hình 2:</strong> Buổi làm việc giữa đoàn nghiên cứu VinUniversity và lãnh đạo Sở Tài chính Tỉnh Khánh Hòa, họp bàn phương án triển khai và cơ chế phối hợp hỗ trợ đề án quan trắc biển.</span>
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/myself/images/projects/coral-reef/meeting-nha-trang-university.jpg" alt="Academic and scientific collaboration meeting at Nha Trang University (NTU)" loading="lazy" />
+  <figcaption>
+    <span data-i18n-en><strong>Figure 3:</strong> Academic collaboration and expert consultation session at Nha Trang University (Trường Đại học Nha Trang - NTU) with leading professors and scientists in marine biology and oceanography.</span>
+    <span data-i18n-vi><strong>Hình 3:</strong> Buổi làm việc và hợp tác nghiên cứu cùng các chuyên gia, nhà khoa học đầu ngành về sinh thái biển và hải dương học tại Trường Đại học Nha Trang (NTU).</span>
+  </figcaption>
+</figure>
 
 <div class="figure-grid">
   <figure>
     <img src="/myself/images/projects/coral-reef/meeting-nha-trang-bay-management.jpg" alt="Technical working session with Nha Trang Bay Management Board" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 2:</strong> Technical working session with leadership and officers of the Nha Trang Bay Management Board, mapping sanctuary zones and sensor deployment coordinates.</span>
-      <span data-i18n-vi><strong>Hình 2:</strong> Buổi làm việc chuyên môn với Ban Quản lý Vịnh Nha Trang, thống nhất phân vùng bảo tồn và tọa độ triển khai thiết bị quan trắc.</span>
+      <span data-i18n-en><strong>Figure 4:</strong> Technical working session with leadership and officers of the Nha Trang Bay Management Board, mapping sanctuary zones and sensor deployment coordinates.</span>
+      <span data-i18n-vi><strong>Hình 4:</strong> Buổi làm việc chuyên môn với Ban Quản lý Vịnh Nha Trang, thống nhất phân vùng bảo tồn và tọa độ triển khai thiết bị quan trắc.</span>
     </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/coral-reef/nha-trang-bay-management-meeting.jpg" alt="Meeting with Nha Trang Bay Management Board delegation" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 3:</strong> Research and leadership delegation outside the headquarters of the Nha Trang Bay Management Board (Ban Quản lý Vịnh Nha Trang) following strategic deployment planning.</span>
-      <span data-i18n-vi><strong>Hình 3:</strong> Đoàn nghiên cứu làm việc trước trụ sở Ban Quản lý Vịnh Nha Trang sau buổi thống nhất kế hoạch triển khai trạm quan trắc.</span>
+      <span data-i18n-en><strong>Figure 5:</strong> Research and leadership delegation outside the headquarters of the Nha Trang Bay Management Board (Ban Quản lý Vịnh Nha Trang) following strategic deployment planning.</span>
+      <span data-i18n-vi><strong>Hình 5:</strong> Đoàn nghiên cứu làm việc trước trụ sở Ban Quản lý Vịnh Nha Trang sau buổi thống nhất kế hoạch triển khai trạm quan trắc.</span>
     </figcaption>
   </figure>
 </div>
@@ -152,15 +172,15 @@ Trạm quan trắc tự hành được gắn chắc chắn lên trụ phao tiêu
   <figure>
     <img src="/myself/images/projects/coral-reef/ocean-deployment-transit.jpg" alt="Marine transit and ROV staging on research boat in Nha Trang Bay" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 4:</strong> Research team navigating Nha Trang Bay aboard an expedition vessel, staging underwater ROVs, cabling, and calibration tools for sanctuary installation.</span>
-      <span data-i18n-vi><strong>Hình 4:</strong> Tàu nghiên cứu di chuyển trên Vịnh Nha Trang mang theo thiết bị ROV, dây cáp cảm biến ngầm và dụng cụ hiệu chuẩn.</span>
+      <span data-i18n-en><strong>Figure 6:</strong> Research team navigating Nha Trang Bay aboard an expedition vessel, staging underwater ROVs, cabling, and calibration tools for sanctuary installation.</span>
+      <span data-i18n-vi><strong>Hình 6:</strong> Tàu nghiên cứu di chuyển trên Vịnh Nha Trang mang theo thiết bị ROV, dây cáp cảm biến ngầm và dụng cụ hiệu chuẩn.</span>
     </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/coral-reef/marine-buoy-monitoring-station.jpg" alt="Deployed solar telemetry station on marine beacon with diver" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 5:</strong> Commissioned solar-powered monitoring station installed atop a marine navigational beacon in Nha Trang Bay, with diver securing submerged sensor nodes in the coral reef zone.</span>
-      <span data-i18n-vi><strong>Hình 5:</strong> Trạm giám sát năng lượng mặt trời hoàn thiện trên phao tiêu hàng hải Vịnh Nha Trang, thợ lặn cố định chùm cảm biến đáy san hô.</span>
+      <span data-i18n-en><strong>Figure 7:</strong> Commissioned solar-powered monitoring station installed atop a marine navigational beacon in Nha Trang Bay, with diver securing submerged sensor nodes in the coral reef zone.</span>
+      <span data-i18n-vi><strong>Hình 7:</strong> Trạm giám sát năng lượng mặt trời hoàn thiện trên phao tiêu hàng hải Vịnh Nha Trang, thợ lặn cố định chùm cảm biến đáy san hô.</span>
     </figcaption>
   </figure>
 </div>
