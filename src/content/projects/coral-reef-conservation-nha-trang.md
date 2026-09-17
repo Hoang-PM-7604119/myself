@@ -11,7 +11,7 @@ order: 2
 cover: /images/projects/coral-reef-conservation-nha-trang.jpg
 topics: [aiot-environmental-monitoring]
 people: [pham-huy-hieu, phung-manh-duong, dinh-van-dung, pham-minh-hoang, nguyen-ngoc-gia-ninh, nguyen-xuan-quyen]
-publications: [edge-deadline-rl]
+publications: []
 relatedProjects: [smart-marine-aquaculture, can-gio-mangrove-iot]
 technologies: [Water Quality Sensing, Marine Telemetry, Underwater Imaging, Drone Remote Sensing, Linux, Docker, MQTT]
 organizations: [

@@ -1,7 +1,58 @@
 ---
-import { render, type CollectionEntry } from 'astro:content'; import ContentLayout from '@/layouts/ContentLayout.astro'; import { published } from '@/lib/content';
-export async function getStaticPaths(){return (await published('people')).map(entry=>({params:{slug:entry.id},props:{entry}}))}
-const {entry}=Astro.props as {entry:CollectionEntry<'people'>}; const {Content}=await render(entry); const projects=await published('projects'); const publications=await published('publications'); const linkedProjects=projects.filter(p=>p.data.people.includes(entry.id)); const linkedPubs=publications.filter(p=>p.data.authors.some(a=>a.person===entry.id)||linkedProjects.some(project=>p.data.projects.includes(project.id))); const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
----
-<ContentLayout title={entry.data.title} description={entry.data.description} description_vi={entry.data.description_vi} date={entry.data.date} topics={entry.data.topics} prose={entry.body}><div class="contact-grid"><div><img src={asset(entry.data.image)} width="400" height="400" alt="" style="border-radius:var(--radius)"/></div><div><h2>{entry.data.role_vi ? <><span data-i18n-en>{entry.data.role}</span><span data-i18n-vi>{entry.data.role_vi}</span></> : entry.data.role}</h2><p>{entry.data.organization_vi ? <><span data-i18n-en>{entry.data.organization}</span><span data-i18n-vi>{entry.data.organization_vi}</span></> : entry.data.organization}</p><div class="resource-links">{entry.data.homepage&&<a href={entry.data.homepage}>Homepage ↗</a>}{entry.data.scholar&&<a href={entry.data.scholar}>Scholar ↗</a>}{entry.data.orcid&&<a href={entry.data.orcid}>ORCID ↗</a>}</div></div></div><Content/><h2><span data-i18n-en>Projects together</span><span data-i18n-vi>Dự án hợp tác</span></h2>{linkedProjects.map(p=><p><a href={asset(`/projects/${p.id}/`)}><span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span></a> — <span data-i18n-en>{p.data.description}</span><span data-i18n-vi>{p.data.description_vi || p.data.description}</span></p>)}<h2><span data-i18n-en>Publications together</span><span data-i18n-vi>Công bố khoa học chung</span></h2>{linkedPubs.map(p=><p><a href={asset(`/publications/${p.id}/`)}><span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span></a> ({p.data.year})</p>)}</ContentLayout>
+import { render, type CollectionEntry } from 'astro:content';
+import ContentLayout from '@/layouts/ContentLayout.astro';
+import { published } from '@/lib/content';
 
+export async function getStaticPaths() {
+  return (await published('people')).map(entry => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'people'> };
+const { Content } = await render(entry);
+const projects = await published('projects');
+const publications = await published('publications');
+const linkedProjects = projects.filter(p => p.data.people.includes(entry.id));
+const linkedPubs = publications.filter(p => p.data.authors.some(a => a.person === entry.id));
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
+---
+<ContentLayout title={entry.data.title} description={entry.data.description} description_vi={entry.data.description_vi} date={entry.data.date} topics={entry.data.topics} prose={entry.body}>
+  <div class="contact-grid">
+    <div>
+      <img src={asset(entry.data.image)} width="400" height="400" alt="" style="border-radius:var(--radius)"/>
+    </div>
+    <div>
+      <h2>{entry.data.role_vi ? <><span data-i18n-en>{entry.data.role}</span><span data-i18n-vi>{entry.data.role_vi}</span></> : entry.data.role}</h2>
+      <p>{entry.data.organization_vi ? <><span data-i18n-en>{entry.data.organization}</span><span data-i18n-vi>{entry.data.organization_vi}</span></> : entry.data.organization}</p>
+      <div class="resource-links">
+        {entry.data.homepage && <a href={entry.data.homepage}>Homepage ↗</a>}
+        {entry.data.scholar && <a href={entry.data.scholar}>Scholar ↗</a>}
+        {entry.data.orcid && <a href={entry.data.orcid}>ORCID ↗</a>}
+      </div>
+    </div>
+  </div>
+  <Content/>
+  {linkedProjects.length > 0 && (
+    <>
+      <h2><span data-i18n-en>Projects together</span><span data-i18n-vi>Dự án hợp tác</span></h2>
+      {linkedProjects.map(p => (
+        <p>
+          <a href={asset(`/projects/${p.id}/`)}>
+            <span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span>
+          </a> — <span data-i18n-en>{p.data.description}</span><span data-i18n-vi>{p.data.description_vi || p.data.description}</span>
+        </p>
+      ))}
+    </>
+  )}
+  {linkedPubs.length > 0 && (
+    <>
+      <h2><span data-i18n-en>Publications together</span><span data-i18n-vi>Công bố khoa học chung</span></h2>
+      {linkedPubs.map(p => (
+        <p>
+          <a href={asset(`/publications/${p.id}/`)}>
+            <span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span>
+          </a> ({p.data.year})
+        </p>
+      ))}
+    </>
+  )}
+</ContentLayout>

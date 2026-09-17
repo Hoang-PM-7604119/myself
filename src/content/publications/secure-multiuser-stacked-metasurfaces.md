@@ -13,9 +13,9 @@ order: 1
 topics: [edge-ai-embedded-systems]
 authors:
   - { name: L.H. Hoang }
-  - { name: M.H. Pham, highlight: true }
+  - { name: M.H. Pham, person: pham-minh-hoang, highlight: true }
   - { name: Q.T. Luu }
-  - { name: V.D. Nguyen }
+  - { name: V.D. Nguyen, person: nguyen-van-dinh }
 abstract: This paper studies secure multiuser communications with stacked intelligent metasurfaces using quantum reinforcement learning.
 abstract_vi: Bài báo nghiên cứu giải pháp truyền thông đa người dùng bảo mật lớp vật lý bằng cách kết hợp bề mặt siêu vật liệu thông minh xếp chồng (Stacked Intelligent Metasurfaces - SIM) và giải thuật học tăng cường lượng tử (QRL).
 summary: Applying reinforcement-learning methods to secure communications with intelligent metasurface systems.

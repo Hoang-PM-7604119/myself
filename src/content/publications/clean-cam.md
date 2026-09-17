@@ -12,8 +12,15 @@ featured: true
 order: 3
 topics: [computer-vision, intelligent-sensing-platforms]
 authors:
-  - { name: K. Nguyen et al. }
-  - { name: H.M. Pham, highlight: true }
+  - { name: Khoa Minh Nguyen, first: true }
+  - { name: Anh Hoang }
+  - { name: Anh Nam Nhat Tran }
+  - { name: Anh Nam Nguyet Tran }
+  - { name: Minh-Hoang Pham, person: pham-minh-hoang, highlight: true }
+  - { name: Tuan-Khoi Phan, person: phan-tuan-khoi }
+  - { name: Dinh Van Dung, person: dinh-van-dung }
+  - { name: Van-Dinh Nguyen, person: nguyen-van-dinh }
+  - { name: Do Danh Cuong, person: do-danh-cuong }
 abstract: CleanCam presents a benchmark dataset for underwater camera viewport fouling severity in aquaculture.
 abstract_vi: CleanCam công bố bộ dữ liệu chuẩn mã nguồn mở phục vụ huấn luyện và đánh giá các mô hình thị giác máy tính nhận diện mức độ bám bẩn sinh học (biofouling) trên bề mặt kính quan sát camera dưới nước trong nuôi trồng thủy sản.
 summary: A computer-vision benchmark for evaluating underwater camera fouling in aquaculture monitoring.
@@ -24,7 +31,7 @@ projects: [smart-marine-aquaculture]
 bibtex: |
   @article{nguyen2026cleancam,
     title={CleanCam: A Benchmark Dataset for Underwater Camera Viewport Fouling Severity in Aquaculture},
-    author={Nguyen, K. and others and Pham, H.M.},
+    author={Nguyen, Khoa Minh and Hoang, Anh and Tran, Anh Nam Nhat and Tran, Anh Nam Nguyet and Pham, Minh-Hoang and Phan, Tuan-Khoi and Dinh, Van Dung and Nguyen, Van-Dinh and Do, Danh Cuong},
     journal={Data in Brief},
     year={2026}
   }

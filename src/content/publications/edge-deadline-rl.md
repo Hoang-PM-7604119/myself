@@ -14,8 +14,8 @@ topics: [edge-ai-embedded-systems]
 authors:
   - { name: N.H. Nguyen }
   - { name: N. Van Thieu }
-  - { name: M.H. Pham, highlight: true }
-  - { name: V.D. Nguyen }
+  - { name: M.H. Pham, person: pham-minh-hoang, highlight: true }
+  - { name: V.D. Nguyen, person: nguyen-van-dinh }
 abstract: This paper studies adaptive task scheduling under hard deadlines in edge environments using deep reinforcement learning.
 abstract_vi: Nghiên cứu đề xuất giải thuật học tăng cường sâu (DRL) phục vụ điều phối và lập lịch tác vụ thích ứng trong môi trường tính toán biên với các ràng buộc thời gian thực nghiêm ngặt (hard deadlines).
 summary: Scheduling edge workloads with reinforcement learning while respecting hard deadline constraints.
