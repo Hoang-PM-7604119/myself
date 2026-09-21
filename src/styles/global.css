@@ -533,13 +533,7 @@ section,
 }
 
 .signal-pulse {
-  display: inline-block;
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #34c759;
-  box-shadow: 0 0 0 2px rgba(52, 199, 89, 0.2);
-  flex-shrink: 0;
+  display: none;
 }
 
 .hero-visual {
@@ -603,12 +597,7 @@ section,
 }
 
 .telemetry-live-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #34c759;
-  box-shadow: 0 0 0 2px rgba(52, 199, 89, 0.2);
-  flex-shrink: 0;
+  display: none;
 }
 
 .telemetry-text {
@@ -622,11 +611,11 @@ section,
   font-family: var(--font-mono);
   font-size: .62rem;
   font-weight: 600;
-  color: #10b981;
-  background: rgba(16, 185, 129, 0.1);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent), transparent 92%);
   padding: 3px 8px;
   border-radius: var(--radius-pill);
-  border: 1px solid rgba(16, 185, 129, 0.22);
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 80%);
   letter-spacing: .04em;
 }
 
@@ -1368,23 +1357,13 @@ footer small { grid-column: 1 / -1; }
 }
 
 .telemetry-pill.active {
-  border-color: rgba(16, 185, 129, 0.3);
-  background: rgba(16, 185, 129, 0.08);
+  border-color: var(--line);
+  background: var(--surfaceSolid);
   color: var(--ink);
 }
 
-.telemetry-pill .pulse-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background: #34c759;
-  box-shadow: 0 0 0 2px rgba(52, 199, 89, 0.2);
-  flex-shrink: 0;
-}
-
-.telemetry-pill.completed .pulse-dot {
-  background: var(--muted-subtle);
-  box-shadow: none;
+.pulse-dot {
+  display: none;
 }
 
 .story-org-timeline {
@@ -1635,7 +1614,7 @@ footer small { grid-column: 1 / -1; }
   display: flex;
   align-items: center;
   gap: 6px;
-  color: #10b981;
+  color: var(--muted);
 }
 
 .blueprint-body {

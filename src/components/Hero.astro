@@ -8,10 +8,10 @@ const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
     <h1 id="hero-title"><span data-i18n-en>Field AIoT systems, <em>from sensors to intelligence.</em></span><span data-i18n-vi>Hệ thống AIoT thực địa, <em>từ cảm biến đến trí tuệ nhân tạo.</em></span></h1>
     <p class="lede"><span data-i18n-en>{profile.statement}</span><span data-i18n-vi>{profile.statement_vi || profile.statement}</span></p>
     <div class="signal-strip" aria-label="Core system stack">
-      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>embedded nodes</span><span data-i18n-vi>nút nhúng</span></span>
-      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>computer vision</span><span data-i18n-vi>thị giác máy tính</span></span>
-      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>edge AI</span><span data-i18n-vi>trí tuệ nhân tạo biên</span></span>
-      <span><i class="signal-pulse" aria-hidden="true"></i> <span data-i18n-en>cloud infrastructure</span><span data-i18n-vi>hạ tầng đám mây</span></span>
+      <span><span data-i18n-en>embedded nodes</span><span data-i18n-vi>nút nhúng</span></span>
+      <span><span data-i18n-en>computer vision</span><span data-i18n-vi>thị giác máy tính</span></span>
+      <span><span data-i18n-en>edge AI</span><span data-i18n-vi>trí tuệ nhân tạo biên</span></span>
+      <span><span data-i18n-en>cloud infrastructure</span><span data-i18n-vi>hạ tầng đám mây</span></span>
     </div>
     <div class="tags">{research.map(r => <a href={asset(`/topics/${r.slug}/`)}><span data-i18n-en>{r.title}</span><span data-i18n-vi>{r.title_vi || r.title}</span></a>)}</div>
     <div class="actions">
@@ -33,7 +33,6 @@ const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
         <img src={asset(profile.image)} width="720" height="840" alt={`System diagram and profile mark for ${profile.name}`} fetchpriority="high" decoding="async" />
       </picture>
       <div class="hero-telemetry-badge" aria-hidden="true">
-        <span class="telemetry-live-dot"></span>
         <span class="telemetry-text">FIELD / SENSOR / MODEL / CLOUD</span>
         <span class="telemetry-code">SYS_ONLINE</span>
       </div>
