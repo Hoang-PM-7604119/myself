@@ -65,12 +65,12 @@ export const allPartners: Record<string, PartnerInfo> = {
   },
   'can-gio': {
     id: 'can-gio',
-    nameEn: 'Can Gio Mangrove Biosphere Reserve Management Board',
-    nameVi: 'Ban Quản lý Rừng phòng hộ Cần Giờ',
-    shortNameEn: 'Can Gio Biosphere Reserve',
-    shortNameVi: 'BQL Rừng Cần Giờ',
+    nameEn: 'Ho Chi Minh City Management Board for Protection and Special-Use Forests',
+    nameVi: 'Ban Quản lý Rừng phòng hộ, đặc dụng Thành phố Hồ Chí Minh',
+    shortNameEn: 'HCMC Forest Authority',
+    shortNameVi: 'BQL Rừng PH&ĐD TP.HCM',
     logo: '/images/organizations/can-gio-emblem.png',
-    url: 'http://www.rungngapmancangio.org'
+    url: 'https://www.facebook.com/61590066004137/'
   },
   hust: {
     id: 'hust',

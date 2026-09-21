@@ -49,8 +49,8 @@ Dự án được chủ trì bởi Chủ nhiệm đề tài (PI) là **PGS. TS. 
 <figure>
   <img src="/myself/images/projects/can-gio/meeting-with-management-board.jpg" alt="Meeting with Ho Chi Minh City Management Board for Protection and Special-Use Forests in Can Gio" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 1:</strong> VinUniversity GREEN-X research delegation—led by PI Assoc. Prof. Dr. Phan Thi Thuc Anh and Co-PI Dinh Van Dung—meeting with leadership and specialists at the Can Gio Protection Forest Management Board (Ban Quản lý Rừng phòng hộ Cần Giờ).</span>
-    <span data-i18n-vi><strong>Hình 1:</strong> Đoàn nghiên cứu Trung tâm GREEN-X (VinUniversity) do Chủ nhiệm đề tài PGS. TS. Phan Thị Thục Anh và Đồng chủ nhiệm Đinh Văn Dũng dẫn đầu làm việc với Ban Quản lý Rừng phòng hộ Cần Giờ (Ban Quản lý Rừng đặc dụng TP. Hồ Chí Minh).</span>
+    <span data-i18n-en><strong>Figure 1:</strong> VinUniversity GREEN-X research delegation—led by PI Assoc. Prof. Dr. Phan Thi Thuc Anh and Co-PI Dinh Van Dung—meeting with leadership and specialists at the Ho Chi Minh City Management Board for Protection and Special-Use Forests (BQL Rừng phòng hộ, đặc dụng TP.HCM).</span>
+    <span data-i18n-vi><strong>Hình 1:</strong> Đoàn nghiên cứu Trung tâm GREEN-X (VinUniversity) do Chủ nhiệm đề tài PGS. TS. Phan Thị Thục Anh và Đồng chủ nhiệm Đinh Văn Dũng dẫn đầu làm việc với Ban Quản lý Rừng phòng hộ, đặc dụng Thành phố Hồ Chí Minh tại Cần Giờ.</span>
   </figcaption>
 </figure>
 
