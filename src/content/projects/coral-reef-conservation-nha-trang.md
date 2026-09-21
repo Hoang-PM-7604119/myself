@@ -133,22 +133,13 @@ Triển khai hạ tầng quan trắc công nghệ cao trên vùng nước bảo 
   </figcaption>
 </figure>
 
-<div class="figure-grid">
-  <figure>
-    <img src="/myself/images/projects/coral-reef/meeting-nha-trang-bay-management.jpg" alt="Technical working session with Nha Trang Bay Management Board" loading="lazy" />
-    <figcaption>
-      <span data-i18n-en><strong>Figure 4:</strong> Technical working session with leadership and officers of the Nha Trang Bay Management Board, mapping sanctuary zones and sensor deployment coordinates.</span>
-      <span data-i18n-vi><strong>Hình 4:</strong> Buổi làm việc chuyên môn với Ban Quản lý Vịnh Nha Trang, thống nhất phân vùng bảo tồn và tọa độ triển khai thiết bị quan trắc.</span>
-    </figcaption>
-  </figure>
-  <figure>
-    <img src="/myself/images/projects/coral-reef/nha-trang-bay-management-meeting.jpg" alt="Meeting with Nha Trang Bay Management Board delegation" loading="lazy" />
-    <figcaption>
-      <span data-i18n-en><strong>Figure 5:</strong> Research and leadership delegation outside the headquarters of the Nha Trang Bay Management Board (Ban Quản lý Vịnh Nha Trang) following strategic deployment planning.</span>
-      <span data-i18n-vi><strong>Hình 5:</strong> Đoàn nghiên cứu làm việc trước trụ sở Ban Quản lý Vịnh Nha Trang sau buổi thống nhất kế hoạch triển khai trạm quan trắc.</span>
-    </figcaption>
-  </figure>
-</div>
+<figure>
+  <img src="/myself/images/projects/coral-reef/meeting-nha-trang-bay-management.jpg" alt="Technical working session with Nha Trang Bay Management Board" loading="lazy" />
+  <figcaption>
+    <span data-i18n-en><strong>Figure 4:</strong> Technical working session with leadership and officers of the Nha Trang Bay Management Board, mapping sanctuary zones and sensor deployment coordinates.</span>
+    <span data-i18n-vi><strong>Hình 4:</strong> Buổi làm việc chuyên môn với Ban Quản lý Vịnh Nha Trang, thống nhất phân vùng bảo tồn và tọa độ triển khai thiết bị quan trắc.</span>
+  </figcaption>
+</figure>
 
 ### <span data-i18n-en>3. Offshore Marine Transit & Buoy Station Commissioning</span><span data-i18n-vi>3. Di chuyển ra biển & Lắp đặt trạm quan trắc trên phao tiêu</span>
 
@@ -172,15 +163,15 @@ Trạm quan trắc tự hành được gắn chắc chắn lên trụ phao tiêu
   <figure>
     <img src="/myself/images/projects/coral-reef/ocean-deployment-transit.jpg" alt="Marine transit and ROV staging on research boat in Nha Trang Bay" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 6:</strong> Research team navigating Nha Trang Bay aboard an expedition vessel, staging underwater ROVs, cabling, and calibration tools for sanctuary installation.</span>
-      <span data-i18n-vi><strong>Hình 6:</strong> Tàu nghiên cứu di chuyển trên Vịnh Nha Trang mang theo thiết bị ROV, dây cáp cảm biến ngầm và dụng cụ hiệu chuẩn.</span>
+      <span data-i18n-en><strong>Figure 5:</strong> Research team navigating Nha Trang Bay aboard an expedition vessel, staging underwater ROVs, cabling, and calibration tools for sanctuary installation.</span>
+      <span data-i18n-vi><strong>Hình 5:</strong> Tàu nghiên cứu di chuyển trên Vịnh Nha Trang mang theo thiết bị ROV, dây cáp cảm biến ngầm và dụng cụ hiệu chuẩn.</span>
     </figcaption>
   </figure>
   <figure>
     <img src="/myself/images/projects/coral-reef/marine-buoy-monitoring-station.jpg" alt="Deployed solar telemetry station on marine beacon with diver" loading="lazy" />
     <figcaption>
-      <span data-i18n-en><strong>Figure 7:</strong> Commissioned solar-powered monitoring station installed atop a marine navigational beacon in Nha Trang Bay, with diver securing submerged sensor nodes in the coral reef zone.</span>
-      <span data-i18n-vi><strong>Hình 7:</strong> Trạm giám sát năng lượng mặt trời hoàn thiện trên phao tiêu hàng hải Vịnh Nha Trang, thợ lặn cố định chùm cảm biến đáy san hô.</span>
+      <span data-i18n-en><strong>Figure 6:</strong> Commissioned solar-powered monitoring station installed atop a marine navigational beacon in Nha Trang Bay, with diver securing submerged sensor nodes in the coral reef zone.</span>
+      <span data-i18n-vi><strong>Hình 6:</strong> Trạm giám sát năng lượng mặt trời hoàn thiện trên phao tiêu hàng hải Vịnh Nha Trang, thợ lặn cố định chùm cảm biến đáy san hô.</span>
     </figcaption>
   </figure>
 </div>
