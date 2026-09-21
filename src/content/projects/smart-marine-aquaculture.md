@@ -310,3 +310,36 @@ Cụm lắp đặt này hợp nhất quan trắc môi trường với nghiên c�
 - **Cảm biến đa phương thức môi trường & âm thanh:** Kết hợp chuỗi dữ liệu 5 thông số chất lượng nước với dữ liệu thủy âm sinh học để quản lý chủ động quá trình sinh trưởng và cho ăn trong nuôi trồng thủy sản.
 
 </div>
+
+---
+
+## <span data-i18n-en>Citations & Institutional Reports</span><span data-i18n-vi>Tài liệu trích dẫn & Báo cáo công bố</span>
+
+<div data-i18n-en>
+
+The high-tech aquaculture technologies and provincial green transformation initiatives have been officially reported and documented by the Smart Green Transformation Center (GREEN-X), VinUniversity:
+
+1. **High-Tech Aquaculture & Marine Conservation:**  
+   [**Green-X And Nha Trang Bay Management Board Cooperate On Marine Conservation And High-Tech Aquaculture Project**](https://greenx.vinuni.edu.vn/green-x-and-nha-trang-bay-management-board-cooperate-on-marine-conservation-and-high-tech-aquaculture-project/) (August 22, 2025).  
+   *Official coverage of the joint working session with the Nha Trang Bay Management Board to deploy AI and IoT platforms for sustainable marine development and high-tech aquaculture monitoring.*
+
+2. **Khanh Hoa Province Green Transformation Technology Review:**  
+   [**GREEN-X and Khanh Hoa Province Strengthen Collaboration on Technology Solutions for Green Transformation**](https://greenx.vinuni.edu.vn/green-x-and-khanh-hoa-province-strengthen-collaboration-on-technology-solutions-for-green-transformation/) (March 16, 2026).  
+   *Review of telemetry platforms, smart operation management, and technology transfer for marine and coastal sustainable transformation in Khanh Hoa Province.*
+
+</div>
+
+<div data-i18n-vi>
+
+Hoạt động nghiên cứu thực địa nuôi biển công nghệ cao và hợp tác chuyển đổi xanh với tỉnh Khánh Hòa được đưa tin và trích dẫn chính thức trên cổng thông tin Trung tâm Chuyển đổi xanh Thông minh (GREEN-X), Đại học VinUni:
+
+1. **Nuôi biển công nghệ cao & Bảo tồn biển:**  
+   [**GREEN-X và Ban Quản lý Vịnh Nha Trang hợp tác triển khai dự án Bảo tồn biển và Nuôi biển công nghệ cao**](https://greenx.vinuni.edu.vn/green-x-and-nha-trang-bay-management-board-cooperate-on-marine-conservation-and-high-tech-aquaculture-project/) (22/08/2025).  
+   *Thông cáo chính thức về phiên làm việc với Ban Quản lý Vịnh Nha Trang triển khai ứng dụng Trí tuệ nhân tạo (AI) và Internet vạn vật (IoT) trong quản lý quan trắc nuôi biển và bảo tồn môi trường nước.*
+
+2. **Hợp tác Công nghệ Chuyển đổi xanh Tỉnh Khánh Hòa:**  
+   [**GREEN-X và Tỉnh Khánh Hòa tăng cường hợp tác về các giải pháp công nghệ phục vụ chuyển đổi xanh**](https://greenx.vinuni.edu.vn/green-x-and-khanh-hoa-province-strengthen-collaboration-on-technology-solutions-for-green-transformation/) (16/03/2026).  
+   *Đánh giá tiến độ giải pháp công nghệ, trung tâm vận hành thông minh và kế hoạch chuyển giao công nghệ cho các cơ quan, đơn vị tại tỉnh Khánh Hòa.*
+
+</div>
+

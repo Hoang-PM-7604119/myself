@@ -58,7 +58,7 @@ export const allPartners: Record<string, PartnerInfo> = {
     id: 'nha-trang-bay',
     nameEn: 'Nha Trang Bay Management Board',
     nameVi: 'Ban Quản lý Vịnh Nha Trang',
-    shortNameEn: 'Nha Trang Bay Authority',
+    shortNameEn: 'Nha Trang Bay Management Board',
     shortNameVi: 'BQL Vịnh Nha Trang',
     logo: '/images/organizations/nha-trang-bay.png',
     url: 'https://vinhnhatrang.net'

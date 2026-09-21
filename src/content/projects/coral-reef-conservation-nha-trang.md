@@ -233,3 +233,44 @@ Bằng cách kết hợp các chuyến bay khảo sát bằng flycam trên cao c
 - **Phần cứng IoT biển bền bỉ:** Khẳng định độ tin cậy của các nút cảm biến tự hành dùng năng lượng mặt trời trong điều kiện môi trường biển nhiệt đới độ mặn cao.
 
 </div>
+
+---
+
+## <span data-i18n-en>Citations & Institutional Reports</span><span data-i18n-vi>Tài liệu trích dẫn & Báo cáo công bố</span>
+
+<div data-i18n-en>
+
+The project's field deployment, marine sanctuary conservation initiatives, and provincial technology partnerships have been officially documented and reported by the Smart Green Transformation Center (GREEN-X), VinUniversity:
+
+1. **GREEN-X Center & Nha Trang Bay Management Board:**  
+   [**Green-X And Nha Trang Bay Management Board Cooperate On Marine Conservation And High-Tech Aquaculture Project**](https://greenx.vinuni.edu.vn/green-x-and-nha-trang-bay-management-board-cooperate-on-marine-conservation-and-high-tech-aquaculture-project/) (August 22, 2025).  
+   *Official working session between VinUniversity GREEN-X and the Nha Trang Bay Management Board to advance the marine conservation project, deploy AI and IoT sensing stations, and implement sustainable marine ecosystem monitoring.*
+
+2. **Khanh Hoa Province Technology Partnership for Green Transformation:**  
+   [**GREEN-X and Khanh Hoa Province Strengthen Collaboration on Technology Solutions for Green Transformation**](https://greenx.vinuni.edu.vn/green-x-and-khanh-hoa-province-strengthen-collaboration-on-technology-solutions-for-green-transformation/) (March 16, 2026).  
+   *High-level working session with representatives from departments and agencies of Khanh Hoa Province to review the progress of marine IoT solutions, smart environmental monitoring platforms, and technology transfer.*
+
+3. **Green Tourism & Ecological Standards in Khanh Hoa:**  
+   [**GREEN-X Collaborates with Khanh Hoa Department of Culture, Sports and Tourism to Deliver Training and Technology Transfer on Green Tourism**](https://greenx.vinuni.edu.vn/green-x-collaborates-with-khanh-hoa-department-of-culture-sports-and-tourism-to-deliver-training-and-technology-transfer-on-green-tourism/) (March 18, 2026).  
+   *Field survey, guidance, and training program supporting the implementation of Khanh Hoa Green Tourism Standards, marine environmental preservation, and sustainable coastal development.*
+
+</div>
+
+<div data-i18n-vi>
+
+Công tác triển khai thực địa, chương trình bảo tồn biển và quan hệ hợp tác công nghệ với tỉnh Khánh Hòa được đưa tin và trích dẫn chính thức trên cổng thông tin Trung tâm Chuyển đổi xanh Thông minh (GREEN-X), Trường Đại học VinUni:
+
+1. **Hợp tác GREEN-X & Ban Quản lý Vịnh Nha Trang:**  
+   [**GREEN-X và Ban Quản lý Vịnh Nha Trang hợp tác triển khai dự án Bảo tồn biển và Nuôi biển công nghệ cao**](https://greenx.vinuni.edu.vn/green-x-and-nha-trang-bay-management-board-cooperate-on-marine-conservation-and-high-tech-aquaculture-project/) (22/08/2025).  
+   *Báo cáo chính thức về phiên làm việc chuyên môn giữa Trung tâm GREEN-X (VinUni) và Ban Quản lý Vịnh Nha Trang nhằm thúc đẩy dự án bảo tồn rạn san hô, trạm quan trắc IoT ngầm và ứng dụng AI trong bảo tồn biển bền vững.*
+
+2. **Hợp tác Chuyển đổi xanh Tỉnh Khánh Hòa:**  
+   [**GREEN-X và Tỉnh Khánh Hòa tăng cường hợp tác về các giải pháp công nghệ phục vụ chuyển đổi xanh**](https://greenx.vinuni.edu.vn/green-x-and-khanh-hoa-province-strengthen-collaboration-on-technology-solutions-for-green-transformation/) (16/03/2026).  
+   *Buổi làm việc chuyên đề cùng các sở ban ngành tỉnh Khánh Hòa nhằm rà soát tiến độ giải pháp công nghệ chuyển đổi xanh, hệ thống quan trắc AIoT và chuyển giao công nghệ cho địa phương.*
+
+3. **Đào tạo & Tiêu chuẩn Du lịch xanh tại Khánh Hòa:**  
+   [**GREEN-X phối hợp Sở Văn hóa, Thể thao và Du lịch Khánh Hòa tập huấn và chuyển giao công nghệ về Du lịch xanh**](https://greenx.vinuni.edu.vn/green-x-collaborates-with-khanh-hoa-department-of-culture-sports-and-tourism-to-deliver-training-and-technology-transfer-on-green-tourism/) (18/03/2026).  
+   *Chương trình khảo sát thực địa, tập huấn bộ tiêu chí du lịch xanh và chuyển giao giải pháp giám sát bảo vệ môi trường sinh thái ven biển tỉnh Khánh Hòa.*
+
+</div>
+
