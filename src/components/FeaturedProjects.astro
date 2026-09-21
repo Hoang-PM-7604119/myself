@@ -256,7 +256,7 @@ const stories: Record<string, {
 
       <div class="story-grid">
         <div class="story-narrative">
-          <div class="story-beats">
+          <div class="story-beats" data-reveal-stagger>
             {story.beats.map((beat) => (
               <div class="story-beat">
                 <div class="beat-phase">
@@ -275,7 +275,7 @@ const stories: Record<string, {
             ))}
           </div>
 
-          <dl class="story-specs-strip" aria-label="System specifications">
+          <dl class="story-specs-strip" aria-label="System specifications" data-reveal>
             {story.specs.map((spec) => (
               <div class="spec-item">
                 <dt>
@@ -311,7 +311,7 @@ const stories: Record<string, {
           </div>
         </div>
 
-        <div class="story-visual">
+        <div class="story-visual" data-reveal>
           <div class="blueprint-frame">
             <div class="blueprint-header">
               <span>{story.sysId}</span>

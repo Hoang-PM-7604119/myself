@@ -82,7 +82,20 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
       navButton.setAttribute('aria-expanded',String(expanded));
       document.querySelector('.site-header')?.classList.toggle('nav-open',expanded);
     });
+    // Reveal Hero immediately on load so above-the-fold content is instantly fluid
     document.querySelectorAll('.hero[data-reveal], .hero [data-reveal-stagger]').forEach((el) => el.classList.add('revealed'));
+
+    // Automatically tag standalone grids and content blocks across all pages
+    document.querySelectorAll('.research-grid, .people-grid, .timeline, .publication-list, .news-list, .cards, .figure-grid, .story-beats').forEach((grid) => {
+      grid.setAttribute('data-reveal-stagger', '');
+    });
+
+    document.querySelectorAll('section:not(.hero), .project-story-section, .cta, .story-visual, .blueprint-frame, .contact-card, .prose > figure, .prose > table').forEach((el) => {
+      if (!el.hasAttribute('data-reveal')) {
+        el.setAttribute('data-reveal', '');
+      }
+    });
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
@@ -90,8 +103,26 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.05, rootMargin: '0px 0px -30px 0px' });
-    document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach((el) => observer.observe(el));
+    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('revealed');
+      } else {
+        observer.observe(el);
+      }
+    });
+
+    // Dynamic header glass compaction on scroll
+    const header = document.querySelector<HTMLElement>('.site-header');
+    if (header) {
+      const handleScroll = () => {
+        header.classList.toggle('scrolled', window.scrollY > 24);
+      };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+    }
 
     document.querySelectorAll<HTMLElement>('[data-copy]').forEach((button) => button.addEventListener('click', async () => {
       await navigator.clipboard.writeText(button.dataset.copy || '');

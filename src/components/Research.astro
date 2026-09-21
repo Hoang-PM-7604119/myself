@@ -13,7 +13,7 @@ const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}
       <span data-i18n-vi>Nghiên cứu của tôi biến các bài toán khoa học thành hệ thống thực địa: phần cứng cảm biến, mô hình AI, hạ tầng backend và triển khai thực địa được thiết kế đồng bộ.</span>
     </p>
   </div>
-  <div class="research-grid">
+  <div class="research-grid" data-reveal-stagger>
     {research.map((r) => (
       <article class="research-card">
         <h3><a href={asset(`/topics/${r.slug}/`)}><span data-i18n-en>{r.title}</span><span data-i18n-vi>{r.title_vi || r.title}</span></a></h3>
