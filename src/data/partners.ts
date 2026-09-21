@@ -60,8 +60,8 @@ export const allPartners: Record<string, PartnerInfo> = {
     nameVi: 'Ban Quản lý Vịnh Nha Trang',
     shortNameEn: 'Nha Trang Bay Authority',
     shortNameVi: 'BQL Vịnh Nha Trang',
-    logo: '/images/organizations/nha-trang-bay.svg',
-    url: 'https://khanhhoa.gov.vn'
+    logo: '/images/organizations/nha-trang-bay.png',
+    url: 'https://vinhnhatrang.net'
   },
   'can-gio': {
     id: 'can-gio',
