@@ -85,34 +85,58 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
     // Reveal Hero immediately on load so above-the-fold content is instantly fluid
     document.querySelectorAll('.hero[data-reveal], .hero [data-reveal-stagger]').forEach((el) => el.classList.add('revealed'));
 
-    // Automatically tag standalone grids and content blocks across all pages
-    document.querySelectorAll('.research-grid, .people-grid, .timeline, .publication-list, .news-list, .cards, .figure-grid, .story-beats').forEach((grid) => {
+    // Tag standalone grids and content blocks only
+    document.querySelectorAll('.research-grid, .people-grid, .timeline, .publication-list, .news-list, .cards, .figure-grid').forEach((grid) => {
       grid.setAttribute('data-reveal-stagger', '');
     });
 
-    document.querySelectorAll('section:not(.hero), .project-story-section, .cta, .story-visual, .blueprint-frame, .contact-card, .prose > figure, .prose > table').forEach((el) => {
+    // Tag top-level sections and standalone content blocks (avoid nesting)
+    document.querySelectorAll('section:not(.hero), .cta, .contact-card, .prose > figure, .prose > table').forEach((el) => {
       if (!el.hasAttribute('data-reveal')) {
         el.setAttribute('data-reveal', '');
       }
     });
 
+    const revealTarget = (target: Element) => {
+      target.classList.add('revealed');
+      target.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach((child) => {
+        child.classList.add('revealed');
+        observer.unobserve(child);
+      });
+      observer.unobserve(target);
+    };
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          observer.unobserve(entry.target);
+          revealTarget(entry.target);
         }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.02, rootMargin: '0px 0px 60px 0px' });
 
-    document.querySelectorAll('[data-reveal], [data-reveal-stagger]').forEach((el) => {
-      const rect = el.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
+    // Robust scroll visibility checker for Windows Edge/Chrome and fast scrolling
+    const checkPendingReveals = () => {
+      const vh = window.innerHeight || document.documentElement.clientHeight;
+      document.querySelectorAll<HTMLElement>('[data-reveal]:not(.revealed), [data-reveal-stagger]:not(.revealed)').forEach((el) => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top <= vh + 60 && rect.bottom >= 0) {
+          revealTarget(el);
+        } else {
+          observer.observe(el);
+        }
+      });
+    };
+
+    checkPendingReveals();
+    window.addEventListener('scroll', checkPendingReveals, { passive: true });
+    window.addEventListener('resize', checkPendingReveals, { passive: true });
+
+    // Safety timeout to ensure no element remains invisible
+    setTimeout(() => {
+      document.querySelectorAll('[data-reveal]:not(.revealed), [data-reveal-stagger]:not(.revealed)').forEach((el) => {
         el.classList.add('revealed');
-      } else {
-        observer.observe(el);
-      }
-    });
+      });
+    }, 1800);
 
     // Dynamic header glass compaction on scroll
     const header = document.querySelector<HTMLElement>('.site-header');

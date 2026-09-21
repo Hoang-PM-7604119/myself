@@ -11,6 +11,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "test:links": "tsx scripts/test-links.ts",
+    "optimize:images": "tsx scripts/optimize-images.ts",
     "quality": "npm run check && npm run validate:content && npm run build && npm run test:links"
   },
   "dependencies": {

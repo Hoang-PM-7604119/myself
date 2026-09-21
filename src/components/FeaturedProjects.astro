@@ -256,7 +256,7 @@ const stories: Record<string, {
 
       <div class="story-grid">
         <div class="story-narrative">
-          <div class="story-beats" data-reveal-stagger>
+          <div class="story-beats">
             {story.beats.map((beat) => (
               <div class="story-beat">
                 <div class="beat-phase">
@@ -275,7 +275,7 @@ const stories: Record<string, {
             ))}
           </div>
 
-          <dl class="story-specs-strip" aria-label="System specifications" data-reveal>
+          <dl class="story-specs-strip" aria-label="System specifications">
             {story.specs.map((spec) => (
               <div class="spec-item">
                 <dt>
@@ -311,7 +311,7 @@ const stories: Record<string, {
           </div>
         </div>
 
-        <div class="story-visual" data-reveal>
+        <div class="story-visual">
           <div class="blueprint-frame">
             <div class="blueprint-header">
               <span>{story.sysId}</span>
@@ -321,13 +321,18 @@ const stories: Record<string, {
               </span>
             </div>
             <a class="blueprint-img-link" href={asset(`/projects/${p.id}/`)} aria-label={`View architecture for ${p.data.title}`}>
-              <img
-                src={asset(p.data.cover)}
-                width="1200"
-                height="750"
-                loading="lazy"
-                alt={`System architecture diagram for ${p.data.title}`}
-              />
+              <picture>
+                <source srcset={asset(p.data.cover.replace(/\.(jpg|jpeg|png)$/i, '.webp'))} type="image/webp" />
+                <img
+                  src={asset(p.data.cover)}
+                  width="1200"
+                  height="750"
+                  loading={index === 0 ? "eager" : "lazy"}
+                  decoding="async"
+                  fetchpriority={index === 0 ? "high" : "auto"}
+                  alt={`System architecture diagram for ${p.data.title}`}
+                />
+              </picture>
             </a>
             <div class="blueprint-caption">
               <strong><span data-i18n-en>{p.data.title}</span><span data-i18n-vi>{p.data.title_vi || p.data.title}</span></strong>

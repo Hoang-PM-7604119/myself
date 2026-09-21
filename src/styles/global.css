@@ -100,35 +100,30 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  background: var(--bg);
+  background-color: var(--bg);
+  background-image:
+    radial-gradient(ellipse 80% 55% at 50% -12%, rgba(0, 113, 227, 0.09) 0%, transparent 70%),
+    radial-gradient(circle 700px at 85% 30%, rgba(94, 92, 230, 0.05) 0%, transparent 65%),
+    radial-gradient(circle 600px at 15% 75%, rgba(48, 176, 199, 0.05) 0%, transparent 60%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   line-height: 1.6;
   transition: background-color var(--duration-norm) ease, color var(--duration-norm) ease;
   min-height: 100dvh;
 }
 
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: -1;
-  opacity: .7;
-  background:
-    radial-gradient(ellipse 80% 55% at 50% -12%, rgba(0, 113, 227, 0.08) 0%, transparent 70%),
-    radial-gradient(circle 700px at 85% 30%, rgba(94, 92, 230, 0.04) 0%, transparent 65%),
-    radial-gradient(circle 600px at 15% 75%, rgba(48, 176, 199, 0.04) 0%, transparent 60%);
-  transition: opacity var(--duration-norm) ease;
+html[data-theme="dark"] body {
+  background-color: #050508;
+  background-image:
+    radial-gradient(ellipse 80% 55% at 50% -10%, rgba(41, 151, 255, 0.22) 0%, transparent 70%),
+    radial-gradient(circle 850px at 10% 35%, rgba(94, 92, 230, 0.16) 0%, transparent 65%),
+    radial-gradient(circle 800px at 90% 65%, rgba(48, 176, 199, 0.12) 0%, transparent 60%),
+    radial-gradient(circle 900px at 50% 115%, rgba(10, 132, 255, 0.10) 0%, transparent 65%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 
-html[data-theme="dark"] body::before {
-  opacity: 0.95;
-  background:
-    radial-gradient(ellipse 70% 50% at 50% -10%, rgba(41, 151, 255, 0.18) 0%, transparent 70%),
-    radial-gradient(circle 800px at 12% 35%, rgba(94, 92, 230, 0.11) 0%, transparent 65%),
-    radial-gradient(circle 750px at 88% 65%, rgba(48, 176, 199, 0.09) 0%, transparent 60%),
-    radial-gradient(circle 900px at 50% 115%, rgba(10, 132, 255, 0.08) 0%, transparent 65%);
-}
-
+body::before,
 body::after {
   content: "";
   display: none;
@@ -1335,64 +1330,57 @@ footer small { grid-column: 1 / -1; }
 .js [data-reveal],
 .js .ios-reveal {
   opacity: 0.001;
-  transform: translateY(32px) scale(0.985);
-  transition: opacity 850ms var(--ease-out-expo),
-              transform 850ms var(--ease-out-expo);
+  transform: translateY(24px);
+  transition: opacity 650ms var(--ease-out-expo),
+              transform 650ms var(--ease-out-expo);
   will-change: opacity, transform;
 }
 
 .js [data-reveal].revealed,
 .js .ios-reveal.revealed {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
 .js [data-reveal-stagger] > *,
 .js .ios-stagger > * {
   opacity: 0.001;
-  transform: translateY(26px) scale(0.988);
-  transition: opacity 800ms var(--ease-out-expo),
-              transform 800ms var(--ease-out-expo);
+  transform: translateY(20px);
+  transition: opacity 600ms var(--ease-out-expo),
+              transform 600ms var(--ease-out-expo);
   will-change: opacity, transform;
 }
 
 .js [data-reveal-stagger].revealed > *,
-.js .ios-stagger.revealed > * {
+.js .ios-stagger.revealed > *,
+.js section[data-reveal].revealed [data-reveal-stagger] > * {
   opacity: 1;
-  transform: translateY(0) scale(1);
+  transform: translateY(0);
 }
 
-.js [data-reveal-stagger].revealed > *:nth-child(1) { transition-delay: 40ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(2) { transition-delay: 110ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(3) { transition-delay: 180ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(4) { transition-delay: 250ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(5) { transition-delay: 320ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(6) { transition-delay: 390ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(7) { transition-delay: 460ms; }
-.js [data-reveal-stagger].revealed > *:nth-child(8) { transition-delay: 530ms; }
-
-/* Sub-elements inside project story sections */
-.js .blueprint-frame[data-reveal],
-.js .story-visual[data-reveal] .blueprint-frame {
-  opacity: 0.001;
-  transform: translateY(28px) scale(0.965);
-  transition: opacity 900ms var(--ease-out-expo),
-              transform 900ms var(--ease-out-expo);
-  will-change: opacity, transform;
-}
-
-.js .blueprint-frame[data-reveal].revealed,
-.js .story-visual[data-reveal].revealed .blueprint-frame {
-  opacity: 1;
-  transform: translateY(0) scale(1);
-}
+.js [data-reveal-stagger].revealed > *:nth-child(1),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(1) { transition-delay: 30ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(2),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(2) { transition-delay: 80ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(3),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(3) { transition-delay: 140ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(4),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(4) { transition-delay: 200ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(5),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(5) { transition-delay: 260ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(6),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(6) { transition-delay: 320ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(7),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(7) { transition-delay: 380ms; }
+.js [data-reveal-stagger].revealed > *:nth-child(8),
+.js section[data-reveal].revealed [data-reveal-stagger] > *:nth-child(8) { transition-delay: 440ms; }
 
 /* Section head smooth glide */
 .js section[data-reveal] .section-head {
   opacity: 0.001;
-  transform: translateY(20px);
-  transition: opacity 750ms var(--ease-out-expo),
-              transform 750ms var(--ease-out-expo);
+  transform: translateY(16px);
+  transition: opacity 600ms var(--ease-out-expo),
+              transform 600ms var(--ease-out-expo);
 }
 
 .js section[data-reveal].revealed .section-head {
@@ -1928,34 +1916,64 @@ footer small { grid-column: 1 / -1; }
   }
 
   .project-story-section {
-    padding: 44px 24px 50px;
-    margin-bottom: 48px;
-    border-radius: var(--radius);
+    padding: 36px 22px 40px;
+    margin-bottom: 36px;
+    border-radius: 22px;
+  }
+
+  .story-header {
+    margin-bottom: 22px;
   }
 
   .story-grid,
   .project-story-section.reverse .story-grid {
-    grid-template-columns: 1fr;
-    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin-top: 18px;
   }
 
+  .story-visual,
   .project-story-section.reverse .story-grid .story-visual {
-    order: 0;
-  }
-
-  .project-story-section.reverse .story-grid .story-narrative {
-    order: 1;
-  }
-
-  .story-visual {
+    order: 1 !important;
     position: static;
     top: auto;
+    width: 100%;
     max-width: 100%;
   }
 
+  .story-narrative,
+  .project-story-section.reverse .story-grid .story-narrative {
+    order: 2 !important;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    width: 100%;
+  }
+
+  .story-narrative .story-specs-strip {
+    order: 1;
+    margin-top: 0;
+  }
+
+  .story-narrative .story-beats {
+    order: 2;
+  }
+
+  .story-narrative .story-footer-actions {
+    order: 3;
+    margin-top: 0;
+  }
+
+  .story-narrative .tags {
+    order: 4;
+    margin-top: 0;
+  }
+
   .story-specs-strip {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
+    padding: 14px 16px;
   }
 }
 
@@ -2179,20 +2197,153 @@ footer small { grid-column: 1 / -1; }
   }
 
   .project-story-section {
-    padding: 32px 16px 38px;
-    margin-bottom: 36px;
+    padding: 22px 14px 26px;
+    margin-bottom: 24px;
     border-radius: 18px;
   }
 
+  .story-header {
+    margin-bottom: 16px;
+  }
+
+  .story-telemetry-meta {
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .telemetry-pill {
+    padding: 3px 9px;
+    font-size: .65rem;
+  }
+
+  .story-org-timeline {
+    font-size: .68rem;
+  }
+
   .story-title {
-    font-size: clamp(1.5rem, 6vw, 2.1rem);
+    font-size: clamp(1.38rem, 6.2vw, 1.85rem);
     line-height: 1.15;
+    margin: 6px 0 10px;
+    letter-spacing: -.03em;
+  }
+
+  .story-lede {
+    font-size: .92rem;
+    line-height: 1.5;
+  }
+
+  .blueprint-frame {
+    border-radius: 14px;
+  }
+
+  .blueprint-header {
+    padding: 8px 12px;
+    font-size: .64rem;
+  }
+
+  .blueprint-caption {
+    padding: 8px 12px;
+    font-size: .74rem;
+    line-height: 1.35;
   }
 
   .story-specs-strip {
-    grid-template-columns: 1fr;
-    gap: 10px;
-    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    padding: 12px 14px;
+    background: var(--surface-glass);
+    border-radius: 14px;
+  }
+
+  .spec-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 12px;
+    padding: 4px 0;
+    border-bottom: 1px solid var(--line-subtle);
+  }
+
+  .spec-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .spec-item dt {
+    font-size: .70rem;
+    color: var(--muted);
+    flex-shrink: 0;
+  }
+
+  .spec-item dd {
+    margin: 0;
+    font-size: .82rem;
+    text-align: right;
+    font-weight: 600;
+  }
+
+  .story-beats {
+    gap: 14px;
+    border-left: 2px solid var(--line);
+    padding-left: 14px;
+    margin-left: 2px;
+  }
+
+  .story-beat::before {
+    left: -18px;
+    top: 5px;
+    width: 6px;
+    height: 6px;
+  }
+
+  .beat-phase {
+    font-size: .62rem;
+    letter-spacing: .06em;
+    margin-bottom: 2px;
+  }
+
+  .beat-title {
+    font-size: .98rem;
+    line-height: 1.25;
+    margin: 0 0 4px;
+  }
+
+  .beat-body {
+    font-size: .86rem;
+    line-height: 1.5;
+  }
+
+  .story-footer-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    margin-top: 4px;
+  }
+
+  .story-footer-actions .button.primary {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: .75rem 1rem;
+    font-size: .90rem;
+  }
+
+  .publication-callout {
+    width: 100%;
+    box-sizing: border-box;
+    padding: .5rem .8rem;
+    font-size: .74rem;
+  }
+
+  .tags {
+    gap: 5px;
+    margin-top: 6px;
+  }
+
+  .tags .tag {
+    padding: .25rem .55rem;
+    font-size: .68rem;
   }
 
   .cta {
