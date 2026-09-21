@@ -1,5 +1,6 @@
 ---
 import { published, pretty } from '@/lib/content';
+import ProjectPartnerMarquee from '@/components/ProjectPartnerMarquee.astro';
 
 const allProjects = await published('projects');
 const projects = allProjects.filter((p) => p.data.featured).sort((a, b) => a.data.order - b.data.order);
@@ -342,6 +343,8 @@ const stories: Record<string, {
           </div>
         </div>
       </div>
+
+      <ProjectPartnerMarquee projectId={p.id} reverse={isReversed} />
     </section>
   );
 })}

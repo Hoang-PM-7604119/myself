@@ -1,0 +1,245 @@
+---
+import { getProjectPartners } from '@/data/partners';
+
+interface Props {
+  projectId: string;
+  reverse?: boolean;
+}
+
+const { projectId, reverse = false } = Astro.props;
+const partners = getProjectPartners(projectId);
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
+
+// Triplicate the list for seamless infinite loop without jumps
+const loopedItems = [...partners, ...partners, ...partners];
+---
+
+{partners.length > 0 && (
+  <div class={`project-partner-ticker ${reverse ? 'reverse-dir' : ''}`} aria-label="Collaborating institutions">
+    <div class="ticker-header">
+      <span class="ticker-dot" aria-hidden="true"></span>
+      <span class="ticker-label">
+        <span data-i18n-en>Collaborating institutions & field partners</span>
+        <span data-i18n-vi>Đơn vị hợp tác & triển khai thực địa</span>
+      </span>
+    </div>
+
+    <div class="marquee-wrapper">
+      <div class="marquee-track">
+        {loopedItems.map((partner) => (
+          <a
+            class="partner-pill"
+            href={partner.url || '#'}
+            target={partner.url ? '_blank' : undefined}
+            rel={partner.url ? 'noopener noreferrer' : undefined}
+            title={`${partner.nameEn} · ${partner.nameVi}`}
+          >
+            <span class="partner-logo-box">
+              <img
+                src={asset(partner.logo)}
+                alt={`${partner.shortNameEn} logo`}
+                width="28"
+                height="28"
+                loading="lazy"
+                decoding="async"
+              />
+            </span>
+            <span class="partner-text">
+              <span class="partner-name">
+                <span data-i18n-en>{partner.shortNameEn}</span>
+                <span data-i18n-vi>{partner.shortNameVi}</span>
+              </span>
+            </span>
+            <span class="partner-arrow" aria-hidden="true">&nearr;</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </div>
+)}
+
+<style>
+  .project-partner-ticker {
+    margin-top: 32px;
+    padding-top: 24px;
+    border-top: 1px solid var(--line-subtle);
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .ticker-header {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+
+  .ticker-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--accent);
+    box-shadow: 0 0 8px color-mix(in srgb, var(--accent), transparent 40%);
+  }
+
+  .ticker-label {
+    font-family: var(--font-mono);
+    font-size: 0.68rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+  }
+
+  .marquee-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding: 4px 0;
+    mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 6%, black 94%, transparent 100%);
+  }
+
+  .marquee-track {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    width: max-content;
+    animation: partnerMarquee 24s linear infinite;
+    will-change: transform;
+  }
+
+  .reverse-dir .marquee-track {
+    animation-direction: reverse;
+  }
+
+  .marquee-wrapper:hover .marquee-track {
+    animation-play-state: paused;
+  }
+
+  @keyframes partnerMarquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-100% / 3));
+    }
+  }
+
+  .partner-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 6px 14px 6px 8px;
+    border-radius: var(--radius-pill);
+    background: var(--surface-glass);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    border: 1px solid var(--line);
+    box-shadow: var(--glass-bevel);
+    text-decoration: none;
+    color: var(--ink);
+    white-space: nowrap;
+    transition: transform var(--duration-fast) var(--ease-apple),
+                background-color var(--duration-fast) ease,
+                border-color var(--duration-fast) ease,
+                box-shadow var(--duration-fast) ease;
+    cursor: pointer;
+  }
+
+  .partner-pill:hover {
+    transform: translateY(-2px);
+    background: var(--surfaceSolid);
+    border-color: color-mix(in srgb, var(--accent), var(--line) 40%);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3), var(--glass-bevel);
+    color: var(--accent);
+  }
+
+  .partner-logo-box {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: grid;
+    place-items: center;
+    flex-shrink: 0;
+    overflow: hidden;
+    padding: 3px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.25), inset 0 0 0 1px rgba(0, 0, 0, 0.08);
+  }
+
+  .partner-logo-box img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;
+  }
+
+  .partner-name {
+    font-family: var(--font-sans);
+    font-size: 0.76rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    color: var(--ink);
+  }
+
+  .partner-pill:hover .partner-name {
+    color: var(--accent);
+  }
+
+  .partner-arrow {
+    font-size: 0.72rem;
+    opacity: 0.35;
+    transition: opacity var(--duration-fast) ease, transform var(--duration-fast) var(--ease-apple);
+  }
+
+  .partner-pill:hover .partner-arrow {
+    opacity: 1;
+    transform: translate(1px, -1px);
+    color: var(--accent);
+  }
+
+  @media (max-width: 600px) {
+    .project-partner-ticker {
+      margin-top: 20px;
+      padding-top: 16px;
+    }
+
+    .ticker-label {
+      font-size: 0.62rem;
+    }
+
+    .partner-pill {
+      padding: 5px 12px 5px 6px;
+      gap: 8px;
+    }
+
+    .partner-logo-box {
+      width: 26px;
+      height: 26px;
+    }
+
+    .partner-logo-box img {
+      width: 18px;
+      height: 18px;
+    }
+
+    .partner-name {
+      font-size: 0.72rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none !important;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+
+    .marquee-wrapper {
+      mask-image: none !important;
+      -webkit-mask-image: none !important;
+    }
+  }
+</style>
