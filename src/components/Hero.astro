@@ -27,13 +27,7 @@ const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
     </div>
   </div>
   <div class="hero-visual" aria-label="Field AIoT System Visual">
-    <div class="tech-ambient-ring" aria-hidden="true"></div>
     <div class="hero-frame">
-      <div class="tech-reticle top-left" aria-hidden="true"></div>
-      <div class="tech-reticle top-right" aria-hidden="true"></div>
-      <div class="tech-reticle bottom-left" aria-hidden="true"></div>
-      <div class="tech-reticle bottom-right" aria-hidden="true"></div>
-      <div class="tech-scanner-wrap" aria-hidden="true"></div>
       <picture>
         <source srcset={`${asset('/images/profile/minh-hoang-pham-mobile.webp')} 420w, ${asset('/images/profile/minh-hoang-pham.webp')} 800w`} sizes="(max-width: 640px) 380px, 720px" type="image/webp" />
         <img src={asset(profile.image)} width="720" height="840" alt={`System diagram and profile mark for ${profile.name}`} fetchpriority="high" decoding="async" />

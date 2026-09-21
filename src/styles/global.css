@@ -525,65 +525,16 @@ section,
 .hero-visual::before {
   content: "";
   position: absolute;
-  inset: -18px -18px 18px 18px;
-  border: 1px dashed color-mix(in srgb, var(--accent), transparent 60%);
-  border-radius: calc(var(--radius) + 16px);
-  transform: translate3d(0, 0, -1px);
-  opacity: .5;
-  pointer-events: none;
-  transition: transform var(--duration-slow) ease, border-color var(--duration-slow) ease;
-}
-
-.hero-visual:hover::before {
-  transform: translate3d(-3px, 3px, -1px);
-  border-color: color-mix(in srgb, var(--accent), transparent 35%);
-}
-
-.tech-ambient-ring {
-  position: absolute;
-  width: 124%;
-  aspect-ratio: 1;
-  left: 50%;
-  top: 48%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  border: 1px solid color-mix(in srgb, var(--accent), transparent 84%);
+  inset: -12px;
+  border-radius: calc(var(--radius) + 14px);
+  background: radial-gradient(circle at 60% 40%, color-mix(in srgb, var(--accent), transparent 88%), transparent 70%);
   pointer-events: none;
   z-index: 0;
-  animation: tech-ring-spin 50s linear infinite;
-  will-change: transform;
-}
-
-.tech-ambient-ring::before {
-  content: "";
-  position: absolute;
-  inset: 22px;
-  border-radius: 50%;
-  border: 1px dashed color-mix(in srgb, var(--accent), transparent 88%);
-}
-
-.tech-ambient-ring::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 50%;
-  width: 1px;
-  background: linear-gradient(180deg,
-    transparent 0%,
-    color-mix(in srgb, var(--accent), transparent 80%) 50%,
-    transparent 100%
-  );
-}
-
-@keyframes tech-ring-spin {
-  from { transform: translate(-50%, -50%) rotate(0deg); }
-  to { transform: translate(-50%, -50%) rotate(360deg); }
 }
 
 .hero-frame {
   position: relative;
-  border-radius: calc(var(--radius) + 10px);
+  border-radius: calc(var(--radius) + 8px);
   overflow: hidden;
   box-shadow: var(--shadow);
   border: 1px solid var(--line);
@@ -601,148 +552,30 @@ section,
 .hero-frame img {
   aspect-ratio: 6 / 7;
   object-fit: cover;
-  transition: transform var(--duration-slow) var(--ease-out-expo),
-              filter var(--duration-slow) ease;
-  filter: saturate(.95) contrast(1.02);
 }
-
-.hero-visual:hover .hero-frame img {
-  transform: scale(1.02);
-}
-
-.tech-scanner-wrap {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 3;
-  border-radius: inherit;
-}
-
-.tech-scanner-wrap::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  right: 0;
-  height: 100%;
-  bottom: 100%;
-  background: linear-gradient(180deg,
-    transparent 0%,
-    transparent calc(100% - 50px),
-    color-mix(in srgb, var(--accent), transparent 90%) calc(100% - 24px),
-    color-mix(in srgb, var(--accent), transparent 30%) calc(100% - 2px),
-    color-mix(in srgb, #fff, var(--accent) 75%) 100%
-  );
-  box-shadow: 0 4px 16px color-mix(in srgb, var(--accent), transparent 45%);
-  will-change: transform, opacity;
-  animation: tech-scan-cycle 7.5s cubic-bezier(0.4, 0, 0.2, 1) infinite;
-}
-
-@keyframes tech-scan-cycle {
-  0% {
-    transform: translateY(0%);
-    opacity: 0;
-  }
-  3% {
-    opacity: 0.85;
-  }
-  36% {
-    transform: translateY(105%);
-    opacity: 0.85;
-  }
-  42% {
-    transform: translateY(107%);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0%);
-    opacity: 0;
-  }
-}
-
-.tech-reticle {
-  position: absolute;
-  width: 13px;
-  height: 13px;
-  pointer-events: none;
-  z-index: 4;
-  border: 1.5px solid color-mix(in srgb, var(--accent), #fff 30%);
-  opacity: 0.65;
-  transition: transform var(--duration-normal) var(--ease-out-expo),
-              opacity var(--duration-normal) ease;
-  animation: reticle-breathe 4s ease-in-out infinite;
-}
-
-@keyframes reticle-breathe {
-  0%, 100% { opacity: 0.45; }
-  50% { opacity: 0.8; }
-}
-
-.tech-reticle.top-left {
-  top: 12px;
-  left: 12px;
-  border-right: 0;
-  border-bottom: 0;
-}
-
-.tech-reticle.top-right {
-  top: 12px;
-  right: 12px;
-  border-left: 0;
-  border-bottom: 0;
-}
-
-.tech-reticle.bottom-left {
-  bottom: 66px;
-  left: 12px;
-  border-right: 0;
-  border-top: 0;
-}
-
-.tech-reticle.bottom-right {
-  bottom: 66px;
-  right: 12px;
-  border-left: 0;
-  border-top: 0;
-}
-
-.hero-visual:hover .tech-reticle.top-left { transform: translate3d(-2px, -2px, 0); opacity: 1; }
-.hero-visual:hover .tech-reticle.top-right { transform: translate3d(2px, -2px, 0); opacity: 1; }
-.hero-visual:hover .tech-reticle.bottom-left { transform: translate3d(-2px, 2px, 0); opacity: 1; }
-.hero-visual:hover .tech-reticle.bottom-right { transform: translate3d(2px, 2px, 0); opacity: 1; }
 
 .hero-telemetry-badge {
-  position: absolute;
-  left: 18px;
-  right: 18px;
-  bottom: 18px;
-  background: color-mix(in srgb, var(--surfaceSolid), transparent 12%);
-  border: 1px solid var(--line);
-  padding: .75rem 1rem;
+  position: relative;
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+  padding: .7rem 1.05rem;
   font-family: var(--font-mono);
-  font-weight: 700;
+  font-weight: 600;
   font-size: .68rem;
-  letter-spacing: .12em;
-  color: var(--ink);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border-radius: calc(var(--radius) + 2px);
-  box-shadow: inset 0 1px 0 rgba(255,255,255,.28), var(--shadow-soft);
+  letter-spacing: .08em;
+  color: var(--muted);
   display: flex;
   align-items: center;
   gap: 9px;
-  z-index: 5;
-  pointer-events: none;
+  z-index: 2;
 }
 
 .telemetry-live-dot {
-  width: 7px;
-  height: 7px;
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
   background: #10b981;
-  box-shadow: 0 0 8px #10b981;
   flex-shrink: 0;
-  animation: live-beacon-pulse 2.2s ease-in-out infinite;
 }
 
 .telemetry-text {
@@ -756,17 +589,12 @@ section,
   font-family: var(--font-mono);
   font-size: .62rem;
   font-weight: 600;
-  color: #10b981;
-  background: color-mix(in srgb, #10b981, transparent 90%);
+  color: var(--accent);
+  background: color-mix(in srgb, var(--accent), transparent 90%);
   padding: 2px 6px;
-  border-radius: 4px;
-  border: 1px solid color-mix(in srgb, #10b981, transparent 70%);
+  border-radius: 3px;
+  border: 1px solid color-mix(in srgb, var(--accent), transparent 75%);
   letter-spacing: .06em;
-}
-
-@keyframes live-beacon-pulse {
-  0%, 100% { opacity: 0.4; transform: scale(0.85); }
-  50% { opacity: 1; transform: scale(1.2); box-shadow: 0 0 10px #10b981; }
 }
 
 .actions,
@@ -1667,7 +1495,9 @@ footer small { grid-column: 1 / -1; }
 }
 
 .blueprint-frame:hover {
-  transform: translateY(-8px) rotate(-.35deg);
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent), var(--line) 40%);
+  box-shadow: var(--shadow);
 }
 
 .blueprint-header {
@@ -1712,12 +1542,6 @@ footer small { grid-column: 1 / -1; }
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform var(--duration-slow) var(--ease-out-expo), filter var(--duration-norm) ease;
-}
-
-.blueprint-frame:hover .blueprint-img-link img {
-  transform: scale(1.035);
-  filter: saturate(1.06) contrast(1.04);
 }
 
 .blueprint-caption {
@@ -1736,20 +1560,6 @@ footer small { grid-column: 1 / -1; }
   font-variation-settings: "opsz" 24;
   font-size: 1rem;
   margin-bottom: 2px;
-}
-
-@supports (animation-timeline: view()) {
-  .hero-visual,
-  .story-visual {
-    animation: slow-float linear both;
-    animation-timeline: view();
-    animation-range: entry 0% exit 100%;
-  }
-}
-
-@keyframes slow-float {
-  from { transform: translateY(18px); }
-  to { transform: translateY(-18px); }
 }
 
 .notice {
@@ -1967,21 +1777,13 @@ footer small { grid-column: 1 / -1; }
   .publication { grid-template-columns: 1fr; }
 
   .hero-telemetry-badge {
-    left: 12px;
-    right: 12px;
-    bottom: 12px;
-    padding: .62rem .85rem;
+    padding: .55rem .75rem;
     font-size: .6rem;
-    letter-spacing: .08em;
+    letter-spacing: .06em;
   }
 
   .telemetry-code {
     display: none;
-  }
-
-  .tech-reticle.bottom-left,
-  .tech-reticle.bottom-right {
-    bottom: 54px;
   }
 
   .cta { padding: 30px; }
@@ -2011,7 +1813,6 @@ footer small { grid-column: 1 / -1; }
   }
 
   .blueprint-frame:hover,
-  .blueprint-frame:hover .blueprint-img-link img,
   .button:hover,
   .card:hover {
     transform: none !important;
