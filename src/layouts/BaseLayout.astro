@@ -20,7 +20,7 @@ const normalizePath = (path: string) => {
 const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${Astro.url.pathname}/`;
 ---
 <!doctype html>
-<html lang={site.language} data-theme="light" style={`--accentLight:${theme.accent};--accentDark:${theme.accentDark};--radius:${theme.radius};--motion:${theme.motion}`}>
+<html lang={site.language} data-theme="dark" style={`--accentLight:${theme.accent};--accentDark:${theme.accentDark};--radius:${theme.radius};--motion:${theme.motion}`}>
 <head>
   <meta charset="UTF-8" /><meta name="viewport" content="width=device-width" />
   <title>{pageTitle}</title><meta name="description" content={description} />
@@ -41,16 +41,16 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
     </>
   )}
   <meta property="og:type" content={article ? 'article' : 'website'} /><meta property="og:title" content={pageTitle} /><meta property="og:description" content={description} /><meta property="og:url" content={canonical} /><meta property="og:image" content={absoluteImage} />
-  <meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content={theme.accent} />
+  <meta name="twitter:card" content="summary_large_image" /><meta name="theme-color" content="#000000" />
   <script type="application/ld+json" set:html={JSON.stringify(article ?? personLd)} />
   <style define:vars={{ accent: theme.accent, accentDark: theme.accentDark, radius: theme.radius, motion: theme.motion }}></style>
   <script is:inline>
     document.documentElement.classList.add('js');
     try {
-      document.documentElement.dataset.theme = localStorage.getItem('theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      document.documentElement.dataset.theme = localStorage.getItem('theme') || 'dark';
       document.documentElement.dataset.lang = localStorage.getItem('lang') || 'en';
     } catch {
-      document.documentElement.dataset.theme = matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      document.documentElement.dataset.theme = 'dark';
       document.documentElement.dataset.lang = 'en';
     }
   </script>
