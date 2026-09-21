@@ -76,7 +76,12 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
     const root=document.documentElement;
     document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;try{localStorage.setItem('theme',next)}catch{}});
     document.querySelector('.lang-toggle')?.addEventListener('click',()=>{const next=root.dataset.lang==='vi'?'en':'vi';root.dataset.lang=next;try{localStorage.setItem('lang',next)}catch{}});
-    const navButton=document.querySelector<HTMLButtonElement>('.nav-toggle');navButton?.addEventListener('click',()=>navButton.setAttribute('aria-expanded',String(navButton.getAttribute('aria-expanded')!=='true')));
+    const navButton=document.querySelector<HTMLButtonElement>('.nav-toggle');
+    navButton?.addEventListener('click',()=>{
+      const expanded=navButton.getAttribute('aria-expanded')!=='true';
+      navButton.setAttribute('aria-expanded',String(expanded));
+      document.querySelector('.site-header')?.classList.toggle('nav-open',expanded);
+    });
     document.querySelectorAll('.hero[data-reveal], .hero [data-reveal-stagger]').forEach((el) => el.classList.add('revealed'));
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
