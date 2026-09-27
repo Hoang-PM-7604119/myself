@@ -5,15 +5,14 @@ const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
 <section class="hero" aria-labelledby="hero-title" data-reveal>
   <div class="hero-copy" data-reveal-stagger>
     <div class="role" aria-label="Current role and affiliation">
-      <span class="role-text" data-i18n-en>
-        <span class="role-title">{profile.role}</span>
-        <span class="role-sep" aria-hidden="true">&bull;</span>
-        <span class="role-org">{profile.institution}</span>
+      <span class="role-badge">
+        <span data-i18n-en>{profile.role}</span>
+        <span data-i18n-vi>{profile.role_vi || profile.role}</span>
       </span>
-      <span class="role-text" data-i18n-vi>
-        <span class="role-title">{profile.role_vi || profile.role}</span>
-        <span class="role-sep" aria-hidden="true">&bull;</span>
-        <span class="role-org">{profile.institution_vi || profile.institution}</span>
+      <span class="role-sep" aria-hidden="true">&bull;</span>
+      <span class="role-org">
+        <span data-i18n-en>{profile.institution}</span>
+        <span data-i18n-vi>{profile.institution_vi || profile.institution}</span>
       </span>
     </div>
     <h1 id="hero-title"><span data-i18n-en>Field AIoT systems, <em>from sensors to intelligence.</em></span><span data-i18n-vi>Hệ thống AIoT thực địa, <em>từ cảm biến đến trí tuệ nhân tạo.</em></span></h1>
