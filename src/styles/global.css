@@ -500,8 +500,7 @@ section,
 .hero .role {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
-  padding: 6px 14px 6px 10px;
+  padding: 6px 16px;
   border-radius: var(--radius-pill);
   font-family: var(--font-sans);
   font-size: clamp(.78rem, .9vw, .86rem);
@@ -523,45 +522,6 @@ section,
   border-color: color-mix(in srgb, var(--accent), var(--line) 40%);
   transform: translateY(-1px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06), var(--glass-bevel);
-}
-
-.hero .role-pulse {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 14px;
-  height: 14px;
-  flex-shrink: 0;
-}
-
-.hero .role-pulse-dot {
-  width: 7px;
-  height: 7px;
-  border-radius: 50%;
-  background-color: #30d158;
-  box-shadow: 0 0 8px rgba(48, 209, 88, 0.6);
-}
-
-.hero .role-pulse::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  background-color: rgba(48, 209, 88, 0.25);
-  animation: role-pulse-ring 2.4s cubic-bezier(0.24, 0, 0.38, 1) infinite;
-}
-
-@keyframes role-pulse-ring {
-  0% { transform: scale(0.6); opacity: 0.9; }
-  50% { transform: scale(1.4); opacity: 0.15; }
-  100% { transform: scale(0.6); opacity: 0.9; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero .role-pulse::before {
-    animation: none;
-  }
 }
 
 .hero .role-text {
@@ -2154,9 +2114,8 @@ footer small { grid-column: 1 / -1; }
 
   .hero .role {
     font-size: .75rem;
-    padding: 6px 12px 6px 9px;
+    padding: 6px 14px;
     border-radius: var(--radius-sm);
-    gap: 8px;
   }
 
   .hero .role-text {
