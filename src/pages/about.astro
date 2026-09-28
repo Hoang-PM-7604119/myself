@@ -1,4 +1,116 @@
 ---
-import BaseLayout from '@/layouts/BaseLayout.astro'; import profile from '@/data/profile.yaml'; import awards from '@/data/awards.yaml'; const asset=(p:string)=>`${import.meta.env.BASE_URL}${p.replace(/^\//,'')}`;
+import BaseLayout from '@/layouts/BaseLayout.astro';
+import profile from '@/data/profile.yaml';
+import awards from '@/data/awards.yaml';
+import social from '@/data/social.yaml';
+
+const asset = (p: string) => `${import.meta.env.BASE_URL}${p.replace(/^\//, '')}`;
 ---
-<BaseLayout title="About" description={`About ${profile.name} and his approach to research engineering.`}><div class="page"><p class="eyebrow"><span data-i18n-en>About</span><span data-i18n-vi>Giới thiệu</span></p><h1><span data-i18n-en>Engineering with the whole system in view.</span><span data-i18n-vi>Kỹ thuật hệ thống toàn diện.</span></h1><div class="contact-grid"><div><p class="lede"><span data-i18n-en>{profile.bio}</span><span data-i18n-vi>Minh-Hoàng Phạm là Trợ lý nghiên cứu và Trưởng nhóm kỹ thuật làm việc trong các lĩnh vực AIoT, giám sát môi trường, thị giác máy tính, AI biên, hệ thống nhúng và hạ tầng đám mây. Anh dẫn dắt các nhóm sinh viên và trợ lý nghiên cứu phát triển các nền tảng cảm biến thực địa phục vụ bảo tồn đa dạng sinh học, nuôi trồng thủy sản thông minh, giám sát rừng ngập mặn và giám sát đàn ong.</span></p><p><span data-i18n-en>I am interested in systems that live close to physical processes: sensors, embedded controllers, computer-vision modules, backend services, and small learning systems that need to keep working after they leave the lab.</span><span data-i18n-vi>Tôi tập trung nghiên cứu các hệ thống gắn liền với quá trình vật lý thực tế: cảm biến, bộ điều khiển nhúng, thị giác máy tính, dịch vụ backend và mô hình học máy duy trì hoạt động ổn định ngoài phòng thí nghiệm.</span></p><a class="button primary" href={asset('/cv/')}><span data-i18n-en>View academic CV</span><span data-i18n-vi>Xem lý lịch khoa học</span></a></div><picture><source srcset={`${asset('/images/profile/minh-hoang-pham-mobile.webp')} 420w, ${asset('/images/profile/minh-hoang-pham.webp')} 800w`} sizes="(max-width: 640px) 380px, 720px" type="image/webp" /><img src={asset(profile.image)} width="720" height="840" alt={`System profile graphic for ${profile.name}`} style="border-radius:var(--radius)" loading="lazy" decoding="async" /></picture></div><section><div class="section-head"><h2><span data-i18n-en>Funding and honors</span><span data-i18n-vi>Tài trợ & Giải thưởng</span></h2></div><div class="cards">{awards.map(a=><article class="callout"><p class="eyebrow">{a.year} / <span data-i18n-en>{a.issuer}</span><span data-i18n-vi>{a.issuer_vi || a.issuer}</span></p><h3><span data-i18n-en>{a.title}</span><span data-i18n-vi>{a.title_vi || a.title}</span></h3><p><span data-i18n-en>{a.description}</span><span data-i18n-vi>{a.description_vi || a.description}</span></p></article>)}</div></section></div></BaseLayout>
+
+<BaseLayout title="About" description={`About ${profile.name} and his approach to research engineering.`}>
+  <div class="page">
+    <section class="about-hero" aria-labelledby="about-title" data-reveal>
+      <div class="about-copy" data-reveal-stagger>
+        <p class="eyebrow">
+          <span data-i18n-en>About</span>
+          <span data-i18n-vi>Giới thiệu</span>
+        </p>
+
+        <h1 id="about-title" class="about-title">
+          <span data-i18n-en>Engineering with the whole system in view.</span>
+          <span data-i18n-vi>Kỹ thuật hệ thống toàn diện.</span>
+        </h1>
+
+        <div class="about-role" aria-label="Current role and affiliation">
+          <span class="role-badge">
+            <span data-i18n-en>{profile.role}</span>
+            <span data-i18n-vi>{profile.role_vi || profile.role}</span>
+          </span>
+          <span class="role-sep" aria-hidden="true">&bull;</span>
+          <span class="role-org">
+            <span data-i18n-en>{profile.institution}</span>
+            <span data-i18n-vi>{profile.institution_vi || profile.institution}</span>
+          </span>
+        </div>
+
+        <p class="lede">
+          <span data-i18n-en>{profile.bio}</span>
+          <span data-i18n-vi>{profile.bio_vi || profile.bio}</span>
+        </p>
+
+        <p class="about-philosophy">
+          <span data-i18n-en>I am interested in systems that live close to physical processes: sensors, embedded controllers, computer-vision modules, backend services, and small learning systems that need to keep working after they leave the lab.</span>
+          <span data-i18n-vi>Tôi tập trung nghiên cứu các hệ thống gắn liền với quá trình vật lý thực tế: cảm biến, bộ điều khiển nhúng, thị giác máy tính, dịch vụ backend và mô hình học máy duy trì hoạt động ổn định ngoài phòng thí nghiệm.</span>
+        </p>
+
+        <div class="about-tags" aria-label="Core focus areas">
+          <span><span data-i18n-en>AIoT Systems</span><span data-i18n-vi>Hệ thống AIoT</span></span>
+          <span><span data-i18n-en>Environmental Sensing</span><span data-i18n-vi>Cảm biến Môi trường</span></span>
+          <span><span data-i18n-en>Edge AI & Computer Vision</span><span data-i18n-vi>AI Biên & Thị giác Máy tính</span></span>
+          <span><span data-i18n-en>Deep RL & Control</span><span data-i18n-vi>Học Tăng cường Sâu</span></span>
+        </div>
+
+        <div class="actions">
+          <a class="button primary" href={asset('/cv/')}>
+            <span data-i18n-en>View academic CV</span>
+            <span data-i18n-vi>Xem lý lịch khoa học</span>
+          </a>
+          <a class="button" href={asset('/contact/')}>
+            <span data-i18n-en>Get in touch &rarr;</span>
+            <span data-i18n-vi>Liên hệ trao đổi &rarr;</span>
+          </a>
+          <a class="button" href={asset('/projects/')}>
+            <span data-i18n-en>Explore projects &rarr;</span>
+            <span data-i18n-vi>Xem các dự án &rarr;</span>
+          </a>
+        </div>
+
+        <div class="socials">
+          <a href={`mailto:${profile.email}`}>Email</a>
+          <a href={social.github} target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href={social.scholar} target="_blank" rel="noopener noreferrer">Google Scholar</a>
+          <a href={social.linkedin} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="about-visual" aria-label="Profile Photo">
+        <div class="about-frame">
+          <picture>
+            <source srcset={`${asset('/images/profile/minh-hoang-pham-mobile.webp')} 420w, ${asset('/images/profile/minh-hoang-pham.webp')} 800w`} sizes="(max-width: 640px) 380px, 720px" type="image/webp" />
+            <img src={asset(profile.image)} width="720" height="840" alt={`Profile portrait of ${profile.name}`} fetchpriority="high" decoding="async" />
+          </picture>
+          <div class="about-telemetry-badge" aria-hidden="true">
+            <span class="telemetry-text">FIELD AIoT &amp; SYSTEMS</span>
+            <span class="telemetry-code">ONLINE</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" data-reveal>
+      <div class="section-head">
+        <h2>
+          <span data-i18n-en>Funding and honors</span>
+          <span data-i18n-vi>Tài trợ &amp; Giải thưởng</span>
+        </h2>
+      </div>
+      <div class="cards">
+        {awards.map(a => (
+          <article class="callout">
+            <p class="eyebrow">
+              {a.year} / <span data-i18n-en>{a.issuer}</span><span data-i18n-vi>{a.issuer_vi || a.issuer}</span>
+            </p>
+            <h3>
+              <span data-i18n-en>{a.title}</span>
+              <span data-i18n-vi>{a.title_vi || a.title}</span>
+            </h3>
+            <p>
+              <span data-i18n-en>{a.description}</span>
+              <span data-i18n-vi>{a.description_vi || a.description}</span>
+            </p>
+          </article>
+        ))}
+      </div>
+    </section>
+  </div>
+</BaseLayout>

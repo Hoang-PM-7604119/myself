@@ -90,8 +90,8 @@ Dự án khởi đầu bằng buổi làm việc kỹ thuật chuyên sâu tại
 <figure>
   <img src="/myself/images/projects/coral-reef/kickstart-meeting.jpg" alt="Coral reef project kickoff and architecture workshop at VinUniversity" loading="lazy" />
   <figcaption>
-    <span data-i18n-en><strong>Figure 1:</strong> Project kickoff meeting at VinUniversity with Minh-Hoang Pham, Prof. Dinh Van Dung, Prof. Pham Huy Hieu, and faculty researchers formulating the coastal sensing architecture.</span>
-    <span data-i18n-vi><strong>Hình 1:</strong> Buổi họp khởi động dự án tại VinUniversity cùng Phạm Minh Hoàng, PGS. Đinh Văn Dũng, TS. Phạm Huy Hiệu và nhóm nghiên cứu định hình kiến trúc quan trắc biển.</span>
+    <span data-i18n-en><strong>Figure 1:</strong> Project kickoff meeting at VinUniversity with Minh-Hoang Pham, Prof. Dinh Van Dung, Prof. Van-Dinh Nguyen, Prof. Pham Huy Hieu, and faculty researchers formulating the coastal sensing architecture.</span>
+    <span data-i18n-vi><strong>Hình 1:</strong> Buổi họp khởi động dự án tại VinUniversity cùng Phạm Minh Hoàng, TS. Đinh Văn Dũng, TS. Nguyễn Văn Định, TS. Phạm Huy Hiệu và nhóm nghiên cứu định hình kiến trúc quan trắc biển.</span>
   </figcaption>
 </figure>
 
