@@ -71,7 +71,41 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
     <button class="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">◐</button>
   </header>
   <main id="main"><slot /></main>
-  <footer><div><strong>{profile.name}</strong><p><span data-i18n-en>AIoT, environmental monitoring, computer vision, edge AI, and deployable intelligent sensing platforms.</span><span data-i18n-vi>Hệ thống AIoT, giám sát môi trường, thị giác máy tính, Edge AI và các nền tảng cảm biến thông minh.</span></p></div><div><a href={asset('/contact/')}><span data-i18n-en>Contact</span><span data-i18n-vi>Liên hệ</span></a><a href={asset('/rss.xml')}>RSS</a><a href={social.github}>GitHub</a></div><small>© {new Date().getFullYear()} {profile.name}. <span data-i18n-en>Built as a static Astro site.</span><span data-i18n-vi>Phát triển trên nền tảng tĩnh Astro.</span></small></footer>
+  <footer>
+    <div>
+      <strong>{profile.name}</strong>
+      <p>
+        <span data-i18n-en>AIoT, environmental monitoring, computer vision, edge AI, and deployable intelligent sensing platforms.</span>
+        <span data-i18n-vi>Hệ thống AIoT, giám sát môi trường, thị giác máy tính, Edge AI và các nền tảng cảm biến thông minh.</span>
+      </p>
+    </div>
+    <div>
+      <a href={asset('/contact/')}><span data-i18n-en>Contact</span><span data-i18n-vi>Liên hệ</span></a>
+      <a href={asset('/rss.xml')}>RSS</a>
+      <a href={social.github}>GitHub</a>
+    </div>
+    <div class="footer-bottom">
+      <small>© {new Date().getFullYear()} {profile.name}. <span data-i18n-en>Built as a static Astro site.</span><span data-i18n-vi>Phát triển trên nền tảng tĩnh Astro.</span></small>
+      <a
+        href="https://hits.sh/hoang-pm-7604119.github.io/myself/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="visitor-counter"
+        title="Total website visits / Tổng lượt truy cập website"
+        aria-label="Website visitor count"
+      >
+        <span class="visitor-dot" aria-hidden="true"></span>
+        <span class="visitor-label" data-i18n-en>Visits</span>
+        <span class="visitor-label" data-i18n-vi>Lượt xem</span>
+        <img
+          class="visitor-badge"
+          src="https://hits.sh/hoang-pm-7604119.github.io/myself.svg?style=flat-square&label=%20&color=2997ff&labelColor=transparent"
+          alt="Visitor count"
+          loading="lazy"
+        />
+      </a>
+    </div>
+  </footer>
   <script>
     const root=document.documentElement;
     document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;try{localStorage.setItem('theme',next)}catch{}});
