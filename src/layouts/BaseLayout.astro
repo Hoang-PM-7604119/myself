@@ -87,29 +87,84 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
     <small>© {new Date().getFullYear()} {profile.name}. <span data-i18n-en>Built as a static Astro site.</span><span data-i18n-vi>Phát triển trên nền tảng tĩnh Astro.</span></small>
   </footer>
   <aside class="floating-visitor-badge" aria-label="Website traffic statistics">
-    <a
-      href="https://hits.sh/hoang-pm-7604119.github.io/myself/"
-      target="_blank"
-      rel="noopener noreferrer"
+    <div
       class="visitor-pill"
-      title="Total website visits / Tổng lượt truy cập website"
+      title="Unique visits in current session / Lượt truy cập theo phiên"
       aria-label="Website visitor count"
     >
       <span class="visitor-dot" aria-hidden="true"></span>
       <span class="visitor-label" data-i18n-en>Visits</span>
       <span class="visitor-label" data-i18n-vi>Lượt xem</span>
-      <img
-        class="visitor-badge"
-        src="https://hits.sh/hoang-pm-7604119.github.io/myself.svg?style=flat-square&label=%20&color=2997ff&labelColor=transparent"
-        alt="Visitor count"
-        loading="lazy"
-      />
-    </a>
+      <span class="visitor-count-badge">
+        <span class="visitor-count-value" id="visitor-count-val">--</span>
+      </span>
+    </div>
+    <script is:inline>
+      try {
+        var c = sessionStorage.getItem('site_visit_cached_count');
+        if (c) {
+          var el = document.getElementById('visitor-count-val');
+          if (el) el.textContent = Number(c).toLocaleString();
+        }
+      } catch (e) {}
+    </script>
   </aside>
   <script>
     const root=document.documentElement;
     document.querySelector('.theme-toggle')?.addEventListener('click',()=>{const next=root.dataset.theme==='dark'?'light':'dark';root.dataset.theme=next;try{localStorage.setItem('theme',next)}catch{}});
     document.querySelector('.lang-toggle')?.addEventListener('click',()=>{const next=root.dataset.lang==='vi'?'en':'vi';root.dataset.lang=next;try{localStorage.setItem('lang',next)}catch{}});
+
+    // Visitor counter with session deduplication (only counts once per session, not on every menu click)
+    const initVisitorCounter = async () => {
+      const countEl = document.getElementById('visitor-count-val');
+      if (!countEl) return;
+
+      const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+      const sessionKey = 'site_session_active';
+      const cacheKey = 'site_visit_cached_count';
+
+      try {
+        const hasVisited = sessionStorage.getItem(sessionKey);
+        const shouldHit = !hasVisited && !isLocal;
+        const endpoint = shouldHit
+          ? 'https://abacus.jasoncameron.dev/hit/hoang-pm-7604119/myself_visits'
+          : 'https://abacus.jasoncameron.dev/get/hoang-pm-7604119/myself_visits';
+
+        const res = await fetch(endpoint);
+        if (res.ok) {
+          const data = await res.json();
+          const val = data?.value;
+          if (typeof val === 'number') {
+            sessionStorage.setItem(sessionKey, '1');
+            sessionStorage.setItem(cacheKey, String(val));
+            countEl.textContent = val.toLocaleString();
+            return;
+          }
+        }
+      } catch {}
+
+      // Secondary fallback endpoint
+      try {
+        const hasVisited = sessionStorage.getItem(sessionKey);
+        const shouldHit = !hasVisited && !isLocal;
+        const backupEndpoint = shouldHit
+          ? 'https://countapi.mileshilliard.com/api/v1/hit/hoang-pm-7604119-myself-visits'
+          : 'https://countapi.mileshilliard.com/api/v1/get/hoang-pm-7604119-myself-visits';
+
+        const res = await fetch(backupEndpoint);
+        if (res.ok) {
+          const data = await res.json();
+          const val = data?.value;
+          if (typeof val === 'number') {
+            sessionStorage.setItem(sessionKey, '1');
+            sessionStorage.setItem(cacheKey, String(val));
+            countEl.textContent = val.toLocaleString();
+          }
+        }
+      } catch {}
+    };
+
+    initVisitorCounter();
     const navButton=document.querySelector<HTMLButtonElement>('.nav-toggle');
     navButton?.addEventListener('click',()=>{
       const expanded=navButton.getAttribute('aria-expanded')!=='true';

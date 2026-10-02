@@ -1209,12 +1209,28 @@ footer small { grid-column: 1 / -1; }
   color: var(--ink);
 }
 
-.visitor-badge {
-  height: 18px;
-  width: auto;
-  display: block;
+.visitor-count-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 22px;
+  height: 20px;
+  padding: 0 6px;
   border-radius: 4px;
-  filter: contrast(1.05);
+  background: var(--accent);
+  color: #ffffff;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: -0.01em;
+  box-shadow: 0 1px 4px rgba(0, 113, 227, 0.25);
+}
+
+.visitor-count-value {
+  display: inline-block;
+  min-width: 10px;
+  text-align: center;
 }
 
 .article-head {
