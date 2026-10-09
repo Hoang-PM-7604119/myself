@@ -225,7 +225,7 @@ pre code {
   margin-right: auto;
 }
 
-.brand span {
+.brand > span:not([type="button"]) {
   display: grid;
   place-items: center;
   width: 34px;
@@ -242,8 +242,28 @@ pre code {
   transition: transform var(--duration-fast) var(--ease-apple);
 }
 
-.brand:hover span {
+.brand:hover > span:not([type="button"]) {
   transform: scale(1.06);
+}
+
+.brand button[type="button"] {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 36px !important;
+  height: 36px !important;
+  border-radius: var(--radius-pill) !important;
+  border: 1px solid var(--line) !important;
+  background: var(--surface-glass) !important;
+  box-shadow: var(--glass-bevel) !important;
+  overflow: hidden !important;
+  cursor: pointer;
+  transition: transform var(--duration-fast) var(--ease-apple), border-color var(--duration-fast) var(--ease-apple);
+}
+
+.brand:hover button[type="button"] {
+  transform: scale(1.08);
+  border-color: var(--accent);
 }
 
 .brand strong {
@@ -554,37 +574,42 @@ section,
 .signal-strip {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 8px;
-  margin: 26px 0 14px;
-  max-width: 720px;
+  gap: 10px;
+  margin: 22px 0 16px;
+  max-width: 680px;
 }
 
-.signal-strip span {
-  background: var(--surface-glass);
-  backdrop-filter: blur(16px) saturate(180%);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border: 1px solid var(--line);
-  padding: 8px 10px;
-  font-family: var(--font-sans);
-  font-weight: 600;
-  font-size: .74rem;
-  letter-spacing: -.01em;
-  color: var(--ink);
+.signal-strip > span {
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
-  line-height: 1.25;
-  min-height: 48px;
+  padding: 10px 14px;
   border-radius: var(--radius-sm);
-  box-shadow: var(--glass-bevel);
+  background: var(--surface);
+  border: 1px solid var(--line);
+  font-family: var(--font-sans);
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  color: var(--muted);
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
   transition: all var(--duration-fast) var(--ease-apple);
+  box-sizing: border-box;
 }
 
-.signal-strip span:hover {
+.signal-strip > span > span {
+  display: inline-block;
+  line-height: 1.25;
+}
+
+.signal-strip > span:hover {
   background: var(--surfaceSolid);
-  transform: translateY(-2px);
-  box-shadow: var(--card-shadow);
+  border-color: var(--line-strong);
+  color: var(--ink);
+  transform: translateY(-1px);
 }
 
 .signal-pulse {
@@ -2390,7 +2415,7 @@ footer small { grid-column: 1 / -1; }
     margin-right: auto;
   }
 
-  .brand span {
+  .brand > span:not([type="button"]) {
     width: 32px;
     height: 32px;
     flex: 0 0 auto;
@@ -2483,7 +2508,7 @@ footer small { grid-column: 1 / -1; }
     width: 100%;
   }
 
-  .signal-strip span {
+  .signal-strip > span {
     padding: 8px 10px;
     font-size: .71rem;
     white-space: nowrap;
