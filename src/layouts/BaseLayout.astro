@@ -60,10 +60,14 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
   {progress && <div class="reading-progress" aria-hidden="true"><span></span></div>}
   <a class="skip" href="#main"><span data-i18n-en>Skip to content</span><span data-i18n-vi>Chuyển đến nội dung</span></a>
   <header class="site-header">
-    <a class="brand" href={asset('/')}>
-      <Mascot client:only="react" size={36} directions={asset('/mascots/hoang-directions.webp')} reactions={asset('/mascots/hoang-reactions.webp')} />
-      <strong>{profile.name}</strong>
-    </a>
+    <div class="brand-group">
+      <div class="mascot-avatar" title="Click to boop me!">
+        <Mascot client:only="react" size={36} directions={asset('/mascots/hoang-directions.webp')} reactions={asset('/mascots/hoang-reactions.webp')} />
+      </div>
+      <a class="brand" href={asset('/')}>
+        <strong>{profile.name}</strong>
+      </a>
+    </div>
     <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav"><span class="sr-only">Toggle navigation</span>Menu</button>
     <nav id="site-nav" aria-label="Primary"><ul>{site.navigation.map((item) => {
       const href = asset(item.href);

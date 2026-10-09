@@ -217,36 +217,20 @@ pre code {
   transition: background-color var(--duration-norm) ease, border-color var(--duration-norm) ease, box-shadow var(--duration-norm) ease;
 }
 
-.brand {
+.brand-group {
   display: flex;
   align-items: center;
   gap: 10px;
-  text-decoration: none;
   margin-right: auto;
 }
 
-.brand > span:not([type="button"]) {
-  display: grid;
-  place-items: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
-  font-family: var(--font-mono);
-  font-weight: 700;
-  font-size: .68rem;
-  letter-spacing: .04em;
-  background: var(--surface-glass);
-  color: var(--ink);
-  box-shadow: var(--glass-bevel);
-  transition: transform var(--duration-fast) var(--ease-apple);
+.mascot-avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.brand:hover > span:not([type="button"]) {
-  transform: scale(1.06);
-}
-
-.brand button[type="button"] {
+.mascot-avatar button[type="button"] {
   display: flex !important;
   align-items: center;
   justify-content: center;
@@ -261,9 +245,15 @@ pre code {
   transition: transform var(--duration-fast) var(--ease-apple), border-color var(--duration-fast) var(--ease-apple);
 }
 
-.brand:hover button[type="button"] {
-  transform: scale(1.08);
+.mascot-avatar:hover button[type="button"] {
+  transform: scale(1.1);
   border-color: var(--accent);
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
 }
 
 .brand strong {
@@ -272,6 +262,11 @@ pre code {
   font-size: .92rem;
   letter-spacing: -.02em;
   color: var(--ink);
+  transition: color var(--duration-fast) var(--ease-apple);
+}
+
+.brand:hover strong {
+  color: var(--accent);
 }
 
 .site-header nav ul {
@@ -2409,16 +2404,12 @@ footer small { grid-column: 1 / -1; }
     min-width: 52px;
   }
 
-  .brand {
+  .brand-group {
+    display: flex;
+    align-items: center;
     gap: 8px;
     min-width: 0;
     margin-right: auto;
-  }
-
-  .brand > span:not([type="button"]) {
-    width: 32px;
-    height: 32px;
-    flex: 0 0 auto;
   }
 
   .brand strong {
