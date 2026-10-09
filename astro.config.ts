@@ -3,6 +3,8 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import { load } from 'js-yaml';
 
+import react from '@astrojs/react';
+
 const repository = process.env.GITHUB_REPOSITORY?.split('/')[1] ?? 'myself';
 const owner = process.env.GITHUB_REPOSITORY_OWNER ?? 'Hoang-PM-7604119';
 const userSite = repository.toLowerCase() === `${owner.toLowerCase()}.github.io`;
@@ -13,7 +15,7 @@ export default defineConfig({
   site,
   base,
   output: 'static',
-  integrations: [mdx(), sitemap()],
+  integrations: [mdx(), sitemap(), react()],
   vite: { plugins: [{ name: 'local-yaml', transform(code, id) { if (!/\.ya?ml$/.test(id)) return; return { code: `export default ${JSON.stringify(load(code))}`, map: null }; } }] },
   markdown: { shikiConfig: { theme: 'github-dark' } }
 });
