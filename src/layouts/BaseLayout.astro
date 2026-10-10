@@ -61,8 +61,8 @@ const currentPath = Astro.url.pathname.endsWith('/') ? Astro.url.pathname : `${A
   <a class="skip" href="#main"><span data-i18n-en>Skip to content</span><span data-i18n-vi>Chuyển đến nội dung</span></a>
   <header class="site-header">
     <div class="brand-group">
-      <div class="mascot-avatar" title="Click to boop the fox!">
-        <Mascot client:only="react" size={36} directions={asset('/mascots/fox-directions.webp')} reactions={asset('/mascots/fox-reactions.webp')} />
+      <div class="mascot-avatar" title="Click to boop me!">
+        <Mascot client:only="react" size={36} directions={asset('/mascots/hoang-directions.webp')} reactions={asset('/mascots/hoang-reactions.webp')} />
       </div>
       <a class="brand" href={asset('/')}>
         <strong>{profile.name}</strong>
